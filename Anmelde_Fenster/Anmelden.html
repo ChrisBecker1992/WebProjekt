@@ -11,24 +11,24 @@
 
     <title>Anmelden</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script type="text/javascript" src="core.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
 </head>
 
 <body>
@@ -39,18 +39,23 @@
 
 <div class="container">
 
-    <form class="form-signin">
-        <h2 class="form-signin-heading">Anmelden</h2>
-        <label for="inputEmail" class="sr-only">Email:</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-        <br> <br>
-        <label for="inputPassword" class="sr-only">Password:</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <form>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+
         <div class="sr-only">
             Password
             <a href="../PW_forget/PWforget.html" target="_self">
                 vergessen?
             </a>
+
         </div>
         <div class="checkbox">
             <!--  <label>
@@ -61,11 +66,11 @@
 
         <br>
 
-        <div class="sr-only">
+        <div>
 
             <h4 class="regtext">Hallo I bims 1 noch kein Account
                 <br>
-                dann <a href="../Registrieren/Registrieren.html" target="_self">
+                dann <a href="../Registrieren/Registrieren.html" class="register">
                     hier
                 </a>
                 registrieren!
@@ -79,7 +84,72 @@
 
 
 
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Registrieren</h4>
+            </div>
+            <div class="modal-body">
+
+
+
+                    <form class="form-signin">
+                        <h1 class="form-signin-heading">Registrieren</h1>
+                        <label for="inputname" class="sr-only"></label>
+                        <input type="text" id="inputname" class="form-control" placeholder="Nachname" required autofocus>
+
+                        <br><br>
+
+                        <label for="inputvname" class="sr-only"></label>
+                        <input type="text" id="inputvname" class="form-control" placeholder="Vorname" required autofocus>
+
+                        <br><br>
+
+                        <label for="inputPassword" class="sr-only"></label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+                        <br><br>
+
+                        <label for="inputWHPassword" class="sr-only"></label>
+                        <input type="password" id="inputWHPassword" class="form-control" placeholder="Password wiederholen" required autofocus>
+
+                        <br><br>
+
+                        <label for="inputEmail" class="sr-only"></label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+
+                        <br><br>
+
+                        <label for="inputdatum" class="sr-only"></label>
+                        <input type="date" id="inputdatum" class="form-control" placeholder="Geburtsdatum" required autofocus>
+
+                        <br><br>
+
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Registrieren</button>
+
+
+
+
+
+                    </form><!-- /form -->
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 </body>
 </html>
