@@ -6,3 +6,20 @@ $(document).ready(function () {
     });
 
 });
+
+$(document).ready(function () {
+    $(".pwforgot").click(function(e) {
+        e.preventDefault();
+
+        $('#myModal1').modal('show');
+    });
+
+});
+
+$(document).ready(function () {
+    $(".absenden").click(function (e) {
+        e.preventDefault();
+
+        $('#myModal2').modal('show');
+    });
+});

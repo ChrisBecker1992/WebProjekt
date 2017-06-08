@@ -1,4 +1,6 @@
-
+.register{
+    cursor: pointer;
+}
 
 .form-signin input[type="email"] {
     margin-bottom: -1px;

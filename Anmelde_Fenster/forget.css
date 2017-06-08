@@ -8,3 +8,11 @@
 .btn{
     border-radius: 7px;
 }
+
+.pwforgot{
+    cursor: pointer;
+}
+
+.glyphicon-ok{
+    color: green;
+}

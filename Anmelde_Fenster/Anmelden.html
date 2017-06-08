@@ -25,6 +25,9 @@
 
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
+    <link href="forget.css" rel="stylesheet">
+    <link href="regist.css" rel="stylesheet">
+    <link href="anmelden.scss" rel="stylesheet">
 
     <script type="text/javascript" src="core.js"></script>
 
@@ -42,17 +45,17 @@
     <form>
 
         <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <label for="exampleInputEmail1">Email-Adresse</label>
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="exampleInputPassword1">Passwort</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Passwort">
         </div>
 
-        <div class="sr-only">
-            Password
-            <a href="../PW_forget/PWforget.html" target="_self">
+        <div>
+            Passwort
+            <a class="pwforgot">
                 vergessen?
             </a>
 
@@ -68,9 +71,9 @@
 
         <div>
 
-            <h4 class="regtext">Hallo I bims 1 noch kein Account
+            <h4 class="regtext">Bimst du 1 noch kein Account?
                 <br>
-                dann <a href="../Registrieren/Registrieren.html" class="register">
+                dann <a class="register">
                     hier
                 </a>
                 registrieren!
@@ -86,7 +89,7 @@
 
 
 
-<!-- Modal -->
+<!-- Lightbox für Registrieren -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -95,8 +98,6 @@
                 <h4 class="modal-title" id="myModalLabel">Registrieren</h4>
             </div>
             <div class="modal-body">
-
-
 
                     <form class="form-signin">
                         <h1 class="form-signin-heading">Registrieren</h1>
@@ -132,22 +133,74 @@
 
                         <button class="btn btn-lg btn-primary btn-block" type="submit">Registrieren</button>
 
-
-
-
-
                     </form><!-- /form -->
 
-
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
         </div>
     </div>
 </div>
+</div>
+
+
+
+
+<!-- Lightbox für Passwort vergessen -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Passwort vergessen?!</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Kein Problem!
+                    <br><br>
+                    Wir senden Ihnen ein neues Passwort per Email zu.
+                </p>
+
+                <form class="forgot">
+                    <label for="inputEmail" class="sr-only"></label>
+                    <input type="email" id="inputEmail1" class="form-control" placeholder="Email" required autofocus>
+
+                    <br>
+
+                    <button type="button" class="btn btn-primary absenden">Absenden</button>
+
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<!-- Lightbox für erfolgreiches Absenden der Email von Passwort vergessen -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">
+                    Email erfolgreich versendet
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Ihnen wurde ein neues Passwort an Ihre Email-Adresse gesendet.
+                </p>
+
+                <form class="forgot">
+
+                    <br>
+
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
 
