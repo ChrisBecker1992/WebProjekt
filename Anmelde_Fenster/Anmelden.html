@@ -12,15 +12,19 @@
     <title>Anmelden</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 
 
     <!-- Custom styles for this template -->
@@ -39,54 +43,60 @@
 <h1>Studenten-Gathering</h1>
 
 
-
 <div class="container">
+    <br><br>
+    <br><br>
+    <br><br>
+
 
     <form>
+        <div class="links col-xs-3"></div>
 
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email-Adresse</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Passwort</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Passwort">
-        </div>
 
-        <div>
-            Passwort
-            <a class="pwforgot">
-                vergessen?
-            </a>
+        <div class="form-group col-xs-6">
 
-        </div>
-        <div class="checkbox">
-            <!--  <label>
-                <input type="checkbox" value="remember-me"> Remember me
-              </label>-->
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Anmelden</button>
+            <div class="innenlinks col-xs-3"></div>
 
-        <br>
+            <div class="innenmitte col-xs-6">
 
-        <div>
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" id="exampleInputEmail1" placeholder="Email">
 
-            <h4 class="regtext">Bimst du 1 noch kein Account?
+                <br><br>
+
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" id="exampleInputPassword1" placeholder="Password">
+
+                <div class="pwforgot">
+                    Password
+                    <a href="../PW_forget/PWforget.html" target="_self">
+                        vergessen?
+                    </a>
+
+                    <br><br>
+
+                </div>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Anmelden</button>
+
                 <br>
-                dann <a class="register">
-                    hier
-                </a>
-                registrieren!
-            </h4>
+
+                <div>
+
+                    <h4 class="regtext">Hallo I bims 1 noch kein Account!!
+                        <br>
+                        Dann <a href="../Registrieren/Registrieren.html" class="register">
+                            hier
+                        </a>
+                        registrieren!
+                    </h4>
+                </div>
+            </div>
+            <div class="innenrecht col-xs-3"></div>
         </div>
-
     </form>
-
+    <div class="rechts col-xs-3"></div>
 </div> <!-- /container -->
-
-
-
-
 
 
 <!-- Lightbox für Registrieren -->
@@ -94,53 +104,54 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
                 <h4 class="modal-title" id="myModalLabel">Registrieren</h4>
             </div>
             <div class="modal-body">
 
-                    <form class="form-signin">
-                        <h1 class="form-signin-heading">Registrieren</h1>
-                        <label for="inputname" class="sr-only"></label>
-                        <input type="text" id="inputname" class="form-control" placeholder="Nachname" required autofocus>
+                <form class="form-signin">
+                    <h1 class="form-signin-heading">Registrieren</h1>
+                    <label for="inputname" class="sr-only"></label>
+                    <input type="text" id="inputname" class="form-control" placeholder="Nachname" required autofocus>
 
-                        <br><br>
+                    <br><br>
 
-                        <label for="inputvname" class="sr-only"></label>
-                        <input type="text" id="inputvname" class="form-control" placeholder="Vorname" required autofocus>
+                    <label for="inputvname" class="sr-only"></label>
+                    <input type="text" id="inputvname" class="form-control" placeholder="Vorname" required autofocus>
 
-                        <br><br>
+                    <br><br>
 
-                        <label for="inputPassword" class="sr-only"></label>
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <label for="inputPassword" class="sr-only"></label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
 
-                        <br><br>
+                    <br><br>
 
-                        <label for="inputWHPassword" class="sr-only"></label>
-                        <input type="password" id="inputWHPassword" class="form-control" placeholder="Password wiederholen" required autofocus>
+                    <label for="inputWHPassword" class="sr-only"></label>
+                    <input type="password" id="inputWHPassword" class="form-control" placeholder="Password wiederholen"
+                           required autofocus>
 
-                        <br><br>
+                    <br><br>
 
-                        <label for="inputEmail" class="sr-only"></label>
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                    <label for="inputEmail" class="sr-only"></label>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
 
-                        <br><br>
+                    <br><br>
 
-                        <label for="inputdatum" class="sr-only"></label>
-                        <input type="date" id="inputdatum" class="form-control" placeholder="Geburtsdatum" required autofocus>
+                    <label for="inputdatum" class="sr-only"></label>
+                    <input type="date" id="inputdatum" class="form-control" placeholder="Geburtsdatum" required
+                           autofocus>
 
-                        <br><br>
+                    <br><br>
 
-                        <button class="btn btn-lg btn-primary btn-block" type="submit">Registrieren</button>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Registrieren</button>
 
-                    </form><!-- /form -->
+                </form><!-- /form -->
 
+            </div>
         </div>
     </div>
 </div>
-</div>
-
-
 
 
 <!-- Lightbox für Passwort vergessen -->
@@ -148,7 +159,8 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
                 <h4 class="modal-title">Passwort vergessen?!</h4>
             </div>
             <div class="modal-body">
@@ -173,13 +185,13 @@
 </div><!-- /.modal -->
 
 
-
 <!-- Lightbox für erfolgreiches Absenden der Email von Passwort vergessen -->
 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
                 <h4 class="modal-title">
                     Email erfolgreich versendet
                     <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
@@ -201,7 +213,6 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
 
 
 </body>

@@ -6,7 +6,9 @@ body {
 
 }
 
-
+.form-group{
+color: #eeeeee;
+}
 
 /*.form-group {*/
     /*max-width: 330px;*/
@@ -14,9 +16,7 @@ body {
     /*margin: auto;*/
 /*}*/
 
-/*.sr-only{*/
-    /*color: #eeeeee;*/
-/*}*/
+
 
 /*.form-group .form-signin-heading,*/
 /*.form-group .checkbox {*/
