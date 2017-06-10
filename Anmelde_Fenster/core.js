@@ -21,5 +21,6 @@ $(document).ready(function () {
         e.preventDefault();
 
         $('#myModal2').modal('show');
+        $('#myModal1').modal('hide');
     });
 });

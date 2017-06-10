@@ -28,6 +28,7 @@
 
 
     <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Bevan|Droid+Serif" rel="stylesheet">
     <link href="signin.css" rel="stylesheet">
     <link href="forget.css" rel="stylesheet">
     <link href="regist.css" rel="stylesheet">
@@ -40,7 +41,12 @@
 
 <body>
 
-<h1>Studenten-Gathering</h1>
+<header>
+    <div>
+        <h1>Studenten-Gathering </h1>
+        <h4>FH Kufstein</h4>
+    </div>
+</header>
 
 
 <div class="container">
@@ -59,16 +65,17 @@
 
             <div class="innenmitte col-xs-6">
 
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="exampleInputEmail1">Email-Addresse</label>
                 <input type="email" id="exampleInputEmail1" placeholder="Email">
 
                 <br><br>
 
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" id="exampleInputPassword1" placeholder="Password">
+                <label for="exampleInputPassword1">Passwort</label>
+                <input type="password" id="exampleInputPassword1" placeholder="Passwort">
 
+                <br>
                 <div class="pwforgot">
-                    Password
+                    Passwort
                     <a href="../PW_forget/PWforget.html" target="_self">
                         vergessen?
                     </a>
@@ -112,6 +119,7 @@
 
                 <form class="form-signin">
                     <h1 class="form-signin-heading">Registrieren</h1>
+                    <br>
                     <label for="inputname" class="sr-only"></label>
                     <input type="text" id="inputname" class="form-control" placeholder="Nachname" required autofocus>
 
@@ -123,12 +131,12 @@
                     <br><br>
 
                     <label for="inputPassword" class="sr-only"></label>
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Passwort" required>
 
                     <br><br>
 
                     <label for="inputWHPassword" class="sr-only"></label>
-                    <input type="password" id="inputWHPassword" class="form-control" placeholder="Password wiederholen"
+                    <input type="password" id="inputWHPassword" class="form-control" placeholder="Passwort wiederholen"
                            required autofocus>
 
                     <br><br>
@@ -138,6 +146,7 @@
 
                     <br><br>
 
+                    Geburtsdatum
                     <label for="inputdatum" class="sr-only"></label>
                     <input type="date" id="inputdatum" class="form-control" placeholder="Geburtsdatum" required
                            autofocus>
@@ -199,7 +208,8 @@
             </div>
             <div class="modal-body">
                 <p>
-                    Ihnen wurde ein neues Passwort an Ihre Email-Adresse gesendet.
+                    Haha ne nur verarscht!
+                    <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
                 </p>
 
                 <form class="forgot">

@@ -4,6 +4,19 @@ body {
   -moz-background-size: cover;
   background-size: cover; }
 
+header {
+  padding: 10px;
+  top: 0;
+  left: 10px;
+  right: 0;
+  background-color: #646464; }
+
+h1 {
+  font-family: 'Droid Serif'; }
+
+h4 {
+  font-family: 'Bevan'; }
+
 .form-group {
   max-width: 330px;
   padding: 250px;
