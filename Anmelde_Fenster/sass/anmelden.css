@@ -1,0 +1,22 @@
+body {
+  background-image: url(../Bechtle_Success_FH_Kufstein.jpg);
+  no-repeat: center center fixed;
+  -moz-background-size: cover;
+  background-size: cover; }
+
+header {
+  padding: 10px;
+  top: 0;
+  left: 10px;
+  right: 0;
+  background-color: #646464; }
+
+h1 {
+  font-family: 'Droid Serif'; }
+
+h4 {
+  font-family: 'Bevan'; }
+
+
+
+/*# sourceMappingURL=anmelden.css.map */
