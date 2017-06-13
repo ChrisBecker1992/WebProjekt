@@ -29,9 +29,9 @@
 
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Bevan|Droid+Serif" rel="stylesheet">
-    <link href="sass/forget.css" rel="stylesheet">
-    <link href="sass/regist.css" rel="stylesheet">
-    <link href="sass/anmelden.css" rel="stylesheet">
+    <link href="../sass/forget.css" rel="stylesheet">
+    <link href="../sass/regist.css" rel="stylesheet">
+    <link href="../stylesheets/anmelden.css" rel="stylesheet">
 
     <script type="text/javascript" src="core.js"></script>
 
@@ -64,13 +64,18 @@
 
             <div class="innenmitte col-xs-6">
 
-                <label for="exampleInputEmail1">Email-Addresse</label>
-                <input type="email" id="exampleInputEmail1" placeholder="Email">
+                <h3 class="h3login">Login</h3>
+                <br>
 
-                <br><br>
+                <label for="exampleInputEmail1">Email-Addresse</label>
+                <br>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+
+                <br>
 
                 <label for="exampleInputPassword1">Passwort</label>
-                <input type="password" id="exampleInputPassword1" placeholder="Passwort">
+                <br>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Passwort">
 
                 <br>
                 <div class="pwforgot">
@@ -89,7 +94,7 @@
 
                 <div>
 
-                    <h4 class="regtext">Hallo I bims 1 noch kein Account!!
+                    <h4 class="regtext">Du bimst 1 noch kein Account?
                         <br>
                         Dann <a href="../Registrieren/Registrieren.html" class="register">
                             hier
@@ -112,13 +117,12 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="myModalLabel">Registrieren</h4>
+                <h3 class="modal-title" id="myModalLabel">Neu hier? Registriere dich jetzt!</h3>
             </div>
             <div class="modal-body">
 
-                <form class="form-signin">
-                    <h1 class="form-signin-heading">Registrieren</h1>
-                    <br>
+                <form class="form-signin regist">
+                    <h4 class="form-signin-heading"></h4>
                     <label for="inputname" class="sr-only"></label>
                     <input type="text" id="inputname" class="form-control" placeholder="Nachname" required autofocus>
 
@@ -152,7 +156,7 @@
 
                     <br><br>
 
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Registrieren</button>
+                    <button type="button" class="btn btn-primary registrieren">Registrieren</button>
 
                 </form><!-- /form -->
 

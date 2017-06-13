@@ -1,0 +1,68 @@
+body {
+  background-image: url(../Anmelde_Fenster/Bechtle_Success_FH_Kufstein.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+header{
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(110, 110, 110, 0.6);
+  .h1header{
+    font-family: "Droid Serif";
+  }
+  .h4header{
+    font-family: Bevan;
+  }
+}
+
+.form-group{
+  color: #eeeeee;
+}
+
+
+.innenmitte{
+  background-color: rgba(50, 50, 50, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 0;
+  border-radius: 7px;
+}
+#exampleInputEmail1{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 0;
+  border-radius: 7px;
+}
+#exampleInputPassword1{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 0;
+  border-radius: 6px;
+}
+.h3login{
+  font-family: "Droid Serif";
+}
+
+.pwforgot{
+  font-size: 1em;
+}
+
+.regist{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 0;
+  border-radius: 7px;
+}
+
+.forgot{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 0;
+  border-radius: 7px;
+}

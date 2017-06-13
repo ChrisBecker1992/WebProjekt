@@ -1,0 +1,14 @@
+/* line 1, ../sass/start.scss */
+.picture {
+  width: 50px;
+  margin: 10px;
+}
+
+/* line 6, ../sass/start.scss */
+header {
+  padding: 10px;
+  top: 0;
+  left: 10px;
+  right: 0;
+  background-color: rgba(100, 100, 100, 0.1);
+}

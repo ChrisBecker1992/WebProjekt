@@ -1,0 +1,82 @@
+/* line 1, ../sass/anmelden.scss */
+body {
+  background-image: url(../Anmelde_Fenster/Bechtle_Success_FH_Kufstein.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 8, ../sass/anmelden.scss */
+header {
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(110, 110, 110, 0.6);
+}
+/* line 14, ../sass/anmelden.scss */
+header .h1header {
+  font-family: "Droid Serif";
+}
+/* line 17, ../sass/anmelden.scss */
+header .h4header {
+  font-family: Bevan;
+}
+
+/* line 22, ../sass/anmelden.scss */
+.form-group {
+  color: #eeeeee;
+}
+
+/* line 27, ../sass/anmelden.scss */
+.innenmitte {
+  background-color: rgba(50, 50, 50, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 0;
+  border-radius: 7px;
+}
+
+/* line 36, ../sass/anmelden.scss */
+#exampleInputEmail1 {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 0;
+  border-radius: 7px;
+}
+
+/* line 42, ../sass/anmelden.scss */
+#exampleInputPassword1 {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 0;
+  border-radius: 6px;
+}
+
+/* line 48, ../sass/anmelden.scss */
+.h3login {
+  font-family: "Droid Serif";
+}
+
+/* line 52, ../sass/anmelden.scss */
+.pwforgot {
+  font-size: 1em;
+}
+
+/* line 56, ../sass/anmelden.scss */
+.regist {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 0;
+  border-radius: 7px;
+}
+
+/* line 63, ../sass/anmelden.scss */
+.forgot {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 0;
+  border-radius: 7px;
+}
