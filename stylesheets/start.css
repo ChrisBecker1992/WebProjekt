@@ -13,6 +13,9 @@ header {
 
 /* line 14, ../sass/start.scss */
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   padding: 10px;
   left: 0;
   right: 0;
@@ -30,6 +33,8 @@ footer {
   margin-right: 1.6%;
   float: left;
   box-sizing: border-box;
+
+
 }
 /* line 31, ../sass/start.scss */
 .picture:last-child {
@@ -40,7 +45,9 @@ footer {
 .row {
   padding: 1.6%;
   padding-right: 0;
-  margin-right: 0;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 /* line 42, ../sass/start.scss */
@@ -75,4 +82,23 @@ footer {
 /* line 66, ../sass/start.scss */
 body {
   background-color: #eeeeee;
+}
+
+
+.uix_socialMediaLinks > li {display: inline-block;
+  float: right}
+.uix_socialMediaLinks > li > a {
+  font-size: 24px;
+  background-image: url("Facebook.png");
+  background-repeat: no-repeat;
+  /*background-position: 0 0;*/
+  margin-right: 4px;
+  -webkit-border-radius: 2px; -moz-border-radius: 2px; -khtml-border-radius: 2px; border-radius: 2px;
+  display: block;
+  -webkit-box-shadow: inset 0 -3px 0 rgba(0,0,0,.2); -moz-box-shadow: inset 0 -3px 0 rgba(0,0,0,.2); -khtml-box-shadow: inset 0 -3px 0 rgba(0,0,0,.2); box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+  transition: 0.2s;
+  overflow: hidden;
+  text-align: center;
+  width: 40px;
+  height: 40px;
 }
