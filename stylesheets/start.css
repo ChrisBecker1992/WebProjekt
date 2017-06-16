@@ -1,14 +1,78 @@
-/* line 1, ../sass/start.scss */
-.picture {
-  width: 50px;
-  margin: 10px;
-}
-
-/* line 6, ../sass/start.scss */
+/* line 2, ../sass/start.scss */
 header {
   padding: 10px;
   top: 0;
-  left: 10px;
+  left: 0;
   right: 0;
-  background-color: rgba(100, 100, 100, 0.1);
+  background-image: url(../Anmelde_Fenster/Bechtle_Success_FH_Kufstein.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-color: rgba(110, 110, 110, 0.6);
+}
+
+/* line 14, ../sass/start.scss */
+footer {
+  padding: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(110, 110, 110, 0.6);
+}
+
+/* line 22, ../sass/start.scss */
+.picture {
+  height: 300px;
+  width: 23%;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-right: 1.6%;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 31, ../sass/start.scss */
+.picture:last-child {
+  margin-right: 0;
+}
+
+/* line 36, ../sass/start.scss */
+.row {
+  padding: 1.6%;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+/* line 42, ../sass/start.scss */
+.first {
+  background-image: url("../Startseite/Pictures/IMG-20160621-WA0011.jpg");
+}
+
+/* line 46, ../sass/start.scss */
+.second {
+  background-image: url("../Startseite/Pictures/Nachhilfe.jpg");
+}
+
+/* line 50, ../sass/start.scss */
+.third {
+  background-image: url("../Startseite/Pictures/crowd.jpg");
+}
+
+/* line 54, ../sass/start.scss */
+.fourth {
+  background-image: url("../Startseite/Pictures/landkarte.jpg");
+  margin-right: 0;
+}
+
+/* line 59, ../sass/start.scss */
+.bildschrift {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* line 66, ../sass/start.scss */
+body {
+  background-color: #eeeeee;
 }

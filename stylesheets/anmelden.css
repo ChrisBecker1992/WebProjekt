@@ -37,9 +37,10 @@ header .h4header {
   border-bottom-right-radius: 1px;
   border-bottom-left-radius: 0;
   border-radius: 7px;
+  font: normal 14px Arial !important;
 }
 
-/* line 36, ../sass/anmelden.scss */
+/* line 37, ../sass/anmelden.scss */
 #exampleInputEmail1 {
   margin-bottom: -1px;
   border-bottom-right-radius: 1px;
@@ -47,7 +48,7 @@ header .h4header {
   border-radius: 7px;
 }
 
-/* line 42, ../sass/anmelden.scss */
+/* line 43, ../sass/anmelden.scss */
 #exampleInputPassword1 {
   margin-bottom: -1px;
   border-bottom-right-radius: 1px;
@@ -55,17 +56,17 @@ header .h4header {
   border-radius: 6px;
 }
 
-/* line 48, ../sass/anmelden.scss */
+/* line 49, ../sass/anmelden.scss */
 .h3login {
   font-family: "Droid Serif";
 }
 
-/* line 52, ../sass/anmelden.scss */
+/* line 53, ../sass/anmelden.scss */
 .pwforgot {
   font-size: 1em;
 }
 
-/* line 56, ../sass/anmelden.scss */
+/* line 57, ../sass/anmelden.scss */
 .regist {
   margin-bottom: -1px;
   border-bottom-right-radius: 1px;
@@ -73,10 +74,15 @@ header .h4header {
   border-radius: 7px;
 }
 
-/* line 63, ../sass/anmelden.scss */
+/* line 64, ../sass/anmelden.scss */
 .forgot {
   margin-bottom: -1px;
   border-bottom-right-radius: 1px;
   border-bottom-left-radius: 0;
   border-radius: 7px;
+}
+
+/* line 71, ../sass/anmelden.scss */
+.beziehungsstatus {
+  font: normal 14px Arial !important;
 }
