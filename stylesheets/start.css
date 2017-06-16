@@ -45,8 +45,12 @@ footer {
 .row {
   padding: 1.6%;
   padding-right: 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
+  -moz-transform:translateY(150px); /* Firefox 3.6 Firefox 4 */
+  -webkit-transform:translateY(150px); /* Safari */
+  -o-transform:translateY(150px); /* Opera */
+  -ms-transform:translateY(150px); /* IE9 */
+  transform:translateY(150px); /* W3C */
 
 }
 
