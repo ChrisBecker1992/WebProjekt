@@ -1,6 +1,6 @@
 /* line 2, ../sass/start.scss */
 header {
-  padding: 10px;
+  padding: 0;
   top: 0;
   left: 0;
   right: 0;
@@ -8,23 +8,36 @@ header {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  background-color: rgba(110, 110, 110, 0.6);
+}
+/* line 11, ../sass/start.scss */
+header .header {
+  background-color: rgba(110, 110, 110, 0.5);
+  margin: 0;
+  padding: 10px;
+  color: black;
+}
+/* line 17, ../sass/start.scss */
+header .h1header {
+  font-family: "Droid Serif";
+}
+/* line 20, ../sass/start.scss */
+header .h4header {
+  font-family: Bevan;
 }
 
-/* line 14, ../sass/start.scss */
+/* line 25, ../sass/start.scss */
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
+  padding: 20px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(110, 110, 110, 0.6);
+  background-color: rgba(110, 110, 110, 0.4);
+  position: fixed;
 }
 
-/* line 22, ../sass/start.scss */
+/* line 34, ../sass/start.scss */
 .picture {
+  border-radius: 5px;
   height: 300px;
   width: 23%;
   background-position: center;
@@ -33,76 +46,63 @@ footer {
   margin-right: 1.6%;
   float: left;
   box-sizing: border-box;
-
-
 }
-/* line 31, ../sass/start.scss */
+/* line 44, ../sass/start.scss */
 .picture:last-child {
   margin-right: 0;
 }
+/* line 47, ../sass/start.scss */
+.picture:first-child {
+  margin-left: 1.6%;
+}
 
-/* line 36, ../sass/start.scss */
+/* line 52, ../sass/start.scss */
 .row {
   padding: 1.6%;
   padding-right: 0;
-  margin: auto;
-  -moz-transform:translateY(150px); /* Firefox 3.6 Firefox 4 */
-  -webkit-transform:translateY(150px); /* Safari */
-  -o-transform:translateY(150px); /* Opera */
-  -ms-transform:translateY(150px); /* IE9 */
-  transform:translateY(150px); /* W3C */
-
-}
-
-/* line 42, ../sass/start.scss */
-.first {
-  background-image: url("../Startseite/Pictures/IMG-20160621-WA0011.jpg");
-}
-
-/* line 46, ../sass/start.scss */
-.second {
-  background-image: url("../Startseite/Pictures/Nachhilfe.jpg");
-}
-
-/* line 50, ../sass/start.scss */
-.third {
-  background-image: url("../Startseite/Pictures/crowd.jpg");
-}
-
-/* line 54, ../sass/start.scss */
-.fourth {
-  background-image: url("../Startseite/Pictures/landkarte.jpg");
+  padding-left: 0;
   margin-right: 0;
 }
 
 /* line 59, ../sass/start.scss */
+.first {
+  background-image: url("../Startseite/Pictures/IMG-20160621-WA0011.jpg");
+}
+
+/* line 63, ../sass/start.scss */
+.second {
+  background-image: url("../Startseite/Pictures/Nachhilfe.jpg");
+}
+
+/* line 67, ../sass/start.scss */
+.third {
+  background-image: url("../Startseite/Pictures/crowd.jpg");
+}
+
+/* line 71, ../sass/start.scss */
+.fourth {
+  background-image: url("../Startseite/Pictures/landkarte.jpg");
+}
+
+/* line 75, ../sass/start.scss */
 .bildschrift {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  background-color: rgba(110, 110, 110, 0.6);
 }
 
-/* line 66, ../sass/start.scss */
-body {
-  background-color: #eeeeee;
+/* line 85, ../sass/start.scss */
+h2 {
+  font-family: "Droid Serif";
+  color: black;
 }
 
-
-.uix_socialMediaLinks > li {display: inline-block;
-  float: right}
-.uix_socialMediaLinks > li > a {
-  font-size: 24px;
-  background-image: url("Facebook.png");
-  background-repeat: no-repeat;
-  /*background-position: 0 0;*/
-  margin-right: 4px;
-  -webkit-border-radius: 2px; -moz-border-radius: 2px; -khtml-border-radius: 2px; border-radius: 2px;
-  display: block;
-  -webkit-box-shadow: inset 0 -3px 0 rgba(0,0,0,.2); -moz-box-shadow: inset 0 -3px 0 rgba(0,0,0,.2); -khtml-box-shadow: inset 0 -3px 0 rgba(0,0,0,.2); box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
-  transition: 0.2s;
-  overflow: hidden;
-  text-align: center;
-  width: 40px;
-  height: 40px;
+/* line 90, ../sass/start.scss */
+.socialmedia {
+  float: right;
+  padding: 10px;
 }

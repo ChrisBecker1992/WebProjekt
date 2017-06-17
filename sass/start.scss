@@ -1,6 +1,6 @@
 
 header{
-  padding: 10px;
+  padding: 0;
   top: 0;
   left: 0;
   right: 0;
@@ -8,18 +8,31 @@ header{
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  background-color: rgba(110, 110, 110, 0.6);
+  .header{
+    background-color: rgba(110, 110, 110, 0.5);
+    margin: 0;
+    padding: 10px;
+    color: black;
+  }
+  .h1header{
+    font-family: "Droid Serif";
+  }
+  .h4header{
+    font-family: Bevan;
+  }
 }
 
 footer{
-  padding: 10px;
+  padding: 20px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(110, 110, 110, 0.6);
+  background-color: rgba(110, 110, 110, 0.4);
+  position: fixed;
 }
 
 .picture {
+  border-radius: 5px;
   height: 300px;
   width: 23%;
   background-position: center;
@@ -28,19 +41,23 @@ footer{
   margin-right: 1.6%;
   float: left;
   box-sizing: border-box;
-  &:last-child{
+  &:last-child {
     margin-right: 0;
+  }
+  &:first-child{
+    margin-left: 1.6%;
   }
 }
 
 .row{
   padding: 1.6%;
   padding-right: 0;
+  padding-left: 0;
   margin-right: 0;
 }
 
 .first{
-  background-image: url("../Startseite/Pictures/IMG-20160621-WA0011.jpg")
+  background-image: url("../Startseite/Pictures/IMG-20160621-WA0011.jpg");
 }
 
 .second{
@@ -53,18 +70,24 @@ footer{
 
 .fourth{
   background-image: url("../Startseite/Pictures/landkarte.jpg");
-  margin-right: 0;
 }
 
 .bildschrift{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  background-color: rgba(110, 110, 110, 0.6);
 }
 
-body{
-  background-color: #eeeeee;
+h2{
+  font-family: "Droid Serif";
+  color: black;
 }
 
-
+.socialmedia{
+  float: right;
+  padding: 10px;
+}
