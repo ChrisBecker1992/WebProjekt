@@ -62,7 +62,14 @@ footer {
   padding-right: 0;
   padding-left: 0;
   margin-right: 0;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
+
 
 /* line 59, ../sass/start.scss */
 .first {
