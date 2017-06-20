@@ -1,3 +1,4 @@
+
 <?php echo $this->header; ?>
 
 <header>
@@ -32,13 +33,13 @@
 
 <div class="links col-xs-10"></div>
 <div class="rechts col-xs-2">
-<button class="btn btn-lg btn-primary btn-block" type="submit">+ neuer Beitrag</button>
+<button class="btn btn-lg btn-primary btn-block beitragbutton">+ neuer Beitrag</button>
 </div>
 
 
 <!--Lightbox für neuen Eintrag-->
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">

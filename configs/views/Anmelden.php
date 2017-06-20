@@ -1,5 +1,6 @@
 <?php echo $this->header; ?>
 
+
 <header>
     <div>
         <h1 class="h1header">Studenten-Gathering </h1>
