@@ -3,16 +3,18 @@
 /**
  * @author Daniel Hoover <https://github.com/danielhoover>
  */
-class IndexController extends Controller
+class WohnenController extends Controller
 {
-    protected $viewFileName = "Startseite"; //this will be the View that gets the data...
+    protected $viewFileName = "Wohnen"; //this will be the View that gets the data...
     protected $loginRequired = true;
 
 
     public function run()
     {
-        $this->view->title = "Übersicht";
+        $this->view->title = "Wohnen";
         $this->view->username = $this->user->username;
+
+        $this->view->test = "Irgendeinwert";
 
         // $this->view->addresses = AddressModel::getAddressesByUserId($this->user->id);
     }

@@ -20,7 +20,7 @@ class Route
 
         $requestUri = $_SERVER['REQUEST_URI']; //get the current URL
 
-        $parts = explode('?', $requestUri); //remove the ? i.e. login.php?anotherVariable=Value
+        $parts = explode('?', $requestUri); //remove the ? i.e. Anmelden.php?anotherVariable=Value
 
         $requestUri = $parts[0]; //be only interested in the first part - which is the url without ?
 

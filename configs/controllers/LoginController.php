@@ -5,7 +5,7 @@
  */
 class LoginController extends Controller
 {
-    protected $viewFileName = "login"; //this will be the View that gets the data...
+    protected $viewFileName = "Anmelden"; //this will be the View that gets the data...
     protected $loginRequired = false;
 
 
