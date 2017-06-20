@@ -20,20 +20,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 
 
+    <?php if($this->current == 'index'): ?>
     <!-- Custom styles for this template -->
     <link href="/stylesheets/start.css" rel="stylesheet">
+    <?php endif; ?>
     <link href="https://fonts.googleapis.com/css?family=Bevan|Droid+Serif" rel="stylesheet">
+    <link href="stylesheets/anmelden.css" rel="stylesheet">
+    <link href="sass/forget.css" rel="stylesheet">
+    <link href="sass/regist.css" rel="stylesheet">
 
+    <script type="text/javascript" src="js/anmelden.js"></script>
 
 
 </head>
