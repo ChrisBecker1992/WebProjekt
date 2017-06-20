@@ -1,3 +1,4 @@
+<?php
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="../../../favicon.ico">
 
     <title>Login</title>
 
@@ -19,7 +20,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -29,15 +30,15 @@
 
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Bevan|Droid+Serif" rel="stylesheet">
-    <link href="../sass/forget.css" rel="stylesheet">
-    <link href="../sass/regist.css" rel="stylesheet">
-    <link href="../stylesheets/anmelden.css" rel="stylesheet">
+    <link href="../../sass/forget.css" rel="stylesheet">
+    <link href="../../sass/regist.css" rel="stylesheet">
+    <link href="../../stylesheets/anmelden.css" rel="stylesheet">
 
-    <script type="text/javascript" src="core.js"></script>
+    <script type="text/javascript" src="../../js/core.js"></script>
 
 
 </head>
-
+?>
 <body>
 
 <header>
@@ -80,7 +81,7 @@
                 <br>
                 <div class="pwforgot">
                     Passwort
-                    <a href="../PW_forget/PWforget.html" target="_self">
+                    <a href="/PW_forget/PWforget.html" target="_self">
                         vergessen?
                     </a>
 

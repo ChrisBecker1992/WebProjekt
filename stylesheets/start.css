@@ -4,7 +4,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-image: url(../Anmelde_Fenster/Bechtle_Success_FH_Kufstein.jpg);
+  background-image: url(../Pictures/Bechtle_Success_FH_Kufstein.jpg);
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -73,22 +73,22 @@ footer {
 
 /* line 59, ../sass/start.scss */
 .first {
-  background-image: url("../Startseite/Pictures/IMG-20160621-WA0011.jpg");
+  background-image: url("../Pictures/IMG-20160621-WA0011.jpg");
 }
 
 /* line 63, ../sass/start.scss */
 .second {
-  background-image: url("../Startseite/Pictures/Nachhilfe.jpg");
+  background-image: url("../Pictures/Nachhilfe.jpg");
 }
 
 /* line 67, ../sass/start.scss */
 .third {
-  background-image: url("../Startseite/Pictures/crowd.jpg");
+  background-image: url("../Pictures/crowd.jpg");
 }
 
 /* line 71, ../sass/start.scss */
 .fourth {
-  background-image: url("../Startseite/Pictures/landkarte.jpg");
+  background-image: url("../Pictures/landkarte.jpg");
 }
 
 /* line 75, ../sass/start.scss */
