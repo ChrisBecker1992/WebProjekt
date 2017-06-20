@@ -8,10 +8,9 @@ function myFunction(x) {
 
 /* Lightbox */
 $(document).ready(function () {
-    $(".").click(function(e) {
+    $(".beitragbutton").click(function(e) {
         e.preventDefault();
 
-        $('#myModal1').modal('show');
+        $('#myModal4').modal('show');
     });
-
 });

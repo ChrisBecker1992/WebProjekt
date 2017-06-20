@@ -34,7 +34,7 @@
     <link href="../../sass/regist.css" rel="stylesheet">
     <link href="../../stylesheets/anmelden.css" rel="stylesheet">
 
-    <script type="text/javascript" src="../../js/core.js"></script>
+    <script type="text/javascript" src="../../js/anmelden.js"></script>
 
 
 </head>
