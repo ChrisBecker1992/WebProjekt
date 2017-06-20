@@ -10,7 +10,6 @@ $route['/anmelden'] = array('controller' => 'LoginController', 'uniqueName' => '
 $route['/anmelden.html'] = array('controller' => 'LoginController', 'uniqueName' => 'login');
 
 
-
 //$route['/logout'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
 //$route['/logout.html'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
 

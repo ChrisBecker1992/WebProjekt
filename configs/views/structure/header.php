@@ -32,14 +32,16 @@
 
     <?php if($this->current == 'index'): ?>
     <!-- Custom styles for this template -->
-    <link href="/stylesheets/start.css" rel="stylesheet">
+        <link href="stylesheets/start.css" rel="stylesheet">
     <?php endif; ?>
     <link href="https://fonts.googleapis.com/css?family=Bevan|Droid+Serif" rel="stylesheet">
+    <?php if($this->current == 'login'): ?>
     <link href="stylesheets/anmelden.css" rel="stylesheet">
     <link href="sass/forget.css" rel="stylesheet">
     <link href="sass/regist.css" rel="stylesheet">
+        <script type="text/javascript" src="js/anmelden.js"></script>
+    <?php endif; ?>
 
-    <script type="text/javascript" src="js/anmelden.js"></script>
 
 
 </head>
