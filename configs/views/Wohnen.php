@@ -9,6 +9,7 @@
 </header>
 
 <!-- Dropdown-Menü -->
+<div class="menü">
 <div class="dropdown">
     <div class="container" onclick="myFunction(this)">
         <div class="bar1"></div>
@@ -26,6 +27,7 @@
         <div class="content">Auslandssemester</div>
     </div>
 </div>
+</div>
 
 <br><br>
 
@@ -35,6 +37,20 @@
 <div class="rechts col-xs-2">
 <button class="btn btn-lg btn-primary btn-block beitragbutton">+ neuer Beitrag</button>
 </div>
+
+<br><br>
+<br><br>
+
+
+<!-- Textfeld für Eintrag -->
+<div class="links col-xs-1"></div>
+
+<textarea class="innen col-xs-8" cols="100" rows="10">
+</textarea>
+
+<div class="rechts col-xs-3"></div>
+
+<br><br>
 
 
 <!--Lightbox für neuen Eintrag-->

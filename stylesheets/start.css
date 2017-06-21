@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 2, ../sass/start.scss */
 header {
   padding: 0;
@@ -63,6 +64,7 @@ footer {
   padding-left: 0;
   margin-right: 0;
   width: 100%;
+  /*Bild zentriert */
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -70,28 +72,27 @@ footer {
   transform: translateY(-50%);
 }
 
-
-/* line 59, ../sass/start.scss */
+/* line 67, ../sass/start.scss */
 .first {
   background-image: url("../Pictures/IMG-20160621-WA0011.jpg");
 }
 
-/* line 63, ../sass/start.scss */
+/* line 71, ../sass/start.scss */
 .second {
   background-image: url("../Pictures/Nachhilfe.jpg");
 }
 
-/* line 67, ../sass/start.scss */
+/* line 75, ../sass/start.scss */
 .third {
   background-image: url("../Pictures/crowd.jpg");
 }
 
-/* line 71, ../sass/start.scss */
+/* line 79, ../sass/start.scss */
 .fourth {
   background-image: url("../Pictures/landkarte.jpg");
 }
 
-/* line 75, ../sass/start.scss */
+/* line 83, ../sass/start.scss */
 .bildschrift {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -102,14 +103,34 @@ footer {
   background-color: rgba(110, 110, 110, 0.6);
 }
 
-/* line 85, ../sass/start.scss */
+/* line 93, ../sass/start.scss */
 h2 {
   font-family: "Droid Serif";
   color: black;
 }
 
-/* line 90, ../sass/start.scss */
+/*Link f├╝r bilder*/
+/* line 100, ../sass/start.scss */
+.picture {
+  position: relative;
+}
+/* line 103, ../sass/start.scss */
+.picture a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+/* line 114, ../sass/start.scss */
 .socialmedia {
   float: right;
   padding: 10px;
+}
+
+/* line 118, ../sass/start.scss */
+footer .socialmedia a i {
+  font-size: 30px;
 }

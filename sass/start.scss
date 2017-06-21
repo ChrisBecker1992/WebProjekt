@@ -4,7 +4,7 @@ header{
   top: 0;
   left: 0;
   right: 0;
-  background-image: url(../Anmelde_Fenster/Bechtle_Success_FH_Kufstein.jpg);
+  background-image: url(../Pictures/Bechtle_Success_FH_Kufstein.jpg);
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -54,6 +54,14 @@ footer{
   padding-right: 0;
   padding-left: 0;
   margin-right: 0;
+  width: 100%;
+
+  /*Bild zentriert */
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .first{
@@ -87,7 +95,26 @@ h2{
   color: black;
 }
 
+/*Link für bilder*/
+
+.picture {
+  position:relative;
+
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display:block;
+  }
+
+}
+
 .socialmedia{
   float: right;
   padding: 10px;
+}
+footer .socialmedia a i {
+  font-size:30px;
 }
