@@ -57,7 +57,7 @@
 
                     <h4 class="regtext">Du bimst 1 noch kein Account?
                         <br>
-                        Dann <a href="/Registrieren/Registrieren.html" class="register">
+                        Dann <a href="was_war_des_für_an_bullshit" class="registerOverlay">
                             hier
                         </a>
                         registrieren!
@@ -85,34 +85,34 @@
                 <form class="form-signin regist">
                     <h4 class="form-signin-heading"></h4>
                     <label for="inputname" class="sr-only"></label>
-                    <input type="text" id="inputname" class="form-control" placeholder="Nachname" required autofocus>
+                    <input type="text" name="name" id="inputname" class="form-control" placeholder="Nachname" required autofocus>
 
                     <br><br>
 
                     <label for="inputvname" class="sr-only"></label>
-                    <input type="text" id="inputvname" class="form-control" placeholder="Vorname" required autofocus>
+                    <input type="text"name="vname" id="inputvname" class="form-control" placeholder="Vorname" required autofocus>
 
                     <br><br>
 
                     <label for="inputPassword" class="sr-only"></label>
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Passwort" required>
+                    <input type="password"name="pwd" id="inputPassword" class="form-control" placeholder="Passwort" required>
 
                     <br><br>
 
                     <label for="inputWHPassword" class="sr-only"></label>
-                    <input type="password" id="inputWHPassword" class="form-control" placeholder="Passwort wiederholen"
+                    <input type="password" name="pwd2" id="inputWHPassword" class="form-control" placeholder="Passwort wiederholen"
                            required autofocus>
 
                     <br><br>
 
                     <label for="inputEmail" class="sr-only"></label>
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                    <input type="inputemail" name="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
 
                     <br><br>
 
                     Geburtsdatum
                     <label for="inputdatum" class="sr-only"></label>
-                    <input type="date" id="inputdatum" class="form-control" placeholder="Geburtsdatum" required
+                    <input type="date" name="birthday" id="inputdatum" class="form-control" placeholder="Geburtsdatum" required
                            autofocus>
 
                     <br><br>

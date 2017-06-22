@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".register").click(function(e) {
+    $(".registerOverlay").click(function(e) {
        e.preventDefault();
 
         $('#myModal').modal('show');
