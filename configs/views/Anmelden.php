@@ -106,7 +106,7 @@
                     <br><br>
 
                     <label for="inputEmail" class="sr-only"></label>
-                    <input type="inputemail" name="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                    <input type="inputemail" name="inputemail" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
 
                     <br><br>
 
