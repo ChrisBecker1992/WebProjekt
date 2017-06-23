@@ -2,7 +2,7 @@
 
 class AuslandModel
 {
-    public static function getAddressById($id)
+    public static function getAuslandById($id)
     {
         $db = new Database();
         $sql = "SELECT * FROM ausland WHERE id=".intval($id);
