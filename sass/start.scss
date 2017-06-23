@@ -19,7 +19,6 @@ $percent: 1.6%;
   }
 }
 
-
 header{
   padding: $null;
   top: $null;
@@ -30,7 +29,7 @@ header{
   -webkit-background-size: cover;
   background-size: cover;
   .header{
-    background-color: rgba(110, 110, 110, 0.5);
+    //background-color: rgba(110, 110, 110, 0.5);
     margin: $null;
     padding: 10px;
     color: black;
