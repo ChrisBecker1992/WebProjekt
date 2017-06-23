@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /**
  * @author Daniel Hoover <https://github.com/danielhoover>
@@ -11,7 +11,7 @@ class LoginController extends Controller
 
     public function run()
     {
-        $this->view->title = 'Login';
+        $this->view->title = 'Anmelden';
 
         if($this->user->isLoggedIn)
         {
@@ -110,5 +110,6 @@ class LoginController extends Controller
             $jsonResponse->setData(array('errorFields' => $errorFields));
             $jsonResponse->send();
         }
+
     }
 }

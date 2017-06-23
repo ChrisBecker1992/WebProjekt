@@ -14,7 +14,7 @@ class WohnenController extends Controller
 
     public function run()
     {
-
+        
         $this->view->title = "Wohnen";
         $this->view->username = $this->user->username;
 

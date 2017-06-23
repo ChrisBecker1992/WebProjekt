@@ -15,7 +15,7 @@
     <br><br>
 
 
-    <form>
+    <form action="" method="post">
         <div class="links col-xs-3"></div>
 
 
@@ -27,21 +27,26 @@
 
                 <h3 class="h3login">Login</h3>
                 <br>
-
-                <label for="exampleInputEmail1">Email-Addresse</label>
+                <div class="form-group">
+                    <label for="username">Name</label>
+                    <br>
+                    <input type="text" name="username" class="form-control" id="username" placeholder="Benutzername">
+                </div>
+                <br>
+                <!--<label for="exampleInputEmail1">Email-Addresse</label>
                 <br>
                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
 
-                <br>
+                <br>-->
 
-                <label for="exampleInputPassword1">Passwort</label>
+                <label for="password">Passwort</label>
                 <br>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Passwort">
+                <input type="password" name="password"  class="form-control" id="password" placeholder="Passwort">
 
                 <br>
                 <div class="pwforgot">
                     Passwort
-                    <a href="/PW_forget/PWforget.html" target="_self">
+                    <a href="Anmelden.php" target="_self">
                         vergessen?
                     </a>
 
@@ -49,7 +54,8 @@
 
                 </div>
 
-                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                <button class="btn btn-lg btn-primary btn-block" name="action" type="submit">
+                    <a href="Startseite.php"></a>
                     Anmelden
                 </button>
 
@@ -59,7 +65,7 @@
 
                     <h4 class="regtext">Du bimst 1 noch kein Account?
                         <br>
-                        Dann <a href="was_war_des_für_an_bullshit" class="registerOverlay">
+                        Dann <a href="Anmelden.php" class="registerOverlay">
                             hier
                         </a>
                         registrieren!
@@ -84,42 +90,46 @@
             </div>
             <div class="modal-body">
 
-                <form class="form-signin regist">
+                <form class="form-signin" action="login" method="post">
                     <h4 class="form-signin-heading"></h4>
-                    <label for="inputname" class="sr-only"></label>
-                    <input type="text" name="name" id="inputname" class="form-control" placeholder="Nachname" required autofocus>
 
-                    <br><br>
+                    <div class="form-group">
+                    <label for="name" class="sr-only"></label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Nachname" required
+                           autofocus>
+                    </div>
+                    <!--<br><br>
 
                     <label for="inputvname" class="sr-only"></label>
-                    <input type="text"name="vname" id="inputvname" class="form-control" placeholder="Vorname" required autofocus>
+                    <input type="text"name="vname" id="inputvname" class="form-control" placeholder="Vorname" required autofocus>-->
 
                     <br><br>
-
-                    <label for="inputPassword" class="sr-only"></label>
-                    <input type="password"name="pwd" id="inputPassword" class="form-control" placeholder="Passwort" required>
-
+                    <div class="form-group">
+                    <label for="pwd" class="sr-only"></label>
+                    <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Passwort" required>
+                    </div>
                     <br><br>
 
-                    <label for="inputWHPassword" class="sr-only"></label>
-                    <input type="password" name="pwd2" id="inputWHPassword" class="form-control" placeholder="Passwort wiederholen"
+                    <div class="form-group">
+                    <label for="pwd2" class="sr-only"></label>
+                    <input type="password" name="pwd2" id="pwd2" class="form-control" placeholder="Passwort wiederholen"
                            required autofocus>
-
+                    </div>
                     <br><br>
 
-                    <label for="inputEmail" class="sr-only"></label>
+                    <!--<label for="inputEmail" class="sr-only"></label>
                     <input type="inputemail" name="inputemail" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
 
-                    <br><br>
+                    <br><br>-->
 
-                    Geburtsdatum
+                    <!--Geburtsdatum
                     <label for="inputdatum" class="sr-only"></label>
                     <input type="date" name="birthday" id="inputdatum" class="form-control" placeholder="Geburtsdatum" required
                            autofocus>
 
-                    <br><br>
+                    <br><br>-->
 
-                    Beziehungsstatus
+                    <!--Beziehungsstatus
                     <br>
                     <input type="radio" id="single" name="beziehungsstatus">
                     <label for="single" class="beziehungsstatus">Single</label>
@@ -128,11 +138,10 @@
                     <label for="vergeben" class="beziehungsstatus">Vergeben</label>
                     <br>
                     <input type="radio" id="cursed" name="beziehungsstatus">
-                    <label for="cursed" class="beziehungsstatus">Cursed or some shit</label>
+                    <label for="cursed" class="beziehungsstatus">Cursed or some shit</label>-->
 
-                    <br><br>
-
-                    <button type="button" class="btn btn-primary registrieren">Registrieren</button>
+                    <br><br><input type="hidden" name="action" value="register">
+                    <button type="button" class="btn btn-primary">Registrieren</button>
 
                 </form><!-- /form -->
 
