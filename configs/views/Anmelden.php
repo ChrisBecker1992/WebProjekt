@@ -28,7 +28,7 @@
                 <h3 class="h3login">Login</h3>
                 <br>
                 <div class="form-group">
-                    <label for="username">Email-Addresse</label>
+                    <label for="username">Name</label>
                     <br>
                     <input type="text" name="username" class="form-control" id="username" placeholder="Benutzername">
                 </div>
