@@ -49,18 +49,19 @@ footer {
   bottom: 0;
   background-color: rgba(110, 110, 110, 0.4);
   position: fixed;
+  box-shadow: 3px 3px 20px #6e6e6e;
 }
-/* line 54, ../sass/start.scss */
+/* line 55, ../sass/start.scss */
 footer .socialmedia {
   float: right;
   padding: 10px;
 }
-/* line 57, ../sass/start.scss */
+/* line 58, ../sass/start.scss */
 footer .socialmedia a i {
   font-size: 30px;
 }
 
-/* line 63, ../sass/start.scss */
+/* line 64, ../sass/start.scss */
 .picture {
   border-radius: 5px;
   height: 300px;
@@ -74,37 +75,37 @@ footer .socialmedia a i {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* line 75, ../sass/start.scss */
+/* line 76, ../sass/start.scss */
 .first {
   background-image: url("../Pictures/IMG-20160621-WA0011.jpg");
   margin-left: 1.6%;
 }
 
-/* line 79, ../sass/start.scss */
+/* line 80, ../sass/start.scss */
 .second {
   background-image: url("../Pictures/Nachhilfe.jpg");
 }
 
-/* line 82, ../sass/start.scss */
+/* line 83, ../sass/start.scss */
 .third {
   background-image: url("../Pictures/crowd.jpg");
 }
 
-/* line 85, ../sass/start.scss */
+/* line 86, ../sass/start.scss */
 .fourth {
   background-image: url("../Pictures/landkarte.jpg");
   margin-left: 0;
 }
 
-/* line 90, ../sass/start.scss */
+/* line 91, ../sass/start.scss */
 .picture {
   position: relative;
 }
-/* line 92, ../sass/start.scss */
+/* line 93, ../sass/start.scss */
 .picture:hover {
   animation: bounce 1s;
 }
-/* line 95, ../sass/start.scss */
+/* line 96, ../sass/start.scss */
 .picture a {
   position: absolute;
   top: 0;
@@ -114,7 +115,7 @@ footer .socialmedia a i {
   display: block;
 }
 
-/* line 105, ../sass/start.scss */
+/* line 106, ../sass/start.scss */
 .row {
   padding: 1.6%;
   padding-right: 0;
@@ -128,7 +129,7 @@ footer .socialmedia a i {
   transform: translateY(-50%);
 }
 
-/* line 119, ../sass/start.scss */
+/* line 120, ../sass/start.scss */
 .bildschrift {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -139,14 +140,14 @@ footer .socialmedia a i {
   background-color: rgba(110, 110, 110, 0.6);
 }
 
-/* line 129, ../sass/start.scss */
+/* line 130, ../sass/start.scss */
 h2 {
   font-family: "Droid Serif";
   color: black;
 }
 
 /*Hamburger Button*/
-/* line 137, ../sass/start.scss */
+/* line 138, ../sass/start.scss */
 .container {
   display: inline-block;
   cursor: pointer;
@@ -154,7 +155,7 @@ h2 {
   margin-left: 5px;
 }
 
-/* line 144, ../sass/start.scss */
+/* line 145, ../sass/start.scss */
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -163,38 +164,38 @@ h2 {
   transition: 0.4s;
 }
 
-/* line 151, ../sass/start.scss */
+/* line 152, ../sass/start.scss */
 .bar1 {
   margin-top: 8px;
 }
 
 /* Rotate first bar */
-/* line 157, ../sass/start.scss */
+/* line 158, ../sass/start.scss */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 /* Fade out the second bar */
-/* line 163, ../sass/start.scss */
+/* line 164, ../sass/start.scss */
 .change .bar2 {
   opacity: 0;
 }
 
 /* Rotate last bar */
-/* line 168, ../sass/start.scss */
+/* line 169, ../sass/start.scss */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /* Dropdown-Men├╝ */
-/* line 174, ../sass/start.scss */
+/* line 175, ../sass/start.scss */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-/* line 177, ../sass/start.scss */
+/* line 178, ../sass/start.scss */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -203,7 +204,7 @@ h2 {
   .dropdown:hover .dropdown-content{
    display: block;
 }*/
-/* line 186, ../sass/start.scss */
+/* line 187, ../sass/start.scss */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -213,21 +214,22 @@ h2 {
   background-color: #f1f1f1;
 }
 
-/* line 195, ../sass/start.scss */
+/* line 196, ../sass/start.scss */
 .content {
   color: black;
   padding: 15px 30px;
   text-decoration: none;
   display: block;
 }
-/* line 200, ../sass/start.scss */
+/* line 201, ../sass/start.scss */
 .content:hover {
   cursor: pointer;
   background-color: rgba(110, 110, 110, 0.8);
 }
 
-/* line 206, ../sass/start.scss */
+/* line 207, ../sass/start.scss */
 .menu {
   background-color: rgba(110, 110, 110, 0.8);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 30px #bbbbbb;
+  border: 1px solid #6e6e6e;
 }
