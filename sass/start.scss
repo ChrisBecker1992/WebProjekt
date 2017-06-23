@@ -1,16 +1,37 @@
+$null: 0;
+$five: 5px;
+$percent: 1.6%;
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
 
 header{
-  padding: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+  padding: $null;
+  top: $null;
+  left: $null;
+  right: $null;
   background-image: url(../Pictures/Bechtle_Success_FH_Kufstein.jpg);
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
   .header{
     background-color: rgba(110, 110, 110, 0.5);
-    margin: 0;
+    margin: $null;
     padding: 10px;
     color: black;
   }
@@ -24,36 +45,66 @@ header{
 
 footer{
   padding: 20px;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left: $null;
+  right: $null;
+  bottom: $null;
   background-color: rgba(110, 110, 110, 0.4);
   position: fixed;
+  .socialmedia{
+    float: right;
+    padding: 10px;
+    a i {
+      font-size: 30px;
+    }
+  }
 }
 
 .picture {
-  border-radius: 5px;
+  border-radius: $five;
   height: 300px;
   width: 23%;
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  margin-right: 1.6%;
+  margin-right: $percent;
   float: left;
   box-sizing: border-box;
-  &:last-child {
-    margin-right: 0;
+  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+}
+.first{
+  background-image: url("../Pictures/IMG-20160621-WA0011.jpg");
+  margin-left: $percent;
+}
+.second{
+  background-image: url("../Pictures/Nachhilfe.jpg");
+}
+.third{
+  background-image: url("../Pictures/crowd.jpg");
+}
+.fourth{
+  background-image: url("../Pictures/landkarte.jpg");
+  margin-left: $null;
+}
+
+.picture {
+  position: relative;
+  &:hover{
+    animation: bounce 1s;
   }
-  &:first-child{
-    margin-left: 1.6%;
+  a {
+    position: absolute;
+    top: $null;
+    left: $null;
+    right: $null;
+    bottom: $null;
+    display: block;
   }
 }
 
 .row{
-  padding: 1.6%;
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: 0;
+  padding: $percent;
+  padding-right: $null;
+  margin-right: $null;
   width: 100%;
 
   /*Bild zentriert */
@@ -64,25 +115,9 @@ footer{
   transform: translateY(-50%);
 }
 
-.first{
-  background-image: url("../Pictures/IMG-20160621-WA0011.jpg");
-}
-
-.second{
-  background-image: url("../Pictures/Nachhilfe.jpg");
-}
-
-.third{
-  background-image: url("../Pictures/crowd.jpg");
-}
-
-.fourth{
-  background-image: url("../Pictures/landkarte.jpg");
-}
-
 .bildschrift{
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: $five;
+  border-top-right-radius: $five;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,26 +130,79 @@ h2{
   color: black;
 }
 
-/*Link für bilder*/
 
-.picture {
-  position:relative;
+/*Hamburger Button*/
 
-  a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display:block;
+.container {
+  display: inline-block;
+  cursor: pointer;
+  width: 50px;
+  margin-left: 5px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px $null 4px $null;
+  transition: 0.4s;
+}
+.bar1{
+  margin-top: 8px;
+}
+
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: $null;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* Dropdown-Menü */
+.dropdown{
+  position: relative;
+  display: inline-block;
+  &:hover .dropdown-content{
+    display: block;
   }
+}
+/*
+  .dropdown:hover .dropdown-content{
+   display: block;
+}*/
 
+.dropdown-content{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #f1f1f1;
 }
 
-.socialmedia{
-  float: right;
-  padding: 10px;
+.content{
+  color: black;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: block;
+  &:hover{
+    cursor: pointer;
+    background-color: rgba(110, 110, 110, 0.8);
+  }
 }
-footer .socialmedia a i {
-  font-size:30px;
+
+.menu{
+  background-color: rgba(110, 110, 110, 0.8);
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
 }

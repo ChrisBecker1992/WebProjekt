@@ -1,4 +1,4 @@
-/* line 1, ../sass/anmelden.scss */
+/* line 8, ../sass/anmelden.scss */
 body {
   background-image: url(../Pictures/Bechtle_Success_FH_Kufstein.jpg);
   background-position: center;
@@ -6,7 +6,7 @@ body {
   background-size: cover;
 }
 
-/* line 8, ../sass/anmelden.scss */
+/* line 15, ../sass/anmelden.scss */
 header {
   padding: 10px;
   top: 0;
@@ -15,21 +15,26 @@ header {
   background-color: rgba(110, 110, 110, 0.6);
   color: black;
 }
-/* line 15, ../sass/anmelden.scss */
+/* line 22, ../sass/anmelden.scss */
 header .h1header {
   font-family: "Droid Serif";
 }
-/* line 18, ../sass/anmelden.scss */
+/* line 25, ../sass/anmelden.scss */
 header .h4header {
   font-family: Bevan;
 }
 
-/* line 23, ../sass/anmelden.scss */
+/* line 31, ../sass/anmelden.scss */
+.glyphicon.glyphicon-ok {
+  color: green;
+}
+
+/* line 35, ../sass/anmelden.scss */
 .form-group {
   color: #eeeeee;
 }
 
-/* line 28, ../sass/anmelden.scss */
+/* line 40, ../sass/anmelden.scss */
 .innenmitte {
   background-color: rgba(50, 50, 50, 0.7);
   margin-left: auto;
@@ -41,7 +46,7 @@ header .h4header {
   font: normal 14px Arial !important;
 }
 
-/* line 38, ../sass/anmelden.scss */
+/* line 50, ../sass/anmelden.scss */
 #exampleInputEmail1 {
   margin-bottom: -1px;
   border-bottom-right-radius: 1px;
@@ -49,25 +54,25 @@ header .h4header {
   border-radius: 7px;
 }
 
-/* line 44, ../sass/anmelden.scss */
+/* line 56, ../sass/anmelden.scss */
 #exampleInputPassword1 {
   margin-bottom: -1px;
   border-bottom-right-radius: 1px;
   border-bottom-left-radius: 0;
-  border-radius: 6px;
+  border-radius: 7px;
 }
 
-/* line 50, ../sass/anmelden.scss */
+/* line 62, ../sass/anmelden.scss */
 .h3login {
   font-family: "Droid Serif";
 }
 
-/* line 54, ../sass/anmelden.scss */
+/* line 66, ../sass/anmelden.scss */
 .pwforgot {
   font-size: 1em;
 }
 
-/* line 58, ../sass/anmelden.scss */
+/* line 70, ../sass/anmelden.scss */
 .regist {
   margin-bottom: -1px;
   border-bottom-right-radius: 1px;
@@ -75,7 +80,7 @@ header .h4header {
   border-radius: 7px;
 }
 
-/* line 65, ../sass/anmelden.scss */
+/* line 77, ../sass/anmelden.scss */
 .forgot {
   margin-bottom: -1px;
   border-bottom-right-radius: 1px;
@@ -83,7 +88,7 @@ header .h4header {
   border-radius: 7px;
 }
 
-/* line 72, ../sass/anmelden.scss */
+/* line 84, ../sass/anmelden.scss */
 .beziehungsstatus {
   font: normal 14px Arial !important;
 }

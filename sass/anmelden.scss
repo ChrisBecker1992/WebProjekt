@@ -1,3 +1,10 @@
+$auto: auto;
+$null: 0;
+$radius1: 1px;
+$radius7: 7px;
+$font: normal 14px Arial !important;
+
+
 body {
   background-image: url(../Pictures/Bechtle_Success_FH_Kufstein.jpg);
   background-position: center;
@@ -7,9 +14,9 @@ body {
 
 header{
   padding: 10px;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: $null;
+  left: $null;
+  right: $null;
   background-color: rgba(110, 110, 110, 0.6);
   color: black;
   .h1header{
@@ -20,6 +27,11 @@ header{
   }
 }
 
+
+.glyphicon.glyphicon-ok{
+  color: green;
+}
+
 .form-group{
   color: #eeeeee;
 }
@@ -27,25 +39,25 @@ header{
 
 .innenmitte{
   background-color: rgba(50, 50, 50, 0.7);
-  margin-left: auto;
-  margin-right: auto;
-  padding: auto;
-  border-bottom-right-radius: 1px;
-  border-bottom-left-radius: 0;
-  border-radius: 7px;
-  font: normal 14px Arial !important;
+  margin-left: $auto;
+  margin-right: $auto;
+  padding: $auto;
+  border-bottom-right-radius: $radius1;
+  border-bottom-left-radius: $null;
+  border-radius: $radius7;
+  font: $font;
 }
 #exampleInputEmail1{
   margin-bottom: -1px;
-  border-bottom-right-radius: 1px;
-  border-bottom-left-radius: 0;
-  border-radius: 7px;
+  border-bottom-right-radius: $radius1;
+  border-bottom-left-radius: $null;
+  border-radius: $radius7;
 }
 #exampleInputPassword1{
   margin-bottom: -1px;
-  border-bottom-right-radius: 1px;
-  border-bottom-left-radius: 0;
-  border-radius: 6px;
+  border-bottom-right-radius: $radius1;
+  border-bottom-left-radius: $null;
+  border-radius: $radius7;
 }
 .h3login{
   font-family: "Droid Serif";
@@ -57,18 +69,22 @@ header{
 
 .regist{
   margin-bottom: -1px;
-  border-bottom-right-radius: 1px;
-  border-bottom-left-radius: 0;
-  border-radius: 7px;
+  border-bottom-right-radius: $radius1;
+  border-bottom-left-radius: $null;
+  border-radius: $radius7;
 }
 
 .forgot{
   margin-bottom: -1px;
-  border-bottom-right-radius: 1px;
-  border-bottom-left-radius: 0;
-  border-radius: 7px;
+  border-bottom-right-radius: $radius1;
+  border-bottom-left-radius: $null;
+  border-radius: $radius7;
 }
 
 .beziehungsstatus{
-  font: normal 14px Arial !important;
+  font: $font;
 }
+
+
+
+

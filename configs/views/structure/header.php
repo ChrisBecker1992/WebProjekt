@@ -27,20 +27,24 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 
 
-    <?php if($this->current == 'index'): ?>
     <!-- Custom styles for this template -->
-        <link href="stylesheets/start.css" rel="stylesheet">
-    <?php endif; ?>
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Bevan|Droid+Serif" rel="stylesheet">
+    <?php if($this->current == 'index'): ?>
+        <link href="stylesheets/start.css" rel="stylesheet">
+        <script type="text/javascript" src="js/start.js"></script>
+    <?php endif; ?>
     <?php if($this->current == 'login'): ?>
-    <link href="stylesheets/anmelden.css" rel="stylesheet">
-    <link href="sass/forget.css" rel="stylesheet">
-    <link href="sass/regist.css" rel="stylesheet">
+        <link href="stylesheets/anmelden.css" rel="stylesheet">
         <script type="text/javascript" src="js/anmelden.js"></script>
     <?php endif; ?>
+    <?php /*if ($this->current == 'wohnen' || 'nachhilfe' || 'veranstaltungen' || 'auslandssemester'): */?><!--
+        <link href="stylesheets/beitragseiten.css" rel="stylesheet">
+        <script type="text/javascript" src="js/beitragseiten.js"></script>
+    --><?php /*endif; */?>
+
 
 
 

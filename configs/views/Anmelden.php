@@ -49,7 +49,9 @@
 
                 </div>
 
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Anmelden</button>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                    Anmelden
+                </button>
 
                 <br>
 
@@ -72,7 +74,7 @@
 
 
 <!-- Lightbox für Registrieren -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade lightbox" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">

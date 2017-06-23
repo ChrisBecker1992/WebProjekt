@@ -83,6 +83,13 @@ class User extends Database
         exit();
     }
 
+    public function redirectToWohnen()
+    {
+        header('Location: '.WOHNEN_URL);
+        header('Status: 303');
+        exit();
+    }
+
     public function login($username, $password)
     {
         $sql = "SELECT `id`,`password` FROM `user` WHERE `name`='" . $this->escapeString($username) . "'";
