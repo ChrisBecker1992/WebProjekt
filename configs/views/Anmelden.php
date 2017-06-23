@@ -27,10 +27,11 @@
 
                 <h3 class="h3login">Login</h3>
                 <br>
-                <label for="username">Email-Addresse</label>
-                <br>
-                <input type="text" name="username" class="form-control" id="username" placeholder="Benutzername">
-
+                <div class="form-group">
+                    <label for="username">Email-Addresse</label>
+                    <br>
+                    <input type="text" name="username" class="form-control" id="username" placeholder="Benutzername">
+                </div>
                 <br>
                 <!--<label for="exampleInputEmail1">Email-Addresse</label>
                 <br>
@@ -38,9 +39,9 @@
 
                 <br>-->
 
-                <label for="exampleInputPassword1">Passwort</label>
+                <label for="password">Passwort</label>
                 <br>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Passwort">
+                <input type="password" name="password"  class="form-control" id="password" placeholder="Passwort">
 
                 <br>
                 <div class="pwforgot">
@@ -89,27 +90,31 @@
             </div>
             <div class="modal-body">
 
-                <form class="form-signin regist" action="" method="post">
+                <form class="form-signin" action="login" method="post">
                     <h4 class="form-signin-heading"></h4>
-                    <label for="inputname" class="sr-only"></label>
-                    <input type="text" name="name" id="inputname" class="form-control" placeholder="Nachname" required autofocus>
 
+                    <div class="form-group">
+                    <label for="name" class="sr-only"></label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Nachname" required
+                           autofocus>
+                    </div>
                     <!--<br><br>
 
                     <label for="inputvname" class="sr-only"></label>
                     <input type="text"name="vname" id="inputvname" class="form-control" placeholder="Vorname" required autofocus>-->
 
                     <br><br>
-
-                    <label for="inputPassword" class="sr-only"></label>
-                    <input type="password"name="pwd" id="inputPassword" class="form-control" placeholder="Passwort" required>
-
+                    <div class="form-group">
+                    <label for="pwd" class="sr-only"></label>
+                    <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Passwort" required>
+                    </div>
                     <br><br>
 
-                    <label for="inputWHPassword" class="sr-only"></label>
-                    <input type="password" name="pwd2" id="inputWHPassword" class="form-control" placeholder="Passwort wiederholen"
+                    <div class="form-group">
+                    <label for="pwd2" class="sr-only"></label>
+                    <input type="password" name="pwd2" id="pwd3" class="form-control" placeholder="Passwort wiederholen"
                            required autofocus>
-
+                    </div>
                     <br><br>
 
                     <!--<label for="inputEmail" class="sr-only"></label>
@@ -137,7 +142,7 @@
 
                     <br><br>
 
-                    <button type="button"  class="btn btn-primary" name="action" value="register" >Registrieren</button>
+                    <button type="button" class="btn btn-primary" name="action" value="register">Registrieren</button>
 
                 </form><!-- /form -->
 
