@@ -19,7 +19,6 @@ $percent: 1.6%;
   }
 }
 
-
 header{
   padding: $null;
   top: $null;
@@ -30,7 +29,7 @@ header{
   -webkit-background-size: cover;
   background-size: cover;
   .header{
-    background-color: rgba(110, 110, 110, 0.5);
+    //background-color: rgba(110, 110, 110, 0.5);
     margin: $null;
     padding: 10px;
     color: black;
@@ -51,6 +50,7 @@ footer{
   bottom: $null;
   background-color: rgba(110, 110, 110, 0.4);
   position: fixed;
+  box-shadow: 3px 3px 20px rgb(110, 110, 110);
   .socialmedia{
     float: right;
     padding: 10px;
@@ -205,5 +205,6 @@ h2{
 
 .menu{
   background-color: rgba(110, 110, 110, 0.8);
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 30px #bbbbbb;
+  border: 1px solid rgb(110, 110, 110);
 }
