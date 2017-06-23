@@ -2,20 +2,19 @@
 /**
  * Created by PhpStorm.
  * User: tomda
- * Date: 22.06.2017
- * Time: 15:20
+ * Date: 23.06.2017
+ * Time: 19:38
  */
-
-class WohnenController extends Controller
+class NachhilfeController extends Controller
 {
-    protected $viewFileName = "Wohnen"; //this will be the View that gets the data...
+    protected $viewFileName = "Nachhilfe"; //this will be the View that gets the data...
     protected $loginRequired = false;
 
 
     public function run()
     {
 
-        $this->view->title = "Wohnen";
+        $this->view->title = "Nachhilfe";
         $this->view->username = $this->user->username;
 
         // $this->view->addresses = AddressModel::getAddressesByUserId($this->user->id);

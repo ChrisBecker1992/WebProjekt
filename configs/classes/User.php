@@ -90,6 +90,12 @@ class User extends Database
         exit();
     }
 
+    public function redirectToNachhilfe()
+    {
+        header('Location: '.NACHHILFE_URL);
+        header('Status: 303');
+    }
+
     public function login($username, $password)
     {
         $sql = "SELECT `id`,`password` FROM `user` WHERE `name`='" . $this->escapeString($username) . "'";

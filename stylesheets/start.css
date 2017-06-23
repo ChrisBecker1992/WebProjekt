@@ -34,13 +34,14 @@ header .header {
 /* line 38, ../sass/start.scss */
 header .h1header {
   font-family: "Droid Serif";
+  text-shadow: 10px 8px 3px rgba(0, 0, 0, 0.4);
 }
-/* line 41, ../sass/start.scss */
+/* line 42, ../sass/start.scss */
 header .h4header {
   font-family: Bevan;
 }
 
-/* line 46, ../sass/start.scss */
+/* line 47, ../sass/start.scss */
 footer {
   padding: 20px;
   left: 0;
@@ -49,17 +50,17 @@ footer {
   background-color: rgba(110, 110, 110, 0.4);
   position: fixed;
 }
-/* line 53, ../sass/start.scss */
+/* line 54, ../sass/start.scss */
 footer .socialmedia {
   float: right;
   padding: 10px;
 }
-/* line 56, ../sass/start.scss */
+/* line 57, ../sass/start.scss */
 footer .socialmedia a i {
   font-size: 30px;
 }
 
-/* line 62, ../sass/start.scss */
+/* line 63, ../sass/start.scss */
 .picture {
   border-radius: 5px;
   height: 300px;
@@ -73,37 +74,37 @@ footer .socialmedia a i {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* line 74, ../sass/start.scss */
+/* line 75, ../sass/start.scss */
 .first {
   background-image: url("../Pictures/IMG-20160621-WA0011.jpg");
   margin-left: 1.6%;
 }
 
-/* line 78, ../sass/start.scss */
+/* line 79, ../sass/start.scss */
 .second {
   background-image: url("../Pictures/Nachhilfe.jpg");
 }
 
-/* line 81, ../sass/start.scss */
+/* line 82, ../sass/start.scss */
 .third {
   background-image: url("../Pictures/crowd.jpg");
 }
 
-/* line 84, ../sass/start.scss */
+/* line 85, ../sass/start.scss */
 .fourth {
   background-image: url("../Pictures/landkarte.jpg");
   margin-left: 0;
 }
 
-/* line 89, ../sass/start.scss */
+/* line 90, ../sass/start.scss */
 .picture {
   position: relative;
 }
-/* line 91, ../sass/start.scss */
+/* line 92, ../sass/start.scss */
 .picture:hover {
   animation: bounce 1s;
 }
-/* line 94, ../sass/start.scss */
+/* line 95, ../sass/start.scss */
 .picture a {
   position: absolute;
   top: 0;
@@ -113,7 +114,7 @@ footer .socialmedia a i {
   display: block;
 }
 
-/* line 104, ../sass/start.scss */
+/* line 105, ../sass/start.scss */
 .row {
   padding: 1.6%;
   padding-right: 0;
@@ -127,7 +128,7 @@ footer .socialmedia a i {
   transform: translateY(-50%);
 }
 
-/* line 118, ../sass/start.scss */
+/* line 119, ../sass/start.scss */
 .bildschrift {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -138,14 +139,14 @@ footer .socialmedia a i {
   background-color: rgba(110, 110, 110, 0.6);
 }
 
-/* line 128, ../sass/start.scss */
+/* line 129, ../sass/start.scss */
 h2 {
   font-family: "Droid Serif";
   color: black;
 }
 
 /*Hamburger Button*/
-/* line 136, ../sass/start.scss */
+/* line 137, ../sass/start.scss */
 .container {
   display: inline-block;
   cursor: pointer;
@@ -153,7 +154,7 @@ h2 {
   margin-left: 5px;
 }
 
-/* line 143, ../sass/start.scss */
+/* line 144, ../sass/start.scss */
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -162,38 +163,38 @@ h2 {
   transition: 0.4s;
 }
 
-/* line 150, ../sass/start.scss */
+/* line 151, ../sass/start.scss */
 .bar1 {
   margin-top: 8px;
 }
 
 /* Rotate first bar */
-/* line 156, ../sass/start.scss */
+/* line 157, ../sass/start.scss */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 /* Fade out the second bar */
-/* line 162, ../sass/start.scss */
+/* line 163, ../sass/start.scss */
 .change .bar2 {
   opacity: 0;
 }
 
 /* Rotate last bar */
-/* line 167, ../sass/start.scss */
+/* line 168, ../sass/start.scss */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /* Dropdown-Men├╝ */
-/* line 173, ../sass/start.scss */
+/* line 174, ../sass/start.scss */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-/* line 176, ../sass/start.scss */
+/* line 177, ../sass/start.scss */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -202,7 +203,7 @@ h2 {
   .dropdown:hover .dropdown-content{
    display: block;
 }*/
-/* line 185, ../sass/start.scss */
+/* line 186, ../sass/start.scss */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -212,21 +213,21 @@ h2 {
   background-color: #f1f1f1;
 }
 
-/* line 194, ../sass/start.scss */
+/* line 195, ../sass/start.scss */
 .content {
   color: black;
   padding: 15px 30px;
   text-decoration: none;
   display: block;
 }
-/* line 199, ../sass/start.scss */
+/* line 200, ../sass/start.scss */
 .content:hover {
   cursor: pointer;
   background-color: rgba(110, 110, 110, 0.8);
 }
 
-/* line 205, ../sass/start.scss */
+/* line 206, ../sass/start.scss */
 .menu {
   background-color: rgba(110, 110, 110, 0.8);
-  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
 }
