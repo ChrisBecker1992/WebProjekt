@@ -1,6 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
+<<<<<<< HEAD
  * User: tomda
  * Date: 23.06.2017
  * Time: 19:38
