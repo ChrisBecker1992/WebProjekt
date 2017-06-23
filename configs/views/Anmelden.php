@@ -112,7 +112,7 @@
 
                     <div class="form-group">
                     <label for="pwd2" class="sr-only"></label>
-                    <input type="password" name="pwd2" id="pwd3" class="form-control" placeholder="Passwort wiederholen"
+                    <input type="password" name="pwd2" id="pwd2" class="form-control" placeholder="Passwort wiederholen"
                            required autofocus>
                     </div>
                     <br><br>
@@ -140,9 +140,8 @@
                     <input type="radio" id="cursed" name="beziehungsstatus">
                     <label for="cursed" class="beziehungsstatus">Cursed or some shit</label>-->
 
-                    <br><br>
-
-                    <button type="button" class="btn btn-primary" name="action" value="register">Registrieren</button>
+                    <br><br><input type="hidden" name="action" value="register">
+                    <button type="button" class="btn btn-primary">Registrieren</button>
 
                 </form><!-- /form -->
 
