@@ -41,7 +41,19 @@
         <script type="text/javascript" src="js/anmelden.js"></script>
         <script type="text/javascript" src="js/toastr.min.js"></script>
     <?php endif; ?>
-    <?php if($this->current == 'wohnen' || 'nachhilfe' || 'veranstaltungen' || 'auslandssemester'): ?>
+    <?php if($this->current == 'wohnen'): ?>
+        <link href="stylesheets/beitragseiten.css" rel="stylesheet">
+        <script type="text/javascript" src="js/beitragseiten.js"></script>
+    <?php endif; ?>
+    <?php if($this->current == 'nachhilfe'): ?>
+        <link href="stylesheets/beitragseiten.css" rel="stylesheet">
+        <script type="text/javascript" src="js/beitragseiten.js"></script>
+    <?php endif; ?>
+    <?php if($this->current == 'veranstaltungen'): ?>
+        <link href="stylesheets/beitragseiten.css" rel="stylesheet">
+        <script type="text/javascript" src="js/beitragseiten.js"></script>
+    <?php endif; ?>
+    <?php if($this->current == 'auslandssemester'): ?>
         <link href="stylesheets/beitragseiten.css" rel="stylesheet">
         <script type="text/javascript" src="js/beitragseiten.js"></script>
     <?php endif; ?>

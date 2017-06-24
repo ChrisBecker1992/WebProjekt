@@ -18,8 +18,8 @@ $route['/Nachhilfe.html'] = array('controller' => 'NachhilfeController', 'unique
 $route['/Veranstaltungen'] = array('controller' => 'VeranstaltungenController', 'uniqueName' => 'veranstaltungen');
 $route['/Veranstaltungen.html'] = array('controller' => 'VeranstaltungenController', 'uniqueName' => 'veranstaltungen');
 
-$route['/Auslandssemester'] = array('controller' => 'AuslandssemesterController', 'uniqueName' => 'ausland');
-$route['/Auslandssemester.html'] = array('controller' => 'AuslandssemesterController', 'uniqueName' => 'ausland');
+$route['/Auslandssemester'] = array('controller' => 'AuslandssemesterController', 'uniqueName' => 'auslandssemester');
+$route['/Auslandssemester.html'] = array('controller' => 'AuslandssemesterController', 'uniqueName' => 'auslandssemester');
 
 
 //$route['/logout'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
