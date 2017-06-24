@@ -8,7 +8,7 @@ $(document).ready(function () {
         $('#myModal').modal('show');
     });
 
-    myModal.find('.btn-primary').click(function () {
+    myModal.find('.registrieren').click(function () {
         myModal.find('form').trigger('submit', [this]);
     });
 
@@ -16,12 +16,12 @@ $(document).ready(function () {
     myModal.find('form').bind('submit', function (e, that) {
         e.preventDefault();
 
-        myModal.find('.btn-primary').prop('disabled', true); //prevent sending the formular again while we check it
+        myModal.find('.registrieren').prop('disabled', true); //prevent sending the formular again while we check it
 
         hasError = false; //we are positive...
 
         if (typeof that === 'undefined') {
-            that = myModal.find('.btn-primary').get(0);
+            that = myModal.find('.registrieren').get(0);
         }
 
         var nonEmptyFields = ['#name', '#pwd', '#pwd2'];
@@ -44,7 +44,7 @@ $(document).ready(function () {
                 if ($('#pwd').val() != $('#pwd2').val()) {
                     $('#pwd2').closest('.form-group').addClass('has-error');
                     hasError = true;
-                    myModal.find('.btn-primary').prop('disabled', false);
+                    myModal.find('.registrieren').prop('disabled', false);
                 } else {
                     //everything fine
 
@@ -71,7 +71,7 @@ $(document).ready(function () {
                                 });
                             }
 
-                            myModal.find('.btn-primary').prop('disabled', false);
+                            myModal.find('.registrieren').prop('disabled', false);
                         }
                     });
 
@@ -79,7 +79,7 @@ $(document).ready(function () {
             }
         }
 
-        myModal.find('.btn-primary').prop('disabled', false);
+        myModal.find('.registrieren').prop('disabled', false);
 
     });
 });

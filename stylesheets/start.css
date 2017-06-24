@@ -228,7 +228,7 @@ h2 {
 
 /* line 206, ../sass/start.scss */
 .menu {
-  background-color: rgba(110, 110, 110, 0.8);
-  box-shadow: inset 0 0 30px #bbbbbb;
+  background-color: rgba(30, 120, 160, 0.8);
+  box-shadow: inset 0 0 30px lightblue;
   border: 1px solid #6e6e6e;
 }

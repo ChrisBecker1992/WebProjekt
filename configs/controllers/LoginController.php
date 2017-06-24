@@ -1,4 +1,4 @@
- <?php
+<?php
 
 /**
  * @author Daniel Hoover <https://github.com/danielhoover>
@@ -24,7 +24,7 @@ class LoginController extends Controller
 
     private function checkForLoginPost()
     {
-        if(!empty($_POST) && isset($_POST['action']) && $_POST['action'] == 'login')
+        if(!empty($_POST) && isset($_POST['action']) && $_POST['action'] == 'anmelden')
         {
             //probably a login attempt!
 

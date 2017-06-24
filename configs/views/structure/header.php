@@ -39,6 +39,7 @@
     <?php if($this->current == 'login'): ?>
         <link href="stylesheets/anmelden.css" rel="stylesheet">
         <script type="text/javascript" src="js/anmelden.js"></script>
+        <script type="text/javascript" src="js/toastr.min.js"></script>
     <?php endif; ?>
     <?php /*if ($this->current == 'wohnen' || 'nachhilfe' || 'veranstaltungen' || 'auslandssemester'): */?><!--
         <link href="stylesheets/beitragseiten.css" rel="stylesheet">

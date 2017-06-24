@@ -37,7 +37,6 @@
         <div class="bildschrift">
             <h2>Wohnen</h2>
         </div>
-        <a href="Wohnen.php"></a>
     </div>
     <div class="picture second">
         <div class="bildschrift">

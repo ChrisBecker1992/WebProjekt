@@ -15,7 +15,7 @@
     <br><br>
 
 
-    <form action="" method="post">
+    <form action="Startseite.php" method="post">
         <div class="links col-xs-3"></div>
 
 
@@ -90,7 +90,7 @@
             </div>
             <div class="modal-body">
 
-                <form class="form-signin" action="login" method="post">
+                <form class="form-signin" action="anmelden" method="post">
                     <h4 class="form-signin-heading"></h4>
 
                     <div class="form-group">
@@ -140,8 +140,9 @@
                     <input type="radio" id="cursed" name="beziehungsstatus">
                     <label for="cursed" class="beziehungsstatus">Cursed or some shit</label>-->
 
-                    <br><br><input type="hidden" name="action" value="register">
-                    <button type="button" class="btn btn-primary">Registrieren</button>
+                    <br><br>
+                    <input type="hidden" name="action" value="register">
+                    <button type="button" class="btn btn-primary registrieren">Registrieren</button>
 
                 </form><!-- /form -->
 
