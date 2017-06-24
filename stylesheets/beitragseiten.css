@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* line 4, ../sass/beitragseiten.scss */
 header {
-  padding: 10px;
+  padding: 0;
   top: 0;
   left: 0;
   right: 0;
@@ -9,10 +9,44 @@ header {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  background-color: rgba(110, 110, 110, 0.6);
+}
+/* line 13, ../sass/beitragseiten.scss */
+header .header {
+  margin: 0;
+  padding: 10px;
+  color: black;
+}
+/* line 19, ../sass/beitragseiten.scss */
+header .h1header {
+  font-family: "Droid Serif";
+  text-shadow: 10px 8px 3px rgba(0, 0, 0, 0.4);
+}
+/* line 23, ../sass/beitragseiten.scss */
+header .h4header {
+  font-family: Bevan;
 }
 
-/* line 16, ../sass/beitragseiten.scss */
+/* line 28, ../sass/beitragseiten.scss */
+footer {
+  padding: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(110, 110, 110, 0.4);
+  position: fixed;
+  box-shadow: 3px 3px 20px #6e6e6e;
+}
+/* line 36, ../sass/beitragseiten.scss */
+footer .socialmedia {
+  float: right;
+  padding: 10px;
+}
+/* line 39, ../sass/beitragseiten.scss */
+footer .socialmedia a i {
+  font-size: 30px;
+}
+
+/* line 45, ../sass/beitragseiten.scss */
 textarea {
   width: 100%;
   height: 150px;
@@ -24,87 +58,90 @@ textarea {
   resize: none;
 }
 
-/* line 28, ../sass/beitragseiten.scss */
-.men├╝ {
-  padding: 5px;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-position: center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-color: rgba(110, 110, 110, 0.6);
-}
-
 /*Hamburger Button*/
-/* line 42, ../sass/beitragseiten.scss */
+/* line 59, ../sass/beitragseiten.scss */
 .container {
   display: inline-block;
   cursor: pointer;
+  width: 50px;
+  margin-left: 5px;
 }
 
-/* line 47, ../sass/beitragseiten.scss */
+/* line 66, ../sass/beitragseiten.scss */
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
   background-color: #333;
-  margin: 6px 0;
+  margin: 6px 0 4px 0;
   transition: 0.4s;
 }
 
+/* line 73, ../sass/beitragseiten.scss */
+.bar1 {
+  margin-top: 8px;
+}
+
 /* Rotate first bar */
-/* line 57, ../sass/beitragseiten.scss */
+/* line 79, ../sass/beitragseiten.scss */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 /* Fade out the second bar */
-/* line 63, ../sass/beitragseiten.scss */
+/* line 85, ../sass/beitragseiten.scss */
 .change .bar2 {
   opacity: 0;
 }
 
 /* Rotate last bar */
-/* line 68, ../sass/beitragseiten.scss */
+/* line 90, ../sass/beitragseiten.scss */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /* Dropdown-Men├╝ */
-/* line 74, ../sass/beitragseiten.scss */
+/* line 96, ../sass/beitragseiten.scss */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-/* line 77, ../sass/beitragseiten.scss */
+/* line 99, ../sass/beitragseiten.scss */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 /*
-.dropdown:hover .dropdown-content{
-  display: block;
+  .dropdown:hover .dropdown-content{
+   display: block;
 }*/
-/* line 86, ../sass/beitragseiten.scss */
+/* line 108, ../sass/beitragseiten.scss */
 .dropdown-content {
   display: none;
   position: absolute;
   min-width: 160px;
   z-index: 1;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #f1f1f1;
 }
 
-/* line 94, ../sass/beitragseiten.scss */
+/* line 117, ../sass/beitragseiten.scss */
 .content {
   color: black;
-  padding: 12px 16px;
+  padding: 15px 30px;
   text-decoration: none;
   display: block;
 }
-/* line 99, ../sass/beitragseiten.scss */
+/* line 122, ../sass/beitragseiten.scss */
 .content:hover {
   cursor: pointer;
-  background-color: #f1f1f1;
+  background-color: rgba(110, 110, 110, 0.8);
+}
+
+/* line 128, ../sass/beitragseiten.scss */
+.menu {
+  background-color: rgba(30, 120, 160, 0.8);
+  box-shadow: inset 0 0 30px lightblue;
+  border: 1px solid #6e6e6e;
 }

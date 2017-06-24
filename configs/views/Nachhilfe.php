@@ -2,29 +2,31 @@
 <?php echo $this->header; ?>
 
 <header>
-    <div>
-        <h1>Studenten-Gathering </h1>
-        <h4>FH Kufstein</h4>
+    <div class="header">
+        <h1 class="h1header">Studenten-Gathering </h1>
+        <h4 class="h4header">FH Kufstein</h4>
     </div>
 </header>
 
 <!-- Dropdown-Menü -->
-<div class="menü">
-    <div class="dropdown">
-        <div class="container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-
-        <div class="dropdown-content">
-            <div class="content">Startseite
-                <a href="Startsite.html" target="_self"></a>
+<div class="menu">
+    <div>
+        <div class="dropdown">
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
-            <div class="content">Wohnen</div>
-            <div class="content">Nachhilfe</div>
-            <div class="content">Veranstaltungen</div>
-            <div class="content">Auslandssemester</div>
+
+            <div class="dropdown-content">
+                <div class="content">Startseite
+                    <a href="Startsite.html" target="_self"></a>
+                </div>
+                <div class="content">Wohnen</div>
+                <div class="content">Nachhilfe</div>
+                <div class="content">Veranstaltungen</div>
+                <div class="content">Auslandssemester</div>
+            </div>
         </div>
     </div>
 </div>
@@ -61,7 +63,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
-                <h3 class="modal-title" id="myModalLabel">neuer Eintrag</h3>
+                <h3 class="modal-title" id="myModalLabel">neuer Beitrag</h3>
             </div>
             <div class="modal-body">
 
@@ -82,4 +84,19 @@
         </div>
     </div>
 </div>
+
+
+<footer>
+    <div class="socialmedia">
+        <span>Impressum</span>
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+    </div>
+</footer>
+
+
 <?php echo $this->footer; ?>

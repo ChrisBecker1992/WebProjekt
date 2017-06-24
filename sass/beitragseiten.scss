@@ -1,8 +1,8 @@
 $null: 0;
 
 
-header {
-  padding: 10px;
+header{
+  padding: $null;
   top: $null;
   left: $null;
   right: $null;
@@ -10,7 +10,36 @@ header {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  background-color: rgba(110, 110, 110, 0.6);
+  .header{
+    //background-color: rgba(110, 110, 110, 0.5);
+    margin: $null;
+    padding: 10px;
+    color: black;
+  }
+  .h1header{
+    font-family: "Droid Serif";
+    text-shadow: 10px 8px 3px rgba(0, 0, 0, 0.4);
+  }
+  .h4header{
+    font-family: Bevan;
+  }
+}
+
+footer{
+  padding: 20px;
+  left: $null;
+  right: $null;
+  bottom: $null;
+  background-color: rgba(110, 110, 110, 0.4);
+  position: fixed;
+  box-shadow: 3px 3px 20px rgb(110, 110, 110);
+  .socialmedia{
+    float: right;
+    padding: 10px;
+    a i {
+      font-size: 30px;
+    }
+  }
 }
 
 textarea {
@@ -25,31 +54,24 @@ textarea {
 }
 
 
-.menü{
-  padding: 5px;
-  top: $null;
-  left: $null;
-  right: $null;
-  background-position: center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-color: rgba(110, 110, 110, 0.6);
-}
-
-
 /*Hamburger Button*/
 
 .container {
   display: inline-block;
   cursor: pointer;
+  width: 50px;
+  margin-left: 5px;
 }
 
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
   background-color: #333;
-  margin: 6px $null;
+  margin: 6px $null 4px $null;
   transition: 0.4s;
+}
+.bar1{
+  margin-top: 8px;
 }
 
 
@@ -79,8 +101,8 @@ textarea {
   }
 }
 /*
-.dropdown:hover .dropdown-content{
-  display: block;
+  .dropdown:hover .dropdown-content{
+   display: block;
 }*/
 
 .dropdown-content{
@@ -89,16 +111,23 @@ textarea {
   min-width: 160px;
   z-index: 1;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #f1f1f1;
 }
 
 .content{
   color: black;
-  padding: 12px 16px;
+  padding: 15px 30px;
   text-decoration: none;
   display: block;
   &:hover{
     cursor: pointer;
-    background-color: #f1f1f1;
+    background-color: rgba(110, 110, 110, 0.8);
   }
+}
+
+.menu{
+  background-color: rgba(30, 120, 160, 0.8);
+  box-shadow: inset 0 0 30px lightblue;
+  border: 1px solid rgb(110, 110, 110);
 }
 

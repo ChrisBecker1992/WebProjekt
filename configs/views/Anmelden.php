@@ -14,8 +14,8 @@
     <br><br>
     <br><br>
 
-    
-    <form action="Startseite.php" method="post">
+
+    <form action="Startseite" method="post">
 
         <div class="links col-xs-3"></div>
 
@@ -29,7 +29,7 @@
                 <h3 class="h3login">Login</h3>
                 <br>
                 <div class="form-group">
-                    <label for="username">Name</label>
+                    <!--<label for="username">Benutzername</label>-->
                     <br>
                     <input type="text" name="username" class="form-control" id="username" placeholder="Benutzername">
                 </div>
@@ -40,7 +40,7 @@
 
                 <br>-->
 
-                <label for="password">Passwort</label>
+                <!--<label for="password">Passwort</label>-->
                 <br>
                 <input type="password" name="password"  class="form-control" id="password" placeholder="Passwort">
 
@@ -56,7 +56,7 @@
                 </div>
 
                 <button class="btn btn-lg btn-primary btn-block" name="action" type="submit">
-                    <a href="Startseite.php"></a>
+                    <!--<a href="Startseite.php"></a>-->
                     Anmelden
                 </button>
 
@@ -81,7 +81,7 @@
 
 
 <!-- Lightbox für Registrieren -->
-<div class="modal fade lightbox" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade <?php if($registerError):?> in<?php endif; ?> lightbox" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -96,7 +96,7 @@
 
                     <div class="form-group">
                     <label for="name" class="sr-only"></label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Nachname" required
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Benutzername" required
                            autofocus>
                     </div>
                     <!--<br><br>

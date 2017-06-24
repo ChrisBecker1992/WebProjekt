@@ -18,7 +18,7 @@ class NachhilfeController extends Controller
         $this->view->title = "Nachhilfe";
         $this->view->username = $this->user->username;
 
-        $this->view->coaching = NachhilfeModel::getNachilfeByUserId($this->user->id);
+        $this->view->coaching = NachhilfeModel::getNachhilfeByUserId($this->user->id);
     }
 
 }

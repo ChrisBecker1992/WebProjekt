@@ -8,13 +8,13 @@
 class VeranstaltungenController extends Controller
 {
     protected $viewFileName = "Veranstaltungen"; //this will be the View that gets the data...
-    protected $loginRequired = true;
+    protected $loginRequired = false;
 
 
     public function run()
     {
 
-        $this->view->title = "Übersicht";
+        $this->view->title = "Veranstaltungen";
         $this->view->username = $this->user->username;
 
         $this->view->veranstaltung = VeranstaltungModel::getVeranstaltungByUserId($this->user->id);

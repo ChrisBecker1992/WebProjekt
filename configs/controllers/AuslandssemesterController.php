@@ -8,13 +8,13 @@
 class AuslandssemesterController extends Controller
 {
     protected $viewFileName = "Auslandssemester"; //this will be the View that gets the data...
-    protected $loginRequired = true;
+    protected $loginRequired = false;
 
 
     public function run()
     {
 
-        $this->view->title = "Übersicht";
+        $this->view->title = "Auslandssemester";
         $this->view->username = $this->user->username;
 
         $this->view->ausland = AuslandModel::getAuslandByUserId($this->user->id);
