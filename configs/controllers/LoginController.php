@@ -1,4 +1,4 @@
- <?php
+<?php
 
 /**
  * @author Daniel Hoover <https://github.com/danielhoover>

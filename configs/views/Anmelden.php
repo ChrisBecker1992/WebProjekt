@@ -15,7 +15,7 @@
     <br><br>
 
 
-    <form action="" method="post">
+    <form action="login" method="post">
         <div class="links col-xs-3"></div>
 
 
