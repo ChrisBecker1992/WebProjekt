@@ -1,32 +1,5 @@
 <?php echo $this->header; ?>
 
-<header>
-    <div class="header">
-        <h1 class="h1header">Studenten-Gathering </h1>
-        <h4 class="h4header">FH Kufstein</h4>
-    </div>
-</header>
-
-<!-- Dropdown-Menü -->
-<div class="menu">
-    <div>
-        <div class="dropdown">
-            <div class="container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-
-            <div class="dropdown-content">
-                <div class="content"><a href='Startseite'>Startseite</a> </div>
-                <div class="content"><a href='Wohnen'>Wohnen</a> </div>
-                <div class="content"><span class="aktuelleseite">Nachhilfe</span> </div>
-                <div class="content"><a href='Veranstaltungen'>Veranstaltungen</a></div>
-                <div class="content"><a href='Auslandssemester'>Auslandssemester</a></div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <br><br>
 
