@@ -22,6 +22,6 @@ $route['/Auslandssemester'] = array('controller' => 'AuslandssemesterController'
 $route['/Auslandssemester.html'] = array('controller' => 'AuslandssemesterController', 'uniqueName' => 'auslandssemester');
 
 
-//$route['/logout'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
-//$route['/logout.html'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
+$route['/logout'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
+$route['/logout.html'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
 
