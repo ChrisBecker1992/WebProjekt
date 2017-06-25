@@ -82,7 +82,7 @@
             </div>
 
             <div class="dropdown-content">
-                <div class="content"><span class="aktuelleseite">Startseite</span></div>
+                <div class="content"><a href='Startseite'>Startseite</a></div>
                 <div class="content"><a href='Wohnen'>Wohnen</a></div>
                 <div class="content"><a href='Nachhilfe'>Nachhilfe</a></div>
                 <div class="content"><a href='Veranstaltungen'>Veranstaltungen</a></div>
