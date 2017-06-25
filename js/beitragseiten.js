@@ -25,22 +25,22 @@ jQuery(document).ready(function() {
     editModal.on('show.bs.modal', function (event) {
 
         var button = $(event.relatedTarget) // Button that triggered the modal
-        var addressId = button.data('id') // Extract info from data-* attributes
+        var beitragId = button.data('id') // Extract info from data-* attributes
 
         var that = this;
 
 
         var theTitle = "Neue Adresse anlegen";
         var thePrimaryButton = "Hinzufügen";
-        var apiRequestUrl = "api/address/?returnView=true";
+        var apiRequestUrl = "api/beitrag/?returnView=true";
 
-        if(typeof addressId !== "undefined")
+        if(typeof beitragId !== "undefined")
         {
-            editModal.find('.id').html(addressId);
-            theTitle = "Adresse mit der ID " + addressId + " bearbeiten";
+            editModal.find('.id').html(beitragId);
+            theTitle = "Adresse mit der ID " + beitragId + " bearbeiten";
             thePrimaryButton = "Speichern";
 
-            apiRequestUrl = apiRequestUrl + "&id=" + addressId;
+            apiRequestUrl = apiRequestUrl + "&id=" + beitragId;
         }
 
         //this is to give the title and the "save" button different labels if they clicked on edit or new
@@ -79,7 +79,7 @@ jQuery(document).ready(function() {
     $('.triggerDelete').click(function(e) {
         e.preventDefault();
 
-        var r = confirm("Wollen Sie die Adresse wirklich löschen?");
+        var r = confirm("Wollen Sie den wirklich löschen?");
         if (r == true) {
             var dataToSend = {'id':$(this).attr('data-id')};
             $.ajax({

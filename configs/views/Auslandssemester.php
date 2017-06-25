@@ -4,8 +4,7 @@
 <br><br>
 
 <!--Button für neuen Eintrag-->
-<div id="main">
-    <div class="row">
+
 
         <div class="links col-xs-10"><h1>Auslandssemester</h1></div>
         <div class="rechts col-xs-2">
@@ -38,8 +37,6 @@
             <p>&nbsp;</p>
             <div class="alert alert-info">Noch keine Auslandserfahrungen vorhanden - Sie können über den Button <strong>neuer Beitrag</strong> eine neue Erfrahrung hinzufügen.</div>
         <?php endif; ?>
-    </div>
-</div>
 <br><br>
 <br><br>
 

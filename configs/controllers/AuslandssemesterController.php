@@ -18,6 +18,7 @@ class AuslandssemesterController extends Controller
         $this->view->username = $this->user->username;
 
         $this->view->ausland = AuslandModel::getAuslandByUserId($this->user->id);
+
     }
 
 }
