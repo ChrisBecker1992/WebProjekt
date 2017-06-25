@@ -1,4 +1,6 @@
 $null: 0;
+$black: black;
+$five: 5px;
 
 
 header{
@@ -14,7 +16,7 @@ header{
     //background-color: rgba(110, 110, 110, 0.5);
     margin: $null;
     padding: 10px;
-    color: black;
+    color: $black;
   }
   .h1header{
     font-family: "Droid Serif";
@@ -60,12 +62,12 @@ textarea {
   display: inline-block;
   cursor: pointer;
   width: 50px;
-  margin-left: 5px;
+  margin-left: $five;
 }
 
 .bar1, .bar2, .bar3 {
   width: 35px;
-  height: 5px;
+  height: $five;
   background-color: #333;
   margin: 6px $null 4px $null;
   transition: 0.4s;
@@ -94,7 +96,9 @@ textarea {
 
 /* Dropdown-Menü */
 .dropdown{
-  margin-left: 0;
+  margin-left: $null;
+  padding-left: $null;
+  margin-top: 4px;
   position: relative;
   display: inline-block;
   &:hover .dropdown-content{
@@ -105,14 +109,14 @@ textarea {
 .dropdown-content{
   display: none;
   position: absolute;
-  min-width: 160px;
+  min-width: 190px;
   z-index: 1;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: $null 8px 16px $null rgba($null,$null,$null,0.2);
   background-color: #f1f1f1;
 }
 
 .content{
-  color: black;
+  color: $black;
   padding: 15px 30px;
   text-decoration: none;
   display: block;
@@ -121,17 +125,20 @@ textarea {
     background-color: rgba(110, 110, 110, 0.8);
   }
   a{
-    color: black;
+    color: $black;
+    font-weight: bold;
   }
 }
 
 .aktuelleseite{
-  color: rgb(90, 90, 90);
+  color: rgb(110, 110, 110);
 }
 
 .menu{
   background-color: rgba(30, 120, 160, 0.8);
-  box-shadow: inset 0 0 30px lightblue;
+  box-shadow:
+          inset 0 0 30px lightblue,
+          3px 3px 20px rgb(110, 110, 110);
   border: 1px solid rgb(110, 110, 110);
 }
 
@@ -143,6 +150,13 @@ textarea {
   h1{
     font-family: "Droid Serif";
     margin-top: 5px;
+  }
+}
+
+.nav {
+  margin-left: $five;
+  a{
+    color: $black;
   }
 }
 

@@ -1,6 +1,7 @@
 $null: 0;
 $five: 5px;
 $percent: 1.6%;
+$black: black;
 
 @keyframes bounce {
   0%, 20%, 60%, 100% {
@@ -32,7 +33,7 @@ header{
     //background-color: rgba(110, 110, 110, 0.5);
     margin: $null;
     padding: 10px;
-    color: black;
+    color: $black;
   }
   .h1header{
     font-family: "Droid Serif";
@@ -128,7 +129,7 @@ footer{
 
 h2{
   font-family: "Droid Serif";
-  color: black;
+  color: $black;
 }
 
 
@@ -138,12 +139,12 @@ h2{
   display: inline-block;
   cursor: pointer;
   width: 50px;
-  margin-left: 5px;
+  margin-left: $five;
 }
 
 .bar1, .bar2, .bar3 {
   width: 35px;
-  height: 5px;
+  height: $five;
   background-color: #333;
   margin: 6px $null 4px $null;
   transition: 0.4s;
@@ -172,7 +173,9 @@ h2{
 
 /* Dropdown-Menü */
 .dropdown{
-  margin-left: 0;
+  margin-left: $null;
+  padding-left: $null;
+  margin-top: 4px;
   position: relative;
   display: inline-block;
   float: left;
@@ -184,14 +187,14 @@ h2{
 .dropdown-content{
   display: none;
   position: absolute;
-  min-width: 160px;
+  min-width: 190px;
   z-index: 1;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: $null 8px 16px $null rgba($null,$null,$null,0.2);
   background-color: #f1f1f1;
 }
 
 .content{
-  color: black;
+  color: $black;
   padding: 15px 30px;
   text-decoration: none;
   display: block;
@@ -200,22 +203,28 @@ h2{
     background-color: rgba(110, 110, 110, 0.8);
   }
   a{
-    color: black;
+    color: $black;
+    font-weight: bold;
   }
 }
 
 .aktuelleseite{
-  color: rgb(90, 90, 90);
+  color: rgb(110, 110, 110);
 }
 
-.menu{
+.menu {
   background-color: rgba(30, 120, 160, 0.8);
-  box-shadow: inset 0 0 30px lightblue;
+  box-shadow:
+          inset 0 0 30px lightblue,
+          3px 3px 20px rgb(110, 110, 110);
   border: 1px solid rgb(110, 110, 110);
 }
 
-.nav{
-  border-radius: 3px;
+.nav {
+  margin-left: $five;
+  a{
+    color: $black;
+  }
 }
 
 

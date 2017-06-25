@@ -65,12 +65,13 @@
 
                 <div>
 
-                    <h4 class="regtext">Du bimst 1 noch kein Account?
+                    <h4 class="regtext">Hasd du noch k1 Account?
                         <br>
-                        Dann <a href="Anmelden.php" class="registerOverlay">
-                            hier
+                        Dann bimst du 1
+                        <a href="Anmelden.php" class="registerOverlay">
+                            spasd
                         </a>
-                        registrieren!
+                        !
                     </h4>
                 </div>
             </div>
