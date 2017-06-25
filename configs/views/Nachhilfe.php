@@ -35,7 +35,7 @@
     </table>
 <?php else: ?>
     <p>&nbsp;</p>
-    <div class="alert alert-info">Noch keine coachingserfahrungen vorhanden - Sie können über den Button <strong>neuer Beitrag</strong> eine neue Erfrahrung hinzufügen.</div>
+    <div class="alert alert-info">Noch keine Coachingtopics vorhanden - Sie können über den Button <strong>neuer Beitrag</strong> ein neues Topic hinzufügen.</div>
 <?php endif; ?>
 
     <br><br>
@@ -43,15 +43,17 @@
 
 
     <!-- Textfeld für Eintrag -->
-    <div class="links col-xs-1"></div>
+<!--    <div class="links col-xs-1"></div>
 
     <textarea class="innen col-xs-8" cols="100" rows="10">
 </textarea>
 
-    <div class="rechts col-xs-3"></div>
+    <div class="rechts col-xs-3"></div>-->
 
     <br><br>
 
+
+    <!-- Lightbox für neuen Beitrag -->
 
     <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">

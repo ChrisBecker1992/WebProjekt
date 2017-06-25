@@ -13,7 +13,7 @@
     transform: translateY(-10px);
   }
 }
-/* line 23, ../sass/start.scss */
+/* line 24, ../sass/start.scss */
 header {
   padding: 0;
   top: 0;
@@ -24,23 +24,23 @@ header {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 32, ../sass/start.scss */
+/* line 33, ../sass/start.scss */
 header .header {
   margin: 0;
   padding: 10px;
   color: black;
 }
-/* line 38, ../sass/start.scss */
+/* line 39, ../sass/start.scss */
 header .h1header {
   font-family: "Droid Serif";
   text-shadow: 10px 8px 3px rgba(0, 0, 0, 0.4);
 }
-/* line 42, ../sass/start.scss */
+/* line 43, ../sass/start.scss */
 header .h4header {
   font-family: Bevan;
 }
 
-/* line 47, ../sass/start.scss */
+/* line 48, ../sass/start.scss */
 footer {
   padding: 20px;
   left: 0;
@@ -50,17 +50,17 @@ footer {
   position: fixed;
   box-shadow: 3px 3px 20px #6e6e6e;
 }
-/* line 55, ../sass/start.scss */
+/* line 56, ../sass/start.scss */
 footer .socialmedia {
   float: right;
   padding: 10px;
 }
-/* line 58, ../sass/start.scss */
+/* line 59, ../sass/start.scss */
 footer .socialmedia a i {
   font-size: 30px;
 }
 
-/* line 64, ../sass/start.scss */
+/* line 65, ../sass/start.scss */
 .picture {
   border-radius: 5px;
   height: 300px;
@@ -72,39 +72,13 @@ footer .socialmedia a i {
   float: left;
   box-sizing: border-box;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* line 76, ../sass/start.scss */
-.first {
-  background-image: url("../Pictures/IMG-20160621-WA0011.jpg");
-  margin-left: 1.6%;
-}
-
-/* line 80, ../sass/start.scss */
-.second {
-  background-image: url("../Pictures/Nachhilfe.jpg");
-}
-
-/* line 83, ../sass/start.scss */
-.third {
-  background-image: url("../Pictures/crowd.jpg");
-}
-
-/* line 86, ../sass/start.scss */
-.fourth {
-  background-image: url("../Pictures/landkarte.jpg");
-  margin-left: 0;
-}
-
-/* line 91, ../sass/start.scss */
-.picture {
   position: relative;
 }
-/* line 93, ../sass/start.scss */
+/* line 77, ../sass/start.scss */
 .picture:hover {
   animation: bounce 1s;
 }
-/* line 96, ../sass/start.scss */
+/* line 80, ../sass/start.scss */
 .picture a {
   position: absolute;
   top: 0;
@@ -114,11 +88,34 @@ footer .socialmedia a i {
   display: block;
 }
 
-/* line 106, ../sass/start.scss */
+/* line 89, ../sass/start.scss */
+.first {
+  background-image: url("../Pictures/IMG-20160621-WA0011.jpg");
+  margin-left: 1.6%;
+}
+
+/* line 93, ../sass/start.scss */
+.second {
+  background-image: url("../Pictures/Nachhilfe.jpg");
+}
+
+/* line 96, ../sass/start.scss */
+.third {
+  background-image: url("../Pictures/crowd.jpg");
+}
+
+/* line 99, ../sass/start.scss */
+.fourth {
+  background-image: url("../Pictures/landkarte.jpg");
+  margin-left: 0;
+}
+
+/* line 104, ../sass/start.scss */
 .row {
   padding: 1.6%;
   padding-right: 0;
   margin-right: 0;
+  margin-top: 20px;
   width: 100%;
   /*Bild zentriert */
   position: absolute;
@@ -128,7 +125,7 @@ footer .socialmedia a i {
   transform: translateY(-50%);
 }
 
-/* line 120, ../sass/start.scss */
+/* line 119, ../sass/start.scss */
 .bildschrift {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -139,14 +136,14 @@ footer .socialmedia a i {
   background-color: rgba(110, 110, 110, 0.6);
 }
 
-/* line 130, ../sass/start.scss */
+/* line 129, ../sass/start.scss */
 h2 {
   font-family: "Droid Serif";
   color: black;
 }
 
 /*Hamburger Button*/
-/* line 138, ../sass/start.scss */
+/* line 137, ../sass/start.scss */
 .container {
   display: inline-block;
   cursor: pointer;
@@ -154,7 +151,7 @@ h2 {
   margin-left: 5px;
 }
 
-/* line 145, ../sass/start.scss */
+/* line 144, ../sass/start.scss */
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -163,33 +160,33 @@ h2 {
   transition: 0.4s;
 }
 
-/* line 152, ../sass/start.scss */
+/* line 151, ../sass/start.scss */
 .bar1 {
   margin-top: 8px;
 }
 
 /* Rotate first bar */
-/* line 158, ../sass/start.scss */
+/* line 157, ../sass/start.scss */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 /* Fade out the second bar */
-/* line 164, ../sass/start.scss */
+/* line 163, ../sass/start.scss */
 .change .bar2 {
   opacity: 0;
 }
 
 /* Rotate last bar */
-/* line 169, ../sass/start.scss */
+/* line 168, ../sass/start.scss */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /* Dropdown-Men├╝ */
-/* line 175, ../sass/start.scss */
+/* line 174, ../sass/start.scss */
 .dropdown {
   margin-left: 0;
   padding-left: 0;
@@ -198,12 +195,12 @@ h2 {
   display: inline-block;
   float: left;
 }
-/* line 182, ../sass/start.scss */
+/* line 181, ../sass/start.scss */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* line 187, ../sass/start.scss */
+/* line 186, ../sass/start.scss */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -213,41 +210,41 @@ h2 {
   background-color: #f1f1f1;
 }
 
-/* line 196, ../sass/start.scss */
+/* line 195, ../sass/start.scss */
 .content {
   color: black;
   padding: 15px 30px;
   text-decoration: none;
   display: block;
 }
-/* line 201, ../sass/start.scss */
+/* line 200, ../sass/start.scss */
 .content:hover {
   cursor: pointer;
-  background-color: rgba(110, 110, 110, 0.8);
+  background-color: rgba(110, 110, 110, 0.5);
 }
-/* line 205, ../sass/start.scss */
+/* line 204, ../sass/start.scss */
 .content a {
   color: black;
   font-weight: bold;
 }
 
-/* line 211, ../sass/start.scss */
+/* line 210, ../sass/start.scss */
 .aktuelleseite {
   color: #6e6e6e;
 }
 
-/* line 215, ../sass/start.scss */
+/* line 214, ../sass/start.scss */
 .menu {
   background-color: rgba(30, 120, 160, 0.8);
   box-shadow: inset 0 0 30px lightblue, 3px 3px 20px #6e6e6e;
   border: 1px solid #6e6e6e;
 }
 
-/* line 223, ../sass/start.scss */
+/* line 222, ../sass/start.scss */
 .nav {
   margin-left: 5px;
 }
-/* line 225, ../sass/start.scss */
+/* line 224, ../sass/start.scss */
 .nav a {
   color: black;
 }

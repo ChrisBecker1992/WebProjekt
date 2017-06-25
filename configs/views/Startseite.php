@@ -1,6 +1,8 @@
 <?php echo $this->header; ?>
 
 
+<!-- Bilder für die 4 Kategorien -->
+
 <div class="row">
 
     <div class="picture first" >

@@ -3,6 +3,7 @@ $five: 5px;
 $percent: 1.6%;
 $black: black;
 
+// benötigt für bouncen der Bilder
 @keyframes bounce {
   0%, 20%, 60%, 100% {
     -webkit-transform: translateY(0);
@@ -72,6 +73,18 @@ footer{
   float: left;
   box-sizing: border-box;
   box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+  position: relative;
+  &:hover{
+    animation: bounce 1s;
+  }
+  a {
+    position: absolute;
+    top: $null;
+    left: $null;
+    right: $null;
+    bottom: $null;
+    display: block;
+  }
 }
 .first{
   background-image: url("../Pictures/IMG-20160621-WA0011.jpg");
@@ -88,25 +101,11 @@ footer{
   margin-left: $null;
 }
 
-.picture {
-  position: relative;
-  &:hover{
-    animation: bounce 1s;
-  }
-  a {
-    position: absolute;
-    top: $null;
-    left: $null;
-    right: $null;
-    bottom: $null;
-    display: block;
-  }
-}
-
 .row{
   padding: $percent;
   padding-right: $null;
   margin-right: $null;
+  margin-top: 20px;
   width: 100%;
 
   /*Bild zentriert */
@@ -200,7 +199,7 @@ h2{
   display: block;
   &:hover{
     cursor: pointer;
-    background-color: rgba(110, 110, 110, 0.8);
+    background-color: rgba(110, 110, 110, 0.5);
   }
   a{
     color: $black;
