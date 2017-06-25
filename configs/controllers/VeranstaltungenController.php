@@ -8,7 +8,7 @@
 class VeranstaltungenController extends Controller
 {
     protected $viewFileName = "Veranstaltungen"; //this will be the View that gets the data...
-    protected $loginRequired = false;
+    protected $loginRequired = true;
 
 
     public function run()

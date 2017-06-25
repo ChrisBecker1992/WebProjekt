@@ -9,7 +9,7 @@
 class WohnenController extends Controller
 {
     protected $viewFileName = "Wohnen"; //this will be the View that gets the data...
-    protected $loginRequired = false;
+    protected $loginRequired = true;
 
 
     public function run()

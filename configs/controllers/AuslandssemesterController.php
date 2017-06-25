@@ -8,7 +8,7 @@
 class AuslandssemesterController extends Controller
 {
     protected $viewFileName = "Auslandssemester"; //this will be the View that gets the data...
-    protected $loginRequired = false;
+    protected $loginRequired = true;
 
 
     public function run()
