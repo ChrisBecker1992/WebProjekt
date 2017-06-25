@@ -57,13 +57,16 @@
         <link href="stylesheets/beitragseiten.css" rel="stylesheet">
         <script type="text/javascript" src="js/beitragseiten.js"></script>
     <?php endif; ?>
+    <?php if ($this->current == 'logout'): ?>
+        <link href="stylesheets/start.css" rel="stylesheet">
+    <?php endif; ?>
 
 
 
 
 </head>
 <body>
-<?php if(LOGGED_IN == true): ?>
+<?php if($this->current != 'login'): ?>
 <header>
     <div class="header">
         <h1 class="h1header">Studenten-Gathering </h1>
@@ -71,15 +74,22 @@
     </div>
 </header>
 
+<?php endif; ?>
+
+<?php if(LOGGED_IN == true): ?>
+
 <!-- Dropdown-Menü -->
-<div class="menu">
-        <div class="dropdown">
+
+<div class="menu col-xs-12">
+
+        <div class="dropdown col-xs-1">
             <div class="container" onclick="myFunction(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
 
+            <?php if($this->current == 'index'): ?>
             <div class="dropdown-content">
                 <div class="content"><span class="aktuelleseite">Startseite</span></div>
                 <div class="content"><a href='Wohnen'>Wohnen</a></div>
@@ -87,9 +97,53 @@
                 <div class="content"><a href='Veranstaltungen'>Veranstaltungen</a></div>
                 <div class="content"><a href='Auslandssemester'>Auslandssemester</a></div>
             </div>
+            <?php endif; ?>
+
+            <?php if($this->current == 'wohnen'): ?>
+            <div class="dropdown-content">
+                <div class="content"><a href='Startseite'>Startseite</a></div>
+                <div class="content"><span class="aktuelleseite">Wohnen</span></div>
+                <div class="content"><a href='Nachhilfe'>Nachhilfe</a></div>
+                <div class="content"><a href='Veranstaltungen'>Veranstaltungen</a></div>
+                <div class="content"><a href='Auslandssemester'>Auslandssemester</a></div>
+            </div>
+            <?php endif; ?>
+
+            <?php if($this->current == 'nachhilfe'): ?>
+            <div class="dropdown-content">
+                <div class="content"><a href='Startseite'>Startseite</a></div>
+                <div class="content"><a href='Wohnen'>Wohnen</a></div>
+                <div class="content"><span class="aktuelleseite">Nachhilfe</span></div>
+                <div class="content"><a href='Veranstaltungen'>Veranstaltungen</a></div>
+                <div class="content"><a href='Auslandssemester'>Auslandssemester</a></div>
+            </div>
+            <?php endif; ?>
+
+            <?php if($this->current == 'veranstaltungen'): ?>
+            <div class="dropdown-content">
+                <div class="content"><a href='Startseite'>Startseite</a></div>
+                <div class="content"><a href='Wohnen'>Wohnen</a></div>
+                <div class="content"><a href='Nachhilfe'>Nachhilfe</a></div>
+                <div class="content"><span class="aktuelleseite">Veranstaltungen</span></div>
+                <div class="content"><a href='Auslandssemester'>Auslandssemester</a></div>
+            </div>
+            <?php endif; ?>
+
+            <?php if($this->current == 'auslandssemester'): ?>
+            <div class="dropdown-content">
+                <div class="content"><a href='Startseite'>Startseite</a></div>
+                <div class="content"><a href='Wohnen'>Wohnen</a></div>
+                <div class="content"><a href='Nachhilfe'>Nachhilfe</a></div>
+                <div class="content"><a href='Veranstaltungen'>Veranstaltungen</a></div>
+                <div class="content"><span class="aktuelleseite">Auslandssemester</span></div>
+            </div>
+            <?php endif; ?>
+
+
         </div>
-        <div class="aktuell">Startseite</div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <div class="innen col-xs-8"></div>
+        <div class="collapse navbar-collapse col-xs-3" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="logout">(Abmelden)</a></li>
             </ul>

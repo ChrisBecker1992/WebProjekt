@@ -104,15 +104,16 @@ textarea {
 /* Dropdown-Men├╝ */
 /* line 96, ../sass/beitragseiten.scss */
 .dropdown {
+  margin-left: 0;
   position: relative;
   display: inline-block;
 }
-/* line 99, ../sass/beitragseiten.scss */
+/* line 100, ../sass/beitragseiten.scss */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* line 104, ../sass/beitragseiten.scss */
+/* line 105, ../sass/beitragseiten.scss */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -122,41 +123,36 @@ textarea {
   background-color: #f1f1f1;
 }
 
-/* line 113, ../sass/beitragseiten.scss */
+/* line 114, ../sass/beitragseiten.scss */
 .content {
   color: black;
   padding: 15px 30px;
   text-decoration: none;
   display: block;
 }
-/* line 118, ../sass/beitragseiten.scss */
+/* line 119, ../sass/beitragseiten.scss */
 .content:hover {
   cursor: pointer;
   background-color: rgba(110, 110, 110, 0.8);
 }
-/* line 122, ../sass/beitragseiten.scss */
+/* line 123, ../sass/beitragseiten.scss */
 .content a {
   color: black;
 }
 
-/* line 127, ../sass/beitragseiten.scss */
+/* line 128, ../sass/beitragseiten.scss */
 .aktuelleseite {
-  color: lightgray;
+  color: #5a5a5a;
 }
 
-/* line 131, ../sass/beitragseiten.scss */
+/* line 132, ../sass/beitragseiten.scss */
 .menu {
   background-color: rgba(30, 120, 160, 0.8);
   box-shadow: inset 0 0 30px lightblue;
   border: 1px solid #6e6e6e;
 }
 
-/* line 137, ../sass/beitragseiten.scss */
+/* line 138, ../sass/beitragseiten.scss */
 .beitragbutton {
   background-color: #1e78a0;
-}
-
-/* line 141, ../sass/beitragseiten.scss */
-.aktuell {
-  display: inline-block;
 }

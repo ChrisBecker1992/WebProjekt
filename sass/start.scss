@@ -172,25 +172,13 @@ h2{
 
 /* Dropdown-Menü */
 .dropdown{
-  background-color: red;
+  margin-left: 0;
   position: relative;
   display: inline-block;
   float: left;
-  width: 60px;
   &:hover .dropdown-content{
     display: block;
   }
-}
-
-.aktuell{
-  width: 200px;
-  background-color: green;
-  float: left;
-}
-
-.collapse{
-  background-color: #f1f1f1;
-  float: left;
 }
 
 .dropdown-content{
@@ -211,12 +199,23 @@ h2{
     cursor: pointer;
     background-color: rgba(110, 110, 110, 0.8);
   }
+  a{
+    color: black;
+  }
 }
 
-
+.aktuelleseite{
+  color: rgb(90, 90, 90);
+}
 
 .menu{
   background-color: rgba(30, 120, 160, 0.8);
   box-shadow: inset 0 0 30px lightblue;
   border: 1px solid rgb(110, 110, 110);
 }
+
+.nav{
+  border-radius: 3px;
+}
+
+

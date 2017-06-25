@@ -94,6 +94,7 @@ textarea {
 
 /* Dropdown-Menü */
 .dropdown{
+  margin-left: 0;
   position: relative;
   display: inline-block;
   &:hover .dropdown-content{
@@ -125,7 +126,7 @@ textarea {
 }
 
 .aktuelleseite{
-  color: lightgray;
+  color: rgb(90, 90, 90);
 }
 
 .menu{
@@ -138,7 +139,4 @@ textarea {
   background-color: rgb(30, 120, 160);
 }
 
-.aktuell{
-  display: inline-block;
-}
 
