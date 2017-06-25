@@ -18,13 +18,11 @@
             </div>
 
             <div class="dropdown-content">
-                <div class="content">Startseite
-                    <a href="Startsite.html" target="_self"></a>
-                </div>
-                <div class="content">Wohnen</div>
-                <div class="content">Nachhilfe</div>
-                <div class="content">Veranstaltungen</div>
-                <div class="content">Auslandssemester</div>
+                <div class="content"><a href='Startseite'>Startseite</a> </div>
+                <div class="content"><span class="aktuelleseite">Wohnen</span></div>
+                <div class="content"><a href='Nachhilfe'>Nachhilfe</a></div>
+                <div class="content"><a href='Veranstaltungen'>Veranstaltungen</a></div>
+                <div class="content"><a href='Auslandssemester'>Auslandssemester</a></div>
             </div>
         </div>
     </div>

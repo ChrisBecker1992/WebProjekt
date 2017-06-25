@@ -106,10 +106,9 @@ textarea {
 .dropdown {
   position: relative;
   display: inline-block;
-}
-/* line 99, ../sass/beitragseiten.scss */
-.dropdown:hover .dropdown-content {
-  display: block;
+  /*&:hover .dropdown-content{
+    display: block;
+  }*/
 }
 
 /*
@@ -138,8 +137,17 @@ textarea {
   cursor: pointer;
   background-color: rgba(110, 110, 110, 0.8);
 }
+/* line 126, ../sass/beitragseiten.scss */
+.content a {
+  color: black;
+}
 
-/* line 128, ../sass/beitragseiten.scss */
+/* line 131, ../sass/beitragseiten.scss */
+.aktuelleseite {
+  color: lightgray;
+}
+
+/* line 135, ../sass/beitragseiten.scss */
 .menu {
   background-color: rgba(30, 120, 160, 0.8);
   box-shadow: inset 0 0 30px lightblue;

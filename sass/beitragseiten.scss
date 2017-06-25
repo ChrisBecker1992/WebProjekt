@@ -96,9 +96,9 @@ textarea {
 .dropdown{
   position: relative;
   display: inline-block;
-  &:hover .dropdown-content{
+  /*&:hover .dropdown-content{
     display: block;
-  }
+  }*/
 }
 /*
   .dropdown:hover .dropdown-content{
@@ -123,6 +123,13 @@ textarea {
     cursor: pointer;
     background-color: rgba(110, 110, 110, 0.8);
   }
+  a{
+    color: black;
+  }
+}
+
+.aktuelleseite{
+  color: lightgray;
 }
 
 .menu{

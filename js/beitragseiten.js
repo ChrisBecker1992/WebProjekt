@@ -3,7 +3,20 @@
  */
 function myFunction(x) {
     x.classList.toggle("change");
+
+    $(".dropdown-content").show();
 }
+
+/*$(document).ready(function () {
+    $(".container").click(function (e) {
+        e.preventDefault();
+
+        $(".dropdown-content").show();
+
+    });
+
+});*/
+
 
 
 /* Lightbox */
