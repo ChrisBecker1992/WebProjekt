@@ -135,7 +135,7 @@ textarea {
 /* line 123, ../sass/beitragseiten.scss */
 .content:hover {
   cursor: pointer;
-  background-color: rgba(110, 110, 110, 0.8);
+  background-color: rgba(110, 110, 110, 0.5);
 }
 /* line 127, ../sass/beitragseiten.scss */
 .content a {

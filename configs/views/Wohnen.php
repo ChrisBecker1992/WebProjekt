@@ -35,13 +35,15 @@
     </table>
 <?php else: ?>
     <p>&nbsp;</p>
-    <div class="alert alert-info">Noch keine habitationserfahrungen vorhanden - Sie können über den Button <strong>neuer Beitrag</strong> eine neue Erfrahrung hinzufügen.</div>
+    <div class="alert alert-info">Noch keine Wohnungen vorhanden - Sie können über den Button <strong>neuer Beitrag</strong> neue Anfragen oder Suchen hinzufügen.</div>
 <?php endif; ?>
 
 <br><br>
 <br><br>
 
 
+
+<!-- Lightbox für neuen Beitrag -->
     <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">

@@ -69,7 +69,7 @@
 <?php if($this->current != 'login'): ?>
 <header>
     <div class="header">
-        <h1 class="h1header">Studenten-Gathering </h1>
+        <h1 class="h1header">Studenten-Gathering</h1>
         <h4 class="h4header">FH Kufstein</h4>
     </div>
 </header>
@@ -83,14 +83,14 @@
 <div class="menu col-xs-12">
 
         <div class="dropdown col-xs-1">
-            <div class="container" onclick="myFunction(this)">
+            <div class="container" id="menubutton" onclick="myFunction(this, 'dropdowncontent')">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
 
             <?php if($this->current == 'index'): ?>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="dropdowncontent">
                 <div class="content"><span class="aktuelleseite">Startseite</span></div>
                 <div class="content"><a href='Wohnen'>Wohnen</a></div>
                 <div class="content"><a href='Nachhilfe'>Nachhilfe</a></div>

@@ -6,7 +6,7 @@
 
     <!--Button für neuen Eintrag-->
 
-    <div class="links col-xs-10"><h1>Wohnen</h1></div>
+    <div class="links col-xs-10"><h1>Veranstaltungen</h1></div>
     <div class="rechts col-xs-2">
         <button class="btn btn-lg btn-primary btn-block beitragbutton" data-toggle="modal" data-target="#editModal">+ neuer Beitrag</button>
     </div>
@@ -35,13 +35,14 @@
     </table>
 <?php else: ?>
     <p>&nbsp;</p>
-    <div class="alert alert-info">Noch keine veranstaltungserfahrungen vorhanden - Sie können über den Button <strong>neuer Beitrag</strong> eine neue Erfrahrung hinzufügen.</div>
+    <div class="alert alert-info">Noch keine Veranstaltungen vorhanden - Sie können über den Button <strong>neuer Beitrag</strong> ein neues Events hinzufügen.</div>
 <?php endif; ?>
 
     <br><br>
     <br><br>
 
 
+    <!-- Lightbox für neuen Beitrag -->
 
     <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
