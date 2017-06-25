@@ -42,17 +42,6 @@
 <br><br>
 
 
-<!-- <!-- Textfeld für Eintrag
-<div class="links col-xs-1"></div>
-
-<textarea class="innen col-xs-8" cols="100" rows="10">
-</textarea>
-
-<div class="rechts col-xs-3"></div>
--->
-<br><br>
-
-
 <!--Lightbox für neuen Eintrag-->
 
 <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

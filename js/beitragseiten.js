@@ -37,7 +37,7 @@ jQuery(document).ready(function() {
         if(typeof beitragId !== "undefined")
         {
             editModal.find('.id').html(beitragId);
-            theTitle = "Adresse mit der ID " + beitragId + " bearbeiten";
+            theTitle = "Beitrag mit der ID " + beitragId + " bearbeiten";
             thePrimaryButton = "Speichern";
 
             apiRequestUrl = apiRequestUrl + "&id=" + beitragId;
