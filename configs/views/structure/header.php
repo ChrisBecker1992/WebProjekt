@@ -63,7 +63,7 @@
 
 </head>
 <body>
-
+<?php if(LOGGED_IN == true): ?>
 <header>
     <div class="header">
         <h1 class="h1header">Studenten-Gathering </h1>
@@ -101,3 +101,5 @@
         </div>
     </div>
 </div>
+<?php endif; ?>
+
