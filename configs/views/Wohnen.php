@@ -71,6 +71,10 @@
 
                     <br><br>
 
+                    <textarea class="sr" cols="100" rows="8" placeholder="Beitrag" maxlength="250"></textarea>
+
+                    <br><br>
+
 
 
                     <button type="button" class="btn btn-primary registrieren">Speichern</button>
