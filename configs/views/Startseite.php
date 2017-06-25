@@ -31,22 +31,22 @@
 <br><br>
 
 <div class="row">
-    <div class="picture first" >
-        <div class="bildschrift">
-            <h2>Wohnen</h2>
+        <div class="picture first">
+            <div class="bildschrift">
+                <h2>Wohnen</h2>
+            </div>
         </div>
-    </div>
-    <div class="picture second">
-        <div class="bildschrift">
-            <h2>Nachhilfe</h2>
+        <div class="picture second">
+            <div class="bildschrift">
+                <h2>Nachhilfe</h2>
+            </div>
         </div>
-    </div>
-    <div class="picture third" >
+    <div class="picture third">
         <div class="bildschrift">
             <h2>Veranstaltungen</h2>
         </div>
     </div>
-    <div class="picture fourth">
+    <div class="picture fourth" href='Auslandssemester'>
         <div class="bildschrift">
             <h2>Auslandssemester</h2>
         </div>
