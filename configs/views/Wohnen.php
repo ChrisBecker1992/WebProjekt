@@ -28,7 +28,7 @@
                 <td><?php echo $habitation->wohnung; ?></td>
 
                 <td><button class="btn btn-default" data-toggle="modal" data-target="#editModal" data-id="<?php echo $habitation->id; ?>"><i class="glyphicon glyphicon-pencil"></i> Bearbeiten</button></td>
-                <td><a class="btn btn-danger triggerDelete" href="api/address/" data-id="<?php echo $habitation->id; ?>"><i class="glyphicon glyphicon-trash"></i> Löschen</a></td>
+                <td><a class="btn btn-danger triggerDelete" href="api/wohnen/" data-id="<?php echo $habitation->id; ?>"><i class="glyphicon glyphicon-trash"></i> Löschen</a></td>
             </tr>
         <?php endforeach; ?>
         </tbody>
@@ -58,12 +58,12 @@
 
                         <!--<label for="Betreff" class="sr-only"></label>
                         <input type="text" id="Betreff" class="form-control" placeholder="neuer Betreff" required autofocus>-->
-
+                        <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/wohnen/" class="col-xs-12">
                         <div class="form-group">
                             <label for="wohnung">Beitrag</label>
                             <input type="text" name="wohnung" class="form-control" id="wohnung" value="<?php echo $this->wohnung; ?>">
                         </div>
-
+                        </form>
                         <br><br>
 
                 </div>
@@ -71,13 +71,8 @@
                     <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
                     <button type="button" class="btn btn-primary registrieren">Speichern</button>
                 </div>
-
-
-                </form><!-- /form -->
-
             </div>
         </div>
-    </div>
     </div>
     <script type="text/javascript">
 
