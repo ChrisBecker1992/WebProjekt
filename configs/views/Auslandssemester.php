@@ -5,8 +5,7 @@
 
 <!--Button für neuen Eintrag-->
 
-
-        <div class="links col-xs-10"><h1>Auslandssemester</h1></div>
+    <div class="links col-xs-10"><h1>Auslandssemester</h1></div>
         <div class="rechts col-xs-2">
         <button class="btn btn-lg btn-primary btn-block beitragbutton" data-toggle="modal" data-target="#editModal">+ neuer Beitrag</button>
         </div>
@@ -37,6 +36,8 @@
             <p>&nbsp;</p>
             <div class="alert alert-info">Noch keine Auslandserfahrungen vorhanden - Sie können über den Button <strong>neuer Beitrag</strong> eine neue Erfrahrung hinzufügen.</div>
         <?php endif; ?>
+
+
 <br><br>
 <br><br>
 
