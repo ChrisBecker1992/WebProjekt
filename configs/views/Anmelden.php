@@ -15,7 +15,7 @@
     <br><br>
 
 
-    <form action="Startseite" method="post">
+    <form action="anmelden" method="post">
 
         <div class="links col-xs-3"></div>
 
@@ -55,11 +55,12 @@
 
                 </div>
 
-                <button class="btn btn-lg btn-primary btn-block" name="action" type="submit">
-                    <!--<a href="Startseite.php"></a>-->
+                <a href="Startseite.php">
+                <button class="btn btn-lg btn-primary btn-block" name="login" type="submit">
                     Anmelden
                 </button>
-
+                </a>
+                <input type="hidden" name="action" value="login">
                 <br>
 
                 <div>
@@ -143,7 +144,7 @@
 
                     <br><br>
                     <input type="hidden" name="action" value="register">
-                    <button type="button" class="btn btn-primary registrieren">Registrieren</button>
+                    <button type="button" class="btn btn-primary registrieren" name="register"">Registrieren</button>
 
                 </form><!-- /form -->
 

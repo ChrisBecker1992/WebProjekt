@@ -24,7 +24,7 @@ class LoginController extends Controller
 
     private function checkForLoginPost()
     {
-        if(!empty($_POST) && isset($_POST['action']) && $_POST['action'] == 'anmelden')
+        if(!empty($_POST) && isset($_POST['action']) && $_POST['action'] == 'login')
         {
             //probably a login attempt!
 
