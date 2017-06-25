@@ -9,7 +9,7 @@
 class NachhilfeController extends Controller
 {
     protected $viewFileName = "Nachhilfe"; //this will be the View that gets the data...
-    protected $loginRequired = false;
+    protected $loginRequired = true;
 
 
     public function run()
