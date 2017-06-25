@@ -6,7 +6,7 @@
 
 <!--Button für neuen Eintrag-->
 
-<div class="links col-xs-10"></div>
+<div class="links col-xs-10"><h1>Nachhilfe</h1></div>
 <div class="rechts col-xs-2">
     <button class="btn btn-lg btn-primary btn-block beitragbutton">+ neuer Beitrag</button>
 </div>

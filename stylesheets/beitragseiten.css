@@ -156,3 +156,9 @@ textarea {
 .beitragbutton {
   background-color: #1e78a0;
 }
+
+/* line 143, ../sass/beitragseiten.scss */
+.links h1 {
+  font-family: "Droid Serif";
+  margin-top: 5px;
+}
