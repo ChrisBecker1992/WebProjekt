@@ -153,3 +153,13 @@ textarea {
   box-shadow: inset 0 0 30px lightblue;
   border: 1px solid #6e6e6e;
 }
+
+/* line 141, ../sass/beitragseiten.scss */
+.beitragbutton {
+  background-color: #1e78a0;
+}
+
+/* line 145, ../sass/beitragseiten.scss */
+.aktuell {
+  display: inline-block;
+}

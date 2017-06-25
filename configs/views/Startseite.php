@@ -2,6 +2,7 @@
 
 
 <div class="row">
+
     <div class="picture first" >
         <div class="bildschrift">
             <h2>Wohnen</h2>
@@ -14,7 +15,7 @@
             <a href="Nachhilfe"></a>
         </div>
     </div>
-    <div class="picture third" >
+    <div class="picture third">
         <div class="bildschrift">
             <h2>Veranstaltungen</h2>
             <a href="Veranstaltungen"></a>
@@ -29,6 +30,8 @@
 
 </div>
 
+
+
     <footer>
         <div class="socialmedia">
             <span>Impressum</span>
@@ -40,4 +43,6 @@
             </a>
         </div>
     </footer>
+
+
 <?php echo $this->footer; ?>
