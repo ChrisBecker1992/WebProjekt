@@ -25,6 +25,7 @@
                 <div class="content"><a href='Auslandssemester'>Auslandssemester</a></div>
             </div>
         </div>
+        <div class="aktuell">Wohnen</div>
     </div>
 </div>
 
