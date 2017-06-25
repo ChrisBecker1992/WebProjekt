@@ -45,11 +45,11 @@ jQuery(document).ready(function() {
 
         //this is to give the title and the "save" button different labels if they clicked on edit or new
         editModal.find('.modal-title').html(theTitle);
-        editModal.find('.btn-primary').html(thePrimaryButton);
+        editModal.find('.registrieren').html(thePrimaryButton);
 
         //before we have a formular loaded via ajax - we don't want them to be able to click on "save"
         //therefore we disable the button
-        editModal.find('.btn-primary').prop('disabled', true);
+        editModal.find('.registrieren').prop('disabled', true);
 
         jQuery.ajax({
             'url': apiRequestUrl,
@@ -59,7 +59,7 @@ jQuery(document).ready(function() {
                 if(receivedData.result) {
                     var modal = $(that)
                     modal.find('.modal-body').html(receivedData.data.html);
-                    editModal.find('.btn-primary').prop('disabled', false);
+                    editModal.find('.registrieren').prop('disabled', false);
                 } else { //there was an error - do something!
 
                 }
@@ -71,7 +71,7 @@ jQuery(document).ready(function() {
     });
 
 
-    editModal.find('.btn-primary').click(function() {
+    editModal.find('.registrieren').click(function() {
         editModal.find('form').trigger('submit', [this]);
     });
 

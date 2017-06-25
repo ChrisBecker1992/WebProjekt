@@ -7,7 +7,7 @@
 
     <div class="links col-xs-10"><h1>Auslandssemester</h1></div>
         <div class="rechts col-xs-2">
-        <button class="btn btn-lg btn-primary btn-block beitragbutton" data-toggle="modal" data-target="#editModal">+ neuer Beitrag</button>
+        <button class="btn btn-lg btn-primary btn-block beitragbutton" data-toggle="modal" data-target="#editModal"> + neuer Beitrag</button>
         </div>
 
         <?php if($this->ausland): ?>
@@ -26,8 +26,8 @@
                         <td><?php echo $ausland->id; ?></td>
                         <td><?php echo $ausland->topic; ?></td>
 
-                        <td><button class="btn btn-default" data-toggle="modal" data-target="#editModal" data-id="<?php echo $ausland->id; ?>"><i class="glyphicon glyphicon-pencil"></i> Bearbeiten</button></td>
-                        <td><a class="btn btn-danger triggerDelete" href="api/auslandssemester/" data-id="<?php echo $ausland->id; ?>"><i class="glyphicon glyphicon-trash"></i> Löschen</a></td>
+                        <td><button class="btn btn-default" data-toggle="modal" data-target="#editModal" data-id="<?php echo $ausland->id; ?>">Bearbeiten</button></td>
+                        <td><a class="btn btn-danger triggerDelete" href="api/auslandssemester/" data-id="<?php echo $ausland->id; ?>"> Löschen </td>
                     </tr>
                 <?php endforeach; ?>
                 </tbody>
@@ -89,12 +89,12 @@
 
             e.preventDefault();
 
-            editModal.find('.btn-primary').prop('disabled', true);
+            editModal.find('.registrieren').prop('disabled', true);
 
             hasError = false;
 
             if(typeof that === 'undefined') {
-                that = editModal.find('.btn-primary').get(0);
+                that = editModal.find('.registrieren').get(0);
             }
 
             var requiredFields = ['#topic'];
@@ -131,13 +131,13 @@
                             });
                         }
 
-                        editModal.find('.btn-primary').prop('disabled', false);
+                        editModal.find('.registrieren').prop('disabled', false);
                     }
                 });
             }
             else
             {
-                editModal.find('.btn-primary').prop('disabled', false);
+                editModal.find('.registrieren').prop('disabled', false);
             }
 
         });

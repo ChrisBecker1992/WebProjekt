@@ -8,7 +8,7 @@
 
 <div class="links col-xs-10"><h1>Wohnen</h1></div>
 <div class="rechts col-xs-2">
-<button class="btn btn-lg btn-primary btn-block beitragbutton" data-toggle="modal" data-target="#editModal">+ neuer Beitrag</button>
+<button class="btn btn-lg btn-primary btn-block beitragbutton" data-toggle="modal" data-target="#editModal"> + neuer Beitrag</button>
 </div>
 
 <?php if($this->habitation): ?>
@@ -27,8 +27,8 @@
                 <td><?php echo $habitation->id; ?></td>
                 <td><?php echo $habitation->wohnung; ?></td>
 
-                <td><button class="btn btn-default" data-toggle="modal" data-target="#editModal" data-id="<?php echo $habitation->id; ?>"><i class="glyphicon glyphicon-pencil"></i> Bearbeiten</button></td>
-                <td><a class="btn btn-danger triggerDelete" href="api/wohnen/" data-id="<?php echo $habitation->id; ?>"><i class="glyphicon glyphicon-trash"></i> Löschen</a></td>
+                <td><button class="btn btn-default" data-toggle="modal" data-target="#editModal" data-id="<?php echo $habitation->id; ?>"></i> Bearbeiten</button></td>
+                <td><a class="btn btn-danger triggerDelete" href="api/wohnen/" data-id="<?php echo $habitation->id; ?>"> Löschen </td>
             </tr>
         <?php endforeach; ?>
         </tbody>
