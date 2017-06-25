@@ -3,8 +3,6 @@
  */
 function myFunction(x) {
     x.classList.toggle("change");
-
-    $(".dropdown-content").show();
 }
 
 /*$(document).ready(function () {

@@ -73,17 +73,6 @@
 
 <!-- Dropdown-Menü -->
 <div class="menu">
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="logout">(Abmelden)</a></li>
-        </ul>
-
-        <p class="navbar-text navbar-right">Angemeldet als <strong class="username"><?php echo $this->username; ?></strong></p>
-
-    </div>
-    <div>
         <div class="dropdown">
             <div class="container" onclick="myFunction(this)">
                 <div class="bar1"></div>
@@ -99,7 +88,13 @@
                 <div class="content"><a href='Auslandssemester'>Auslandssemester</a></div>
             </div>
         </div>
-    </div>
+        <div class="aktuell">Startseite</div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="logout">(Abmelden)</a></li>
+            </ul>
+            <p class="navbar-text navbar-right">Angemeldet als <strong class="username"><?php echo $this->username; ?></strong></p>
+        </div>
 </div>
 <?php endif; ?>
 

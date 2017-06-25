@@ -31,7 +31,6 @@
 </div>
 
 
-
     <footer>
         <div class="socialmedia">
             <span>Impressum</span>

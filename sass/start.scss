@@ -172,16 +172,26 @@ h2{
 
 /* Dropdown-Menü */
 .dropdown{
+  background-color: red;
   position: relative;
   display: inline-block;
+  float: left;
+  width: 60px;
   &:hover .dropdown-content{
     display: block;
   }
 }
-/*
-  .dropdown:hover .dropdown-content{
-   display: block;
-}*/
+
+.aktuell{
+  width: 200px;
+  background-color: green;
+  float: left;
+}
+
+.collapse{
+  background-color: #f1f1f1;
+  float: left;
+}
 
 .dropdown-content{
   display: none;
@@ -202,6 +212,8 @@ h2{
     background-color: rgba(110, 110, 110, 0.8);
   }
 }
+
+
 
 .menu{
   background-color: rgba(30, 120, 160, 0.8);
