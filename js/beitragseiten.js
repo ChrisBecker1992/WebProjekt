@@ -22,7 +22,7 @@ jQuery(document).ready(function() {
 
     var editModal = $('#editModal');
 
-    editModal.on('show.bs.modal', function (event) {
+    editModal.on('show', function (event) {
 
         var button = $(event.relatedTarget) // Button that triggered the modal
         var beitragId = button.data('id') // Extract info from data-* attributes
