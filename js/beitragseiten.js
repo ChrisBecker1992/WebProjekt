@@ -20,7 +20,47 @@ function myFunction(x) {
 /* Lightbox */
 $(document).ready(function() {
 
-    var editModal = $('#editModal');
+    $('.saveContribution').click(function() {
+
+        var urlToSendStuffTo = $('#beitragsformular').attr('action');
+
+        $.ajax({
+            url: urlToSendStuffTo,
+            method: "post",
+            data: {category: $('#category').val(), contribution: $('#beitrag').val()},
+            success: function(dataReceived) {
+                if(dataReceived.result) {
+                    toastr.success('Hat geklappt');
+
+                    window.setTimeout(function() {
+                        location.reload();
+                    }, 3000);
+                }
+            }
+        });
+
+        //console.log($('#beitrag').val());
+    });
+
+    $('.editBeitrag').click(function() {
+        var id = $(this).attr('data-id');
+        var category = $(this).attr('data-category');
+
+        $.ajax({
+            url: 'api/beitrag/',
+            method: "get",
+            data: {category: category, id: id, returnView: 'true'},
+            success: function(dataReceived) {
+                if(dataReceived.result) {
+
+                    $('.modal-body').html(dataReceived.data.view);
+                    $('#editModal').modal('show');
+                }
+            }
+        });
+    });
+
+    /*var editModal = $('#editModal');
 
     editModal.on('show', function (event) {
 
@@ -98,6 +138,6 @@ $(document).ready(function() {
                 }
             });
         }
-    });
+    });*/
 
 });

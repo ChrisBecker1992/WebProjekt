@@ -17,6 +17,21 @@ class WohnenModel
         return null;
     }
 
+    public static function getBeitragById($id)
+    {
+        $db = new Database();
+        $sql = "SELECT * FROM wohnen WHERE id=".intval($id);
+
+        $result = $db->query($sql);
+
+        if($db->numRows($result) > 0)
+        {
+            return $db->fetchObject($result);
+        }
+
+        return null;
+    }
+
     public static function getWohnenByUserId($userId)
     {
         $db = new Database();
@@ -39,11 +54,12 @@ class WohnenModel
         return null;
     }
 
-    public static function createNewWohnen($data)
+    public static function createNewBeitrag($data)
     {
         $db = new Database();
 
-        $sql = "INSERT INTO wohnen(userId,wohnnung) VALUES('".$db->escapeString($data['userId'])."','".$db->escapeString($data['wohnnung']);
+        $beitrag = $db->escapeString($data['beitrag']);
+        $sql = "INSERT INTO wohnen(userId,wohnung) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
         $db->query($sql);
 
         $data['id'] = $db->insertId();

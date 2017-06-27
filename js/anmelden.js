@@ -66,8 +66,9 @@ $(document).ready(function () {
                             else {
                                 myModal.find('.form-group').removeClass('has-error');
 
-                                $.each(receivedData.data.errorFields, function (key, value) {
+                                $.each(receivedData.data.errorFields, function (key, errorMsg) {
                                     $('#' + key).closest('.form-group').addClass('has-error');
+                                    toastr.error(errorMsg);
                                 });
                             }
 

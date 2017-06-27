@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="stylesheets/toastr.min.css">
+
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
@@ -31,6 +33,7 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/toastr.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bevan|Droid+Serif" rel="stylesheet">
     <?php if($this->current == 'index'): ?>
         <link href="stylesheets/start.css" rel="stylesheet">
