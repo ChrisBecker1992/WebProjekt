@@ -62,7 +62,7 @@ footer{
 
 .einleitung{
   margin-left: 28px;
-  margin-top: 25px;
+  margin-top: 10px;
   padding-left: 25px;
   border-radius: $five;
   color: $black;
@@ -192,9 +192,9 @@ h2{
   position: relative;
   display: inline-block;
   float: left;
-  &:hover .dropdown-content{
+  /*&:hover .dropdown-content{
     display: block;
-  }
+  }*/
 }
 
 .dropdown-content{
@@ -230,7 +230,7 @@ h2{
   box-shadow:
           inset 0 0 30px lightblue,
           3px 3px 20px rgb(110, 110, 110);
-  border: 1px solid rgb(40, 130, 190);
+  //border: 1px solid rgb(40, 130, 190);
 }
 
 .nav {

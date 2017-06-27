@@ -4,6 +4,7 @@
 function myFunction(x) {
 
     x.classList.toggle("change");
+    document.getElementById('dropdowncontent').style.display = "block";
 }
 
 /*$(document).ready(function(){
@@ -13,5 +14,10 @@ function myFunction(x) {
     });
 
 });*/
+
+/*var menubutton = document.getElementById('menubutton');
+menubutton.onclick = function () {
+    document.getElementById('dropdowncontent').style.display = "block";
+};*/
 
 
