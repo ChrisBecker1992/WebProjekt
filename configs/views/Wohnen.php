@@ -27,7 +27,7 @@
                 <td><?php echo $habitation->id; ?></td>
                 <td><?php echo $habitation->wohnung; ?></td>
 
-                <td><button class="btn btn-default" data-toggle="modal" data-target="#editModal" data-id="<?php echo $habitation->id; ?>"></i> Bearbeiten</button></td>
+                <td><button class="btn btn-default editBeitrag" data-id="<?php echo $habitation->id; ?>" data-category="wohnen"></i> Bearbeiten</button></td>
                 <td><a class="btn btn-danger triggerDelete" href="api/wohnen/" data-id="<?php echo $habitation->id; ?>"> Löschen </td>
             </tr>
         <?php endforeach; ?>
@@ -54,22 +54,22 @@
                 </div>
                 <div class="modal-body">
 
-                    <form class="Beitrag">
 
                         <!--<label for="Betreff" class="sr-only"></label>
                         <input type="text" id="Betreff" class="form-control" placeholder="neuer Betreff" required autofocus>-->
-                        <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/wohnen/" class="col-xs-12">
+                        <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
                         <div class="form-group">
                             <label for="wohnung">Beitrag</label>
-                            <input type="text" name="wohnung" class="form-control" id="wohnung" value="<?php echo $this->wohnung; ?>">
+                            <input type="text" name="wohnung" class="form-control" id="beitrag" value="<?php echo $this->wohnung; ?>">
                         </div>
+                            <input type="hidden" name="category" value="wohnen" id="category">
                         </form>
                         <br><br>
 
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
-                    <button type="button" class="btn btn-primary registrieren">Speichern</button>
+                    <button type="button" class="btn btn-primary saveContribution">Speichern</button>
                 </div>
             </div>
         </div>
