@@ -18,11 +18,11 @@ function myFunction(x) {
 
 
 /* Lightbox */
-jQuery(document).ready(function() {
+$(document).ready(function() {
 
     var editModal = $('#editModal');
 
-    editModal.on('show.bs.modal', function (event) {
+    editModal.on('show', function (event) {
 
         var button = $(event.relatedTarget) // Button that triggered the modal
         var beitragId = button.data('id') // Extract info from data-* attributes
@@ -32,7 +32,7 @@ jQuery(document).ready(function() {
 
         var theTitle = "Neue Adresse anlegen";
         var thePrimaryButton = "Hinzufügen";
-        var apiRequestUrl = "api/beitrag/?returnView=true";
+        var apiRequestUrl = "api/wohnen/?returnView=true";
 
         if(typeof beitragId !== "undefined")
         {
