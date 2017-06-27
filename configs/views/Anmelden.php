@@ -36,11 +36,6 @@
                     <input type="text" name="username" class="form-control" id="username" placeholder="Benutzername">
                 </div>
                 <br>
-                <!--<label for="exampleInputEmail1">Email-Addresse</label>
-                <br>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-
-                <br>-->
 
                 <!--<label for="password">Passwort</label>-->
                 <br>
@@ -69,11 +64,11 @@
 
                     <h4 class="regtext">Hasd du noch k1 Account?
                         <br>
-                        Dann bimst du 1
+                        Dann
                         <a href="Anmelden.php" class="registerOverlay">
-                            spasd
+                            hier
                         </a>
-                        !
+                        registrieren!
                     </h4>
                 </div>
             </div>
@@ -103,10 +98,6 @@
                     <input type="text" name="name" id="name" class="form-control" placeholder="Benutzername" required
                            autofocus>
                     </div>
-                    <!--<br><br>
-
-                    <label for="inputvname" class="sr-only"></label>
-                    <input type="text"name="vname" id="inputvname" class="form-control" placeholder="Vorname" required autofocus>-->
 
                     <br><br>
                     <div class="form-group">
@@ -120,34 +111,12 @@
                     <input type="password" name="pwd2" id="pwd2" class="form-control" placeholder="Passwort wiederholen"
                            required autofocus>
                     </div>
-                    <br><br>
-
-                    <!--<label for="inputEmail" class="sr-only"></label>
-                    <input type="inputemail" name="inputemail" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-
-                    <br><br>-->
-
-                    <!--Geburtsdatum
-                    <label for="inputdatum" class="sr-only"></label>
-                    <input type="date" name="birthday" id="inputdatum" class="form-control" placeholder="Geburtsdatum" required
-                           autofocus>
-
-                    <br><br>-->
-
-                    <!--Beziehungsstatus
-                    <br>
-                    <input type="radio" id="single" name="beziehungsstatus">
-                    <label for="single" class="beziehungsstatus">Single</label>
-                    <br>
-                    <input type="radio" id="vergeben" name="beziehungsstatus">
-                    <label for="vergeben" class="beziehungsstatus">Vergeben</label>
-                    <br>
-                    <input type="radio" id="cursed" name="beziehungsstatus">
-                    <label for="cursed" class="beziehungsstatus">Cursed or some shit</label>-->
 
                     <br><br>
+                    <br><br>
+
                     <input type="hidden" name="action" value="register">
-                    <button type="button" class="btn btn-primary registrieren" name="register"">Registrieren</button>
+                    <button type="button" class="btn btn-primary registrieren" name="register">Registrieren</button>
 
                 </form><!-- /form -->
 

@@ -19,24 +19,23 @@ header {
 /* line 23, ../sass/anmelden.scss */
 header .h1header {
   font-family: "Droid Serif";
-  text-shadow: 10px 8px 3px rgba(0, 0, 0, 0.4);
 }
-/* line 27, ../sass/anmelden.scss */
+/* line 26, ../sass/anmelden.scss */
 header .h4header {
   font-family: Bevan;
 }
 
-/* line 33, ../sass/anmelden.scss */
+/* line 32, ../sass/anmelden.scss */
 .glyphicon.glyphicon-ok {
   color: green;
 }
 
-/* line 37, ../sass/anmelden.scss */
+/* line 36, ../sass/anmelden.scss */
 .form-group {
   color: #eeeeee;
 }
 
-/* line 42, ../sass/anmelden.scss */
+/* line 41, ../sass/anmelden.scss */
 .innenmitte {
   background-color: rgba(50, 50, 50, 0.7);
   box-shadow: 0 0 40px #6e6e6e;
@@ -49,7 +48,7 @@ header .h4header {
   font: normal 14px Arial !important;
 }
 
-/* line 53, ../sass/anmelden.scss */
+/* line 52, ../sass/anmelden.scss */
 #exampleInputEmail1 {
   margin-bottom: -1px;
   border-bottom-right-radius: 1px;
@@ -57,7 +56,7 @@ header .h4header {
   border-radius: 7px;
 }
 
-/* line 59, ../sass/anmelden.scss */
+/* line 58, ../sass/anmelden.scss */
 #exampleInputPassword1 {
   margin-bottom: -1px;
   border-bottom-right-radius: 1px;
@@ -65,17 +64,17 @@ header .h4header {
   border-radius: 7px;
 }
 
-/* line 65, ../sass/anmelden.scss */
+/* line 64, ../sass/anmelden.scss */
 .h3login {
   font-family: "Droid Serif";
 }
 
-/* line 69, ../sass/anmelden.scss */
+/* line 68, ../sass/anmelden.scss */
 .pwforgot {
   font-size: 1em;
 }
 
-/* line 73, ../sass/anmelden.scss */
+/* line 72, ../sass/anmelden.scss */
 .regist {
   margin-bottom: -1px;
   border-bottom-right-radius: 1px;
@@ -83,15 +82,10 @@ header .h4header {
   border-radius: 7px;
 }
 
-/* line 80, ../sass/anmelden.scss */
+/* line 79, ../sass/anmelden.scss */
 .forgot {
   margin-bottom: -1px;
   border-bottom-right-radius: 1px;
   border-bottom-left-radius: 0;
   border-radius: 7px;
-}
-
-/* line 87, ../sass/anmelden.scss */
-.beziehungsstatus {
-  font: normal 14px Arial !important;
 }

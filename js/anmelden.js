@@ -83,6 +83,8 @@ $(document).ready(function () {
 
     });
 });
+
+
     $(document).ready(function () {
         $(".pwforgot").click(function (e) {
             e.preventDefault();

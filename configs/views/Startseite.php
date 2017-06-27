@@ -1,8 +1,19 @@
 <?php echo $this->header; ?>
 
 
-<!-- Bilder für die 4 Kategorien -->
+<br><br>
 
+<div class="col-xs-9 alert-info einleitung">
+    <h2>Servus Studies!</h2>
+    <h4>Willkommen bei <strong>Studenten-Gathering</strong>, dem Studentenforum der FH-Kufstein Tirol.</h4>
+    <p>Hier kannst du dich über die Wohnsituation informieren, Nachhilfe suchen oder geben,
+        Veranstaltungen ankündigen und Auslandserfahrungen teilen.</p>
+</div>
+
+<br><br>
+<br><br>
+
+    <!-- Bilder für die 4 Kategorien -->
 <div class="row">
 
     <div class="picture first" >

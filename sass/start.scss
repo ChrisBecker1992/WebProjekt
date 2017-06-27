@@ -31,14 +31,12 @@ header{
   -webkit-background-size: cover;
   background-size: cover;
   .header{
-    //background-color: rgba(110, 110, 110, 0.5);
     margin: $null;
     padding: 10px;
     color: $black;
   }
   .h1header{
     font-family: "Droid Serif";
-    text-shadow: 10px 8px 3px rgba(0, 0, 0, 0.4);
   }
   .h4header{
     font-family: Bevan;
@@ -61,6 +59,22 @@ footer{
     }
   }
 }
+
+.einleitung{
+  margin-left: 28px;
+  margin-top: 25px;
+  padding-left: 25px;
+  border-radius: $five;
+  color: $black;
+  //background-color: rgba(30, 120, 160, 0.8);
+  //box-shadow:
+          //4px 4px 4px 4px rgba(0,0,0,0.2),
+          //inset 0 0 40px lightblue;
+  h2{
+    margin-top: 10px;
+  }
+}
+
 
 .picture {
   border-radius: $five;
@@ -110,7 +124,7 @@ footer{
 
   /*Bild zentriert */
   position: absolute;
-  top: 50%;
+  top: 60%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -224,6 +238,11 @@ h2{
   a{
     color: $black;
   }
+}
+
+.collapse{
+  box-shadow: inset 0 0 30px lightblue;
+  border-radius: 5px;
 }
 
 
