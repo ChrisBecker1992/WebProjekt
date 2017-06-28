@@ -17,6 +17,21 @@ class AuslandModel
         return null;
     }
 
+    public static function getBeitragById($id)
+    {
+        $db = new Database();
+        $sql = "SELECT * FROM ausland WHERE id=".intval($id);
+
+        $result = $db->query($sql);
+
+        if($db->numRows($result) > 0)
+        {
+            return $db->fetchObject($result);
+        }
+
+        return null;
+    }
+
     public static function getAuslandByUserId($userId)
     {
         $db = new Database();
@@ -39,11 +54,12 @@ class AuslandModel
         return null;
     }
 
-    public static function createNewAusland($data)
+    public static function createNewBeitrag($data)
     {
         $db = new Database();
 
-        $sql = "INSERT INTO ausland(userId,topic) VALUES('".$db->escapeString($data['userId'])."','".$db->escapeString($data['topic']);
+        $beitrag = $db->escapeString($data['beitrag']);
+        $sql = "INSERT INTO ausland(userId,topic) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
         $db->query($sql);
 
         $data['id'] = $db->insertId();

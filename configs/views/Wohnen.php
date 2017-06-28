@@ -54,9 +54,6 @@
                 </div>
                 <div class="modal-body">
 
-
-                        <!--<label for="Betreff" class="sr-only"></label>
-                        <input type="text" id="Betreff" class="form-control" placeholder="neuer Betreff" required autofocus>-->
                         <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
                         <div class="form-group">
                             <label for="wohnung">Beitrag</label>

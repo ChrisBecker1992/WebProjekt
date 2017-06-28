@@ -30,11 +30,11 @@ $(document).ready(function() {
             data: {category: $('#category').val(), contribution: $('#beitrag').val()},
             success: function(dataReceived) {
                 if(dataReceived.result) {
-                    toastr.success('Hat geklappt');
+                    toastr.success('Beitrag wurde erstellt!');
 
                     window.setTimeout(function() {
                         location.reload();
-                    }, 3000);
+                    }, 2000);
                 }
             }
         });

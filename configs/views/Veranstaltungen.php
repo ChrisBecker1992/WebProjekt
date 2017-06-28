@@ -54,23 +54,19 @@
                 </div>
                 <div class="modal-body">
 
-                    <form class="Beitrag">
-
-                        <!--<label for="Betreff" class="sr-only"></label>
-                        <input type="text" id="Betreff" class="form-control" placeholder="neuer Betreff" required autofocus>-->
-
-                        <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/veranstaltungen/" class="col-xs-12">
+                        <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
                         <div class="form-group">
                             <label for="veranstaltungen">Beitrag</label>
-                            <input type="text" name="veranstaltungen" class="form-control" id="veranstaltungen" value="<?php echo $this->veranstaltungen; ?>">
+                            <input type="text" name="veranstaltungen" class="form-control" id="beitrag" value="<?php echo $this->veranstaltungen; ?>">
                         </div>
+                            <input type="hidden" name="category" value="veranstaltungen" id="category">
                         </form>
                         <br><br>
 
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
-                    <button type="button" class="btn btn-primary registrieren">Speichern</button>
+                    <button type="button" class="btn btn-primary saveContribution">Speichern</button>
                 </div>
 
             </div>

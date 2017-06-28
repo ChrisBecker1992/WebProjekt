@@ -54,15 +54,12 @@
             </div>
             <div class="modal-body">
 
-                <form class="Beitrag">
-
-                    <!--<label for="Betreff" class="sr-only"></label>
-                    <input type="text" id="Betreff" class="form-control" placeholder="neuer Betreff" required autofocus>-->
-                    <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/auslandssemester/" class="col-xs-12">
+                    <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
                         <div class="form-group">
                         <label for="topic">Beitrag</label>
-                        <input type="text" name="topic" class="form-control" id="topic" value="<?php echo $this->topic; ?>">
+                        <input type="text" name="topic" class="form-control" id="beitrag" value="<?php echo $this->topic; ?>">
                     </div>
+                        <input type="hidden" name="category" value="auslandssemester" id="category">
                     </form>
 
                     <br><br>
@@ -70,7 +67,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
-                <button type="button" class="btn btn-primary registrieren">Speichern</button>
+                <button type="button" class="btn btn-primary saveContribution">Speichern</button>
             </div>
             </div>
         </div>

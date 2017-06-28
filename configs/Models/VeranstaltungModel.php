@@ -17,6 +17,21 @@ class VeranstaltungModel
         return null;
     }
 
+    public static function getBeitragById($id)
+    {
+        $db = new Database();
+        $sql = "SELECT * FROM veranstaltung WHERE id=".intval($id);
+
+        $result = $db->query($sql);
+
+        if($db->numRows($result) > 0)
+        {
+            return $db->fetchObject($result);
+        }
+
+        return null;
+    }
+
     public static function getVeranstaltungByUserId($userId)
     {
         $db = new Database();
@@ -39,11 +54,12 @@ class VeranstaltungModel
         return null;
     }
 
-    public static function createNewVeranstaltung($data)
+    public static function createNewBeitrag($data)
     {
         $db = new Database();
 
-        $sql = "INSERT INTO veranstaltung(userId,veranstaltungen) VALUES('".$db->escapeString($data['userId'])."','".$db->escapeString($data['veranstaltungen']);
+        $beitrag = $db->escapeString($data['beitrag']);
+        $sql = "INSERT INTO veranstaltung(userId,veranstaltungen) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
         $db->query($sql);
 
         $data['id'] = $db->insertId();

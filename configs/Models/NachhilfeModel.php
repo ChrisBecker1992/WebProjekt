@@ -17,6 +17,21 @@ class NachhilfeModel
         return null;
     }
 
+    public static function getBeitragById($id)
+    {
+        $db = new Database();
+        $sql = "SELECT * FROM nachhilfe WHERE id=".intval($id);
+
+        $result = $db->query($sql);
+
+        if($db->numRows($result) > 0)
+        {
+            return $db->fetchObject($result);
+        }
+
+        return null;
+    }
+
     public static function getNachhilfeByUserId($userId)
     {
         $db = new Database();
@@ -39,11 +54,12 @@ class NachhilfeModel
         return null;
     }
 
-    public static function createNewNachhilfe($data)
+    public static function createNewBeitrag($data)
     {
         $db = new Database();
 
-        $sql = "INSERT INTO nachhilfe(userId,coach) VALUES('".$db->escapeString($data['userId'])."','".$db->escapeString($data['coach']);
+        $beitrag = $db->escapeString($data['beitrag']);
+        $sql = "INSERT INTO nachhilfe(userId,coach) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
         $db->query($sql);
 
         $data['id'] = $db->insertId();

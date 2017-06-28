@@ -1,7 +1,7 @@
 <form method="put" action="api/beitrag/">
 
     <div class="form-group">
-        <label for="wohnung">Beitrag</label>
+        <label for="beitrag">Beitrag</label>
         <input type="text" name="beitrag" class="form-control" id="beitrag" value="<?php echo $this->beitrag; ?>">
     </div>
 
