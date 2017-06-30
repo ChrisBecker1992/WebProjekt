@@ -30,7 +30,7 @@ class Beitrag extends RESTClass
 
                 $dataForView = (array) $model->getBeitragById($data['id']);
 
-                $dataForView['beitrag'] = $dataForView['wohnen'| 'nachhilfe' | 'veranstaltungen' | 'auslandssemester'];    //für alle Seiten erstellen
+                $dataForView['beitrag'] = $dataForView['wohnung']; //| 'coach' | 'veranstaltungen' | 'topic'];    //für alle Seiten erstellen
 
             }
 
@@ -94,6 +94,28 @@ class Beitrag extends RESTClass
     protected function saveRequest($data)
     {
         //put
+
+        if(isset($data['contribution']))
+        {
+            $user = new User();
+
+            $model = null;
+
+            $model = $this->getModelForCategory($data['category']);
+
+            if ($model !== null)
+            {
+                $model->updateBeitrag(array(
+                    'userId' => $user->id,
+                    'beitrag' => $data['contribution']
+                ));
+
+                //bescheid sagen - Beitrag wurde bearbeitet
+                $json = new JSON();
+                $json->result = true;
+                $json->send();
+            }
+        }
     }
 
     protected function deleteRequest($data)

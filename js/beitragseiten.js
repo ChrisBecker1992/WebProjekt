@@ -54,12 +54,32 @@ $(document).ready(function() {
                 if(dataReceived.result) {
 
                   $('.modal-body').html(dataReceived.data.view);
-                  $('#editModal').modal('show');
+                  $('#updateModal').modal('show');
 
-                    toastr.success('Beitrag wurde bearbeitet!');
+                  }
                 }
-            }
+            });
         });
+
+    $('.updateContribution').click(function () {
+
+        var urlToSendStuffTo = $('#beitragsformular').attr('action');
+
+        $.ajax({
+            url: urlToSendStuffTo,
+            method: "put",
+            data: {category: $('#category').val(), contribution: $('#beitrag').val()},
+            success: function (dataReceived) {
+                if (dataReceived.result){
+                    toastr.success('Beitrag wurde bearbeitet!')
+
+                    window.setTimeout(function () {
+                        location.reload();
+                    }, 2000);
+                }
+
+            }
+        })
     });
 
 
