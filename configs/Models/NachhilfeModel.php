@@ -2,20 +2,6 @@
 
 class NachhilfeModel
 {
-    public static function getNachhilfeById($id)
-    {
-        $db = new Database();
-        $sql = "SELECT * FROM nachhilfe WHERE id=".intval($id);
-
-        $result = $db->query($sql);
-
-        if($db->numRows($result) > 0)
-        {
-            return $db->fetchObject($result);
-        }
-
-        return null;
-    }
 
     public static function getBeitragById($id)
     {
@@ -54,6 +40,7 @@ class NachhilfeModel
         return null;
     }
 
+    //create new Contribution to the Database
     public static function createNewBeitrag($data)
     {
         $db = new Database();
@@ -67,7 +54,8 @@ class NachhilfeModel
         return (object) $data;
     }
 
-    public static function saveNachhilfe($data)
+    //update Database
+    public static function updateBeitrag($data)
     {
         $db = new Database();
 
@@ -77,6 +65,7 @@ class NachhilfeModel
         return (object) $data;
     }
 
+    //delete from Database
     public static function deleteBeitrag($id)
     {
         $db = new Database();
