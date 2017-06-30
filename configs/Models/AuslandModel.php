@@ -77,7 +77,7 @@ class AuslandModel
         return (object) $data;
     }
 
-    public static function deleteAusland($id)
+    public static function deleteBeitrag($id)
     {
         $db = new Database();
 

@@ -77,7 +77,7 @@ class VeranstaltungModel
         return (object) $data;
     }
 
-    public static function deleteVeranstaltung($id)
+    public static function deleteBeitrag($id)
     {
         $db = new Database();
 

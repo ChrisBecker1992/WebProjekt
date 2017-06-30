@@ -77,7 +77,7 @@ class NachhilfeModel
         return (object) $data;
     }
 
-    public static function deleteNachhilfe($id)
+    public static function deleteBeitrag($id)
     {
         $db = new Database();
 

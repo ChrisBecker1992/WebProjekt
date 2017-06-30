@@ -77,7 +77,7 @@ class WohnenModel
         return (object) $data;
     }
 
-    public static function deleteWohnen($id)
+    public static function deleteBeitrag($id)
     {
         $db = new Database();
 
