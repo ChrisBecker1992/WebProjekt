@@ -28,7 +28,7 @@
                 <td><?php echo $habitation->wohnung; ?></td>
 
                 <td><button class="btn btn-default editBeitrag" data-id="<?php echo $habitation->id; ?>" data-category="wohnen"></i> Bearbeiten</button></td>
-                <td><a class="btn btn-danger triggerDelete" href="api/wohnen/" data-id="<?php echo $habitation->id; ?>"> Löschen </td>
+                <td><a class="btn btn-danger triggerDelete" href="api/beitrag/" data-id="<?php echo $habitation->id; ?>"> Löschen </td>
             </tr>
         <?php endforeach; ?>
         </tbody>

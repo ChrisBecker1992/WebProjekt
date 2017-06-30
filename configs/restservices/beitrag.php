@@ -30,17 +30,7 @@ class Beitrag extends RESTClass
 
                 $dataForView = (array) $model->getBeitragById($data['id']);
 
-
-                // get View for all Sites
-//                switch($dataForView)
-//                {
-//                    case 'wohnen': $dataForView['beitrag'] = $dataForView['wohnung']; break;
-//                    case 'nachhilfe': $dataForView['beitrag'] = $dataForView['nachhilfe']; break;
-//                    case 'veranstaltungen': $dataForView['beitrag'] = $dataForView['veranstaltung']; break;
-//                    case 'auslandssemester': $dataForView['beitrag'] = $dataForView['ausland']; break;
-//                    default: $dataForView['beitrag'] = null;
-//                }
-                $dataForView['beitrag'] = $dataForView['wohnung'];
+                $dataForView['beitrag'] = $dataForView['wohnen'| 'nachhilfe' | 'veranstaltungen' | 'auslandssemester'];    //für alle Seiten erstellen
 
             }
 
@@ -108,7 +98,30 @@ class Beitrag extends RESTClass
 
     protected function deleteRequest($data)
     {
-        //delete (method)
+        if(isset($data['contribution']))
+        {
+            $user = new User();
+
+            $model = null;
+
+            //Werte in der Datenbankspeichern
+            $model = $this->getModelForCategory($data['category']);
+
+            if($model !== null)
+            {
+                $model->deleteBeitrag(array(
+                    'userId' => $this->delete('id')
+                ));
+
+                //bescheid sagen - hat geklappt
+                $json= new JSON();
+                $json->result = true;
+                $json->send();
+
+            }
+
+
+        }
 
     }
 }

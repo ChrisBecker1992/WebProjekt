@@ -1,8 +1,5 @@
 <?php
 
-/**
- * @author Daniel Hoover <https://github.com/danielhoover>
- */
 class LoginController extends Controller
 {
     protected $viewFileName = "Anmelden"; //this will be the View that gets the data...

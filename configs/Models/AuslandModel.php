@@ -2,21 +2,6 @@
 
 class AuslandModel
 {
-    public static function getAuslandById($id)
-    {
-        $db = new Database();
-        $sql = "SELECT * FROM ausland WHERE id=".intval($id);
-
-        $result = $db->query($sql);
-
-        if($db->numRows($result) > 0)
-        {
-            return $db->fetchObject($result);
-        }
-
-        return null;
-    }
-
     public static function getBeitragById($id)
     {
         $db = new Database();
@@ -36,7 +21,7 @@ class AuslandModel
     {
         $db = new Database();
 
-        $sql = "SELECT * FROM ausland WHERE userId=".intval($userId);
+        $sql = "SELECT * FROM ausland INNER JOIN USER ON user.id = ausland.userId";
         $result = $db->query($sql);
 
         if($db->numRows($result) > 0)
@@ -67,7 +52,8 @@ class AuslandModel
         return (object) $data;
     }
 
-    public static function saveAusland($data)
+    //update Database
+    public static function updateBeitrag($data)
     {
         $db = new Database();
 
@@ -77,7 +63,8 @@ class AuslandModel
         return (object) $data;
     }
 
-    public static function deleteAusland($id)
+    //delete from Database
+    public static function deleteBeitrag($id)
     {
         $db = new Database();
 

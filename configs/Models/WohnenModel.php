@@ -2,21 +2,6 @@
 
 class WohnenModel
 {
-    public static function getWohnenById($id)
-    {
-        $db = new Database();
-        $sql = "SELECT * FROM wohnen WHERE id=".intval($id);
-
-        $result = $db->query($sql);
-
-        if($db->numRows($result) > 0)
-        {
-            return $db->fetchObject($result);
-        }
-
-        return null;
-    }
-
     public static function getBeitragById($id)
     {
         $db = new Database();
@@ -67,7 +52,8 @@ class WohnenModel
         return (object) $data;
     }
 
-    public static function saveWohnen($data)
+    //update Database
+    public static function updateBeitrag($data)
     {
         $db = new Database();
 
@@ -77,7 +63,8 @@ class WohnenModel
         return (object) $data;
     }
 
-    public static function deleteWohnen($id)
+    //delete from Database
+    public static function deleteBeitrag($id)
     {
         $db = new Database();
 
