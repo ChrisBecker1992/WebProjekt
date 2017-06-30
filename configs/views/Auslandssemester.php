@@ -26,7 +26,7 @@
                         <td><?php echo $ausland->id; ?></td>
                         <td><?php echo $ausland->topic; ?></td>
 
-                        <td><button class="btn btn-default" data-toggle="modal" data-target="#editModal" data-id="<?php echo $ausland->id; ?>">Bearbeiten</button></td>
+                        <td><button class="btn btn-default editBeitrag" data-id="<?php echo $ausland->id; ?>" data-category="auslandssemester"></i>Bearbeiten</button></td>
                         <td><a class="btn btn-danger triggerDelete" href="api/auslandssemester/" data-id="<?php echo $ausland->id; ?>"> Löschen </td>
                     </tr>
                 <?php endforeach; ?>

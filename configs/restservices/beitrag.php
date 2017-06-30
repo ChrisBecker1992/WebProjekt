@@ -30,7 +30,17 @@ class Beitrag extends RESTClass
 
                 $dataForView = (array) $model->getBeitragById($data['id']);
 
-                $dataForView['beitrag'] = $dataForView['wohnen'];    //für alle Seiten erstellen??
+
+                // get View for all Sites
+//                switch($dataForView)
+//                {
+//                    case 'wohnen': $dataForView['beitrag'] = $dataForView['wohnung']; break;
+//                    case 'nachhilfe': $dataForView['beitrag'] = $dataForView['nachhilfe']; break;
+//                    case 'veranstaltungen': $dataForView['beitrag'] = $dataForView['veranstaltung']; break;
+//                    case 'auslandssemester': $dataForView['beitrag'] = $dataForView['ausland']; break;
+//                    default: $dataForView['beitrag'] = null;
+//                }
+                $dataForView['beitrag'] = $dataForView['wohnung'];
 
             }
 
