@@ -86,7 +86,7 @@
 <div class="menu col-xs-12">
 
         <div class="dropdown col-xs-1">
-            <div class="container" id="menubutton" onclick="myFunction(this, 'dropdowncontent')">
+            <div class="container" id="menubutton" onclick="myFunction(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>

@@ -88,9 +88,6 @@ footer{
   position: relative;
   display: inline-block;
   float: left;
-  /*&:hover .dropdown-content{
-    display: block;
-  }*/
 }
 
 .dropdown-content{
@@ -100,6 +97,7 @@ footer{
   z-index: 1;
   box-shadow: $null 8px 16px $null rgba($null,$null,$null,0.2);
   background-color: #f1f1f1;
+  border-radius: $five;
 }
 
 .content{
@@ -110,6 +108,14 @@ footer{
   &:hover{
     cursor: pointer;
     background-color: rgba(110, 110, 110, 0.5);
+    &:first-child{
+      border-top-right-radius: $five;
+      border-top-left-radius: $five;
+    }
+    &:last-child{
+      border-bottom-left-radius: $five;
+      border-bottom-right-radius: $five;
+    }
   }
   a{
     color: $black;

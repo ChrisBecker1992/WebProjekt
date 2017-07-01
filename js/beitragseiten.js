@@ -1,9 +1,21 @@
 /**
  * Created by kimilk on 16.06.2017.
  */
+
 function myFunction(x) {
+
     x.classList.toggle("change");
-    document.getElementById('dropdowncontent').style.display = "block";
+
+    var y = document.getElementById('dropdowncontent');
+
+    if (y.style.display === 'block'){
+
+        $('#dropdowncontent').fadeOut("slow").style.display = 'none';
+
+    } else {
+
+        $('#dropdowncontent').fadeIn("slow").style.display = 'block';
+    }
 }
 
 
