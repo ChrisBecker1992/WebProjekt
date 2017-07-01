@@ -30,6 +30,8 @@ class Beitrag extends RESTClass
 
                 $dataForView = (array) $model->getBeitragById($data['id']);
 
+                $dataForView['category'] = $data['category'];
+
                 $dataForView['beitrag'] = $dataForView['wohnung']; //| 'coach' | 'veranstaltungen' | 'topic'];    //für alle Seiten erstellen
 
             }
@@ -97,7 +99,6 @@ class Beitrag extends RESTClass
 
         if(isset($data['contribution']))
         {
-            $user = new User();
 
             $model = null;
 
@@ -106,8 +107,8 @@ class Beitrag extends RESTClass
             if ($model !== null)
             {
                 $model->updateBeitrag(array(
-                    'userId' => $user->id,
-                    'beitrag' => $data['contribution']
+                    'wohnung' => $data['contribution'],
+                    'id' => $data['id']
                 ));
 
                 //bescheid sagen - Beitrag wurde bearbeitet

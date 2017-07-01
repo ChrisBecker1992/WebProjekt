@@ -3,17 +3,8 @@
  */
 function myFunction(x) {
     x.classList.toggle("change");
+    document.getElementById('dropdowncontent').style.display = "block";
 }
-
-/*$(document).ready(function () {
-    $(".container").click(function (e) {
-        e.preventDefault();
-
-        $(".dropdown-content").show();
-
-    });
-
-});*/
 
 
 
@@ -63,12 +54,21 @@ $(document).ready(function() {
 
     $('.updateContribution').click(function () {
 
-        var urlToSendStuffTo = $('#beitragsformular').attr('action');
+        var formWithData = $(this).closest('.modal-content').find('.modal-body form');
+        var urlSentStuffTo = formWithData.attr('action');
+        //var urlSendStuffTo1 = $('#beitragsformular').attr('action');
+
+        var dataToSend = formWithData.serialize();
+        //var dataForContribution = {contribution: $('#beitrag').val()};
+        //var id = $('#id').val();
+
+        dataToSend = dataToSend + "&contribution=" + $('#beitrag').val();
+        //dataToSend = dataToSend + id + dataForContribution;
 
         $.ajax({
-            url: urlToSendStuffTo,
+            url: urlSentStuffTo,
             method: "put",
-            data: {category: $('#category').val(), contribution: $('#beitrag').val()},
+            data: dataToSend,
             success: function (dataReceived) {
                 if (dataReceived.result){
                     toastr.success('Beitrag wurde bearbeitet!')
@@ -86,11 +86,11 @@ $(document).ready(function() {
     $('.triggerDelete').click(function(e) {
         e.preventDefault();
 
-        var del = confirm("Wollen Sie den wirklich löschen?");
+        var del = confirm("Wollen Sie diesen Beitrag wirklich löschen?");
         if (del == true) {
             var id = $(this).attr('data-id');
             $.ajax({
-                'url': 'api/beitrag',
+                'url': 'api/beitrag/',
                 'method': 'delete',
                 'data': id,
                 'dataType': "json",

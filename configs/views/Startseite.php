@@ -1,7 +1,8 @@
 <?php echo $this->header; ?>
 
-
 <br><br>
+<br><br>
+
 
 <div class="col-xs-9 alert-info einleitung">
     <h2>Servus Studies!</h2>
@@ -9,6 +10,7 @@
     <p>Hier kannst du dich über die Wohnsituation informieren, Nachhilfe suchen oder geben,
         Veranstaltungen ankündigen und Auslandserfahrungen teilen.</p>
 </div>
+<div class="col-xs-3"></div>
 
 <br><br>
 <br><br>

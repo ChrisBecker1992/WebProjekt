@@ -7,17 +7,6 @@ function myFunction(x) {
     document.getElementById('dropdowncontent').style.display = "block";
 }
 
-/*$(document).ready(function(){
 
-    $("#menubutton").click(function () {
-        $("#dropdown").slideToggle("slow");
-    });
-
-});*/
-
-/*var menubutton = document.getElementById('menubutton');
-menubutton.onclick = function () {
-    document.getElementById('dropdowncontent').style.display = "block";
-};*/
 
 

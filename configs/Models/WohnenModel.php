@@ -57,7 +57,7 @@ class WohnenModel
     {
         $db = new Database();
 
-        $sql = "UPDATE wohnen SET wohnnung='".$db->escapeString($data['wohnnung'])."' WHERE id=".intval($data['id']);
+        $sql = "UPDATE wohnen SET wohnung='".$db->escapeString($data['wohnung'])."' WHERE id=".intval($data['id']);
         $db->query($sql);
 
         return (object) $data;

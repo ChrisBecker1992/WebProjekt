@@ -6,5 +6,5 @@
     </div>
 
     <input type="hidden" name="category" value="<?php echo $this->category; ?>">
-    <input type="hidden" name="id" value="<?php echo $this->id; ?>">
+    <input type="hidden" name="id" id="id" value="<?php echo $this->id; ?>">
 </form>

@@ -83,9 +83,9 @@
 
 <!-- Dropdown-Menü -->
 
-<div class="menu .col-xs-12">
+<div class="menu col-xs-12">
 
-        <div class="dropdown .col-xs-1">
+        <div class="dropdown col-xs-1">
             <div class="container" id="menubutton" onclick="myFunction(this, 'dropdowncontent')">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -103,7 +103,7 @@
             <?php endif; ?>
 
             <?php if($this->current == 'wohnen'): ?>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="dropdowncontent">
                 <div class="content"><a href='Startseite'>Startseite</a></div>
                 <div class="content"><span class="aktuelleseite">Wohnen</span></div>
                 <div class="content"><a href='Nachhilfe'>Nachhilfe</a></div>
@@ -113,7 +113,7 @@
             <?php endif; ?>
 
             <?php if($this->current == 'nachhilfe'): ?>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="dropdowncontent">
                 <div class="content"><a href='Startseite'>Startseite</a></div>
                 <div class="content"><a href='Wohnen'>Wohnen</a></div>
                 <div class="content"><span class="aktuelleseite">Nachhilfe</span></div>
@@ -123,7 +123,7 @@
             <?php endif; ?>
 
             <?php if($this->current == 'veranstaltungen'): ?>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="dropdowncontent">
                 <div class="content"><a href='Startseite'>Startseite</a></div>
                 <div class="content"><a href='Wohnen'>Wohnen</a></div>
                 <div class="content"><a href='Nachhilfe'>Nachhilfe</a></div>
@@ -133,7 +133,7 @@
             <?php endif; ?>
 
             <?php if($this->current == 'auslandssemester'): ?>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="dropdowncontent">
                 <div class="content"><a href='Startseite'>Startseite</a></div>
                 <div class="content"><a href='Wohnen'>Wohnen</a></div>
                 <div class="content"><a href='Nachhilfe'>Nachhilfe</a></div>
@@ -145,8 +145,8 @@
 
         </div>
 
-        <div class="innen .col-xs-8"></div>
-        <div class="collapse navbar-collapse .col-xs-3" id="bs-example-navbar-collapse-1">
+        <div class="innen col-xs-8"></div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="logout">(Abmelden)</a></li>
             </ul>

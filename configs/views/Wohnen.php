@@ -1,8 +1,8 @@
 <?php echo $this->header; ?>
 
-
 <br><br>
 <br><br>
+<br>
 
 <!--Button für neuen Eintrag-->
 
@@ -10,6 +10,10 @@
 <div class="rechts col-xs-2">
 <button class="btn btn-lg btn-primary btn-block beitragbutton" data-toggle="modal" data-target="#editModal"> + neuer Beitrag</button>
 </div>
+
+<br><br>
+<br><br>
+
 
 <?php if($this->habitation): ?>
     <table class="table table-striped">
