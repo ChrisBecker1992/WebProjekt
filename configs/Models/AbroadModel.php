@@ -1,6 +1,6 @@
 <?php
 
-class AuslandModel
+class AbroadModel
 {
     public static function getBeitragById($id)
     {

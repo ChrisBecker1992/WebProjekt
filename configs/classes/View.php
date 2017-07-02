@@ -20,11 +20,11 @@ class View
 
     protected function loadViewFromFile()
     {
-        if(file_exists(VIEW_DIRECTORY.'/structure/header.php'))
+        if(file_exists(VIEW_DIRECTORY.'/parts/header.php'))
         {
             ob_start();
 
-            include(VIEW_DIRECTORY.'/structure/header.php');
+            include(VIEW_DIRECTORY . '/parts/header.php');
 
             $strBuffer = ob_get_contents();
 
@@ -39,11 +39,11 @@ class View
             include(VIEW_DIRECTORY.$this->viewName.'.php');
         }
 
-        if(file_exists(VIEW_DIRECTORY.'/structure/footer.php'))
+        if(file_exists(VIEW_DIRECTORY.'/parts/footer.php'))
         {
             ob_start();
 
-            include(VIEW_DIRECTORY.'/structure/footer.php');
+            include(VIEW_DIRECTORY . '/parts/footer.php');
 
             $strBuffer = ob_get_contents();
 

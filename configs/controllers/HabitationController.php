@@ -6,7 +6,7 @@
  * Time: 15:20
  */
 
-class WohnenController extends Controller
+class HabitationController extends Controller
 {
     protected $viewFileName = "Wohnen"; //this will be the View that gets the data...
     protected $loginRequired = true;
@@ -18,7 +18,7 @@ class WohnenController extends Controller
         $this->view->title = "Wohnen";
         $this->view->username = $this->user->username;
 
-        $this->view->habitation = WohnenModel::getWohnenByUserId($this->user->id);
+        $this->view->habitation = HabitationModel::getWohnenByUserId($this->user->id);
     }
 
 }

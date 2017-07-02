@@ -49,10 +49,10 @@ class Beitrag extends RESTClass
     {
         switch($category)
         {
-            case 'wohnen': $model = new WohnenModel(); break;
-            case 'nachhilfe': $model = new NachhilfeModel(); break;
-            case 'veranstaltungen': $model = new VeranstaltungModel(); break;
-            case 'auslandssemester': $model = new AuslandModel(); break;
+            case 'wohnen': $model = new HabitationModel(); break;
+            case 'nachhilfe': $model = new HelpModel(); break;
+            case 'veranstaltungen': $model = new EventModel(); break;
+            case 'auslandssemester': $model = new AbroadModel(); break;
             default: $model = null;
         }
 

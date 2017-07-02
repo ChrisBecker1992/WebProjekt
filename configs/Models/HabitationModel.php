@@ -1,6 +1,6 @@
 <?php
 
-class WohnenModel
+class HabitationModel
 {
     public static function getBeitragById($id)
     {

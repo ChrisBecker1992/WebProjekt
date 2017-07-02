@@ -5,7 +5,7 @@
  * Date: 23.06.2017
  * Time: 19:30
  */
-class AuslandssemesterController extends Controller
+class AbroadController extends Controller
 {
     protected $viewFileName = "Auslandssemester"; //this will be the View that gets the data...
     protected $loginRequired = true;
@@ -17,7 +17,7 @@ class AuslandssemesterController extends Controller
         $this->view->title = "Auslandssemester";
         $this->view->username = $this->user->username;
 
-        $this->view->ausland = AuslandModel::getAuslandByUserId($this->user->id);
+        $this->view->ausland = AbroadModel::getAuslandByUserId($this->user->id);
 
     }
 

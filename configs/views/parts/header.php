@@ -36,32 +36,32 @@
     <script type="text/javascript" src="js/toastr.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bevan|Droid+Serif" rel="stylesheet">
     <?php if($this->current == 'index'): ?>
-        <link href="stylesheets/start.css" rel="stylesheet">
-        <script type="text/javascript" src="js/start.js"></script>
+        <link href="stylesheets/dropdown.css" rel="stylesheet">
+        <script type="text/javascript" src="js/dropdown.js"></script>
     <?php endif; ?>
     <?php if($this->current == 'login'): ?>
-        <link href="stylesheets/anmelden.css" rel="stylesheet">
-        <script type="text/javascript" src="js/anmelden.js"></script>
+        <link href="stylesheets/login.css" rel="stylesheet">
+        <script type="text/javascript" src="js/login.js"></script>
         <script type="text/javascript" src="js/toastr.min.js"></script>
     <?php endif; ?>
     <?php if($this->current == 'wohnen'): ?>
-        <link href="stylesheets/beitragseiten.css" rel="stylesheet">
-        <script type="text/javascript" src="js/beitragseiten.js"></script>
+        <link href="stylesheets/input.css" rel="stylesheet">
+        <script type="text/javascript" src="js/input.js"></script>
     <?php endif; ?>
     <?php if($this->current == 'nachhilfe'): ?>
-        <link href="stylesheets/beitragseiten.css" rel="stylesheet">
-        <script type="text/javascript" src="js/beitragseiten.js"></script>
+        <link href="stylesheets/input.css" rel="stylesheet">
+        <script type="text/javascript" src="js/input.js"></script>
     <?php endif; ?>
     <?php if($this->current == 'veranstaltungen'): ?>
-        <link href="stylesheets/beitragseiten.css" rel="stylesheet">
-        <script type="text/javascript" src="js/beitragseiten.js"></script>
+        <link href="stylesheets/input.css" rel="stylesheet">
+        <script type="text/javascript" src="js/input.js"></script>
     <?php endif; ?>
     <?php if($this->current == 'auslandssemester'): ?>
-        <link href="stylesheets/beitragseiten.css" rel="stylesheet">
-        <script type="text/javascript" src="js/beitragseiten.js"></script>
+        <link href="stylesheets/input.css" rel="stylesheet">
+        <script type="text/javascript" src="js/input.js"></script>
     <?php endif; ?>
     <?php if ($this->current == 'logout'): ?>
-        <link href="stylesheets/start.css" rel="stylesheet">
+        <link href="stylesheets/dropdown.css" rel="stylesheet">
     <?php endif; ?>
 
 

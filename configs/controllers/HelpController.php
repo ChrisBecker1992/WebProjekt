@@ -6,7 +6,7 @@
  * Date: 23.06.2017
  * Time: 19:38
  */
-class NachhilfeController extends Controller
+class HelpController extends Controller
 {
     protected $viewFileName = "Nachhilfe"; //this will be the View that gets the data...
     protected $loginRequired = true;
@@ -18,7 +18,7 @@ class NachhilfeController extends Controller
         $this->view->title = "Nachhilfe";
         $this->view->username = $this->user->username;
 
-        $this->view->coaching = NachhilfeModel::getNachhilfeByUserId($this->user->id);
+        $this->view->coaching = HelpModel::getNachhilfeByUserId($this->user->id);
     }
 
 }

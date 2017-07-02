@@ -1,11 +1,12 @@
 <?php
 
-class VeranstaltungModel
+class HelpModel
 {
+
     public static function getBeitragById($id)
     {
         $db = new Database();
-        $sql = "SELECT * FROM veranstaltung WHERE id=".intval($id);
+        $sql = "SELECT * FROM nachhilfe WHERE id=".intval($id);
 
         $result = $db->query($sql);
 
@@ -17,34 +18,35 @@ class VeranstaltungModel
         return null;
     }
 
-    public static function getVeranstaltungByUserId($userId)
+    public static function getNachhilfeByUserId($userId)
     {
         $db = new Database();
 
-        $sql = "SELECT * FROM veranstaltung WHERE userId=".intval($userId);
+        $sql = "SELECT * FROM nachhilfe WHERE userId=".intval($userId);
         $result = $db->query($sql);
 
         if($db->numRows($result) > 0)
         {
-            $veranstaltungArray = array();
+            $nachhilfeArray = array();
 
             while($row = $db->fetchObject($result))
             {
-                $veranstaltungArray[] = $row;
+                $nachhilfeArray[] = $row;
             }
 
-            return $veranstaltungArray;
+            return $nachhilfeArray;
         }
 
         return null;
     }
 
+    //create new Contribution to the Database
     public static function createNewBeitrag($data)
     {
         $db = new Database();
 
         $beitrag = $db->escapeString($data['beitrag']);
-        $sql = "INSERT INTO veranstaltung(userId,veranstaltungen) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
+        $sql = "INSERT INTO nachhilfe(userId,coach) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
         $db->query($sql);
 
         $data['id'] = $db->insertId();
@@ -57,7 +59,7 @@ class VeranstaltungModel
     {
         $db = new Database();
 
-        $sql = "UPDATE veranstaltung SET veranstaltungen='".$db->escapeString($data['veranstaltungen'])."' WHERE id=".intval($data['id']);
+        $sql = "UPDATE nachhilfe SET coach='".$db->escapeString($data['coach'])."' WHERE id=".intval($data['id']);
         $db->query($sql);
 
         return (object) $data;
@@ -68,7 +70,7 @@ class VeranstaltungModel
     {
         $db = new Database();
 
-        $sql = "DELETE FROM veranstaltung WHERE id=".intval($id);
+        $sql = "DELETE FROM nachhilfe WHERE id=".intval($id);
         $db->query($sql);
     }
 }
