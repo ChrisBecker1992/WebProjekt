@@ -21,14 +21,14 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Id</th>
+                    <th>Username</th>
                     <th>Beitrag</th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php foreach($this->ausland as $ausland): ?>
                     <tr>
-                        <td><?php echo $ausland->id; ?></td>
+                        <td><?php echo $ausland->name; ?></td>
                         <td><?php echo $ausland->topic; ?></td>
 
                         <td><button class="btn btn-default editBeitrag" data-id="<?php echo $ausland->id; ?>" data-category="auslandssemester"></i>Bearbeiten</button></td>

@@ -21,7 +21,7 @@ class EventModel
     {
         $db = new Database();
 
-        $sql = "SELECT * FROM veranstaltung WHERE userId=".intval($userId);
+        $sql = "SELECT * FROM veranstaltung INNER JOIN USER ON user.id = veranstaltung.userId";
         $result = $db->query($sql);
 
         if($db->numRows($result) > 0)

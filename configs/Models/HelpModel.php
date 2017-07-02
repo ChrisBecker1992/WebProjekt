@@ -22,7 +22,7 @@ class HelpModel
     {
         $db = new Database();
 
-        $sql = "SELECT * FROM nachhilfe WHERE userId=".intval($userId);
+        $sql = "SELECT * FROM nachhilfe INNER JOIN USER ON user.id = nachhilfe.userId";
         $result = $db->query($sql);
 
         if($db->numRows($result) > 0)

@@ -20,14 +20,14 @@
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>Id</th>
+            <th>Username</th>
             <th>Beitrag</th>
         </tr>
         </thead>
         <tbody>
         <?php foreach($this->habitation as $habitation): ?>
             <tr>
-                <td><?php echo $habitation->id; ?></td>
+                <td><?php echo $habitation->name; ?></td>
                 <td><?php echo $habitation->wohnung; ?></td>
 
                 <td><button class="btn btn-default editBeitrag" data-id="<?php echo $habitation->id; ?>" data-category="wohnen"></i> Bearbeiten</button></td>

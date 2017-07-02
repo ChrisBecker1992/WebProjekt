@@ -21,7 +21,7 @@ class HabitationModel
     {
         $db = new Database();
 
-        $sql = "SELECT * FROM wohnen WHERE userId=".intval($userId);
+        $sql = "SELECT * FROM wohnen INNER JOIN USER ON user.id = wohnen.userId";
         $result = $db->query($sql);
 
         if($db->numRows($result) > 0)

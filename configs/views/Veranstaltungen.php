@@ -25,14 +25,14 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Id</th>
+                    <th>Username</th>
                     <th>Beitrag</th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php foreach ($this->veranstaltung as $veranstaltung): ?>
                     <tr>
-                        <td><?php echo $veranstaltung->id; ?></td>
+                        <td><?php echo $veranstaltung->name; ?></td>
                         <td><?php echo $veranstaltung->veranstaltungen; ?></td>
 
                         <td>

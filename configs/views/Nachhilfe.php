@@ -22,14 +22,14 @@
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>Id</th>
+            <th>Username</th>
             <th>Beitrag</th>
         </tr>
         </thead>
         <tbody>
         <?php foreach($this->coaching as $coaching): ?>
             <tr>
-                <td><?php echo $coaching->id; ?></td>
+                <td><?php echo $coaching->name; ?></td>
                 <td><?php echo $coaching->coach; ?></td>
 
                 <td><button class="btn btn-default editBeitrag" data-id="<?php echo $coaching->id; ?>" data-category="nachhilfe"> Bearbeiten</button></td>
