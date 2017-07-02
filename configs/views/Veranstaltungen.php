@@ -3,40 +3,58 @@
 
     <br><br>
     <br><br>
+<br>
+
 
     <!--Button für neuen Eintrag-->
 
     <div class="links col-xs-10"><h1>Veranstaltungen</h1></div>
     <div class="rechts col-xs-2">
-        <button class="btn btn-lg btn-primary btn-block beitragbutton" data-toggle="modal" data-target="#editModal"> + neuer Beitrag</button>
+        <button class="btn btn-lg btn-primary btn-block beitragbutton" data-toggle="modal" data-target="#editModal"> +
+            neuer Beitrag
+        </button>
     </div>
 
-<?php if($this->veranstaltung): ?>
-    <table class="table table-striped">
-        <thead>
-        <tr>
-            <th>Id</th>
-            <th>Beitrag</th>
-            <th>Bearbeiten</th>
-            <th>Löschen</th>
-        </tr>
-        </thead>
-        <tbody>
-        <?php foreach($this->veranstaltung as $veranstaltung): ?>
-            <tr>
-                <td><?php echo $veranstaltung->id; ?></td>
-                <td><?php echo $veranstaltung->veranstaltungen; ?></td>
+    <br><br>
+    <br><br>
 
-                <td><button class="btn btn-default" data-toggle="modal" data-target="#editModal" data-id="<?php echo $veranstaltung->id; ?>"> Bearbeiten</button></td>
-                <td><a class="btn btn-danger triggerDelete" href="api/veranstaltungen/" data-id="<?php echo $veranstaltung->id; ?>"> Löschen</td>
-            </tr>
-        <?php endforeach; ?>
-        </tbody>
-    </table>
-<?php else: ?>
-    <p>&nbsp;</p>
-    <div class="alert alert-info">Noch keine Veranstaltungen vorhanden - Sie können über den Button <strong>neuer Beitrag</strong> ein neues Events hinzufügen.</div>
-<?php endif; ?>
+
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10 articleTable">
+        <?php if ($this->veranstaltung): ?>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Beitrag</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($this->veranstaltung as $veranstaltung): ?>
+                    <tr>
+                        <td><?php echo $veranstaltung->id; ?></td>
+                        <td><?php echo $veranstaltung->veranstaltungen; ?></td>
+
+                        <td>
+                            <button class="btn btn-default" data-toggle="modal" data-target="#editModal"
+                                    data-id="<?php echo $veranstaltung->id; ?>"> Bearbeiten
+                            </button>
+                        </td>
+                        <td><a class="btn btn-danger triggerDelete" href="api/veranstaltungen/"
+                               data-id="<?php echo $veranstaltung->id; ?>"> Löschen</td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        <?php else: ?>
+            <p>&nbsp;</p>
+            <div class="alert alert-info">Noch keine Veranstaltungen vorhanden - Sie können über den Button <strong>neuer
+                    Beitrag</strong> ein neues Events hinzufügen.
+            </div>
+        <?php endif; ?>
+    </div>
+
+    <div class="col-xs-1"></div>
 
     <br><br>
     <br><br>
@@ -72,7 +90,13 @@
             </div>
         </div>
     </div>
-    </div>
+
+
+
+    <div class="col-xs-12" style="height: 120px"></div>
+
+
+
     <script type="text/javascript">
 
         var editModal = $('#editModal');

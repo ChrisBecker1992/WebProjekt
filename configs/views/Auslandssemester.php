@@ -2,6 +2,7 @@
 
 <br><br>
 <br><br>
+<br>
 
 <!--Button für neuen Eintrag-->
 
@@ -10,14 +11,18 @@
         <button class="btn btn-lg btn-primary btn-block beitragbutton" data-toggle="modal" data-target="#editModal"> + neuer Beitrag</button>
         </div>
 
+    <br><br>
+    <br><br>
+
+
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10 articleTable">
         <?php if($this->ausland): ?>
             <table class="table table-striped">
                 <thead>
                 <tr>
                     <th>Id</th>
                     <th>Beitrag</th>
-                    <th>Bearbeiten</th>
-                    <th>Löschen</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -36,6 +41,9 @@
             <p>&nbsp;</p>
             <div class="alert alert-info">Noch keine Auslandserfahrungen vorhanden - Sie können über den Button <strong>neuer Beitrag</strong> eine neue Erfrahrung hinzufügen.</div>
         <?php endif; ?>
+    </div>
+
+    <div class="col-xs-1"></div>
 
 
 <br><br>
@@ -72,7 +80,11 @@
             </div>
         </div>
     </div>
-</div>
+
+
+
+
+    <div class="col-xs-12" style="height: 120px"></div>
 
 
 

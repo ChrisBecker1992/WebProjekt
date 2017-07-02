@@ -145,7 +145,7 @@ footer .socialmedia a i {
   align-items: center;
   justify-content: center;
   margin: auto;
-  background-color: rgba(110, 110, 110, 0.6);
+  background-color: rgba(110, 110, 110, 0.7);
 }
 
 /* line 143, ../sass/start.scss */
@@ -235,34 +235,38 @@ h2 {
 .content:hover:first-child {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
 }
-/* line 219, ../sass/start.scss */
+/* line 221, ../sass/start.scss */
 .content:hover:last-child {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
 }
-/* line 224, ../sass/start.scss */
+/* line 228, ../sass/start.scss */
 .content a {
   color: black;
   font-weight: bold;
 }
 
-/* line 230, ../sass/start.scss */
+/* line 234, ../sass/start.scss */
 .aktuelleseite {
   color: #6e6e6e;
 }
 
-/* line 234, ../sass/start.scss */
+/* line 238, ../sass/start.scss */
 .menu {
-  background-color: rgba(30, 120, 160, 0.8);
-  box-shadow: inset 0 0 30px #bef0ff, 3px 3px 20px #6e6e6e;
+  background-color: rgba(40, 150, 180, 0.8);
+  box-shadow: inset 0 0 30px #bef0ff, 0 3px 20px #6e6e6e;
 }
 
-/* line 242, ../sass/start.scss */
+/* line 246, ../sass/start.scss */
 .nav {
   margin-left: 5px;
 }
-/* line 244, ../sass/start.scss */
+/* line 248, ../sass/start.scss */
 .nav a {
   color: black;
 }
