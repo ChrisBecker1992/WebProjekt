@@ -13,7 +13,7 @@
     transform: translateY(-10px);
   }
 }
-/* line 24, ../sass/start.scss */
+/* line 24, ../sass/dropdown.scss */
 header {
   padding: 0;
   top: 0;
@@ -24,22 +24,22 @@ header {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 33, ../sass/start.scss */
+/* line 33, ../sass/dropdown.scss */
 header .header {
   margin: 0;
   padding: 10px;
   color: black;
 }
-/* line 38, ../sass/start.scss */
+/* line 38, ../sass/dropdown.scss */
 header .h1header {
   font-family: "Droid Serif";
 }
-/* line 41, ../sass/start.scss */
+/* line 41, ../sass/dropdown.scss */
 header .h4header {
   font-family: Bevan;
 }
 
-/* line 46, ../sass/start.scss */
+/* line 46, ../sass/dropdown.scss */
 footer {
   padding: 20px;
   left: 0;
@@ -49,17 +49,17 @@ footer {
   position: fixed;
   box-shadow: 3px 3px 20px #6e6e6e;
 }
-/* line 54, ../sass/start.scss */
+/* line 54, ../sass/dropdown.scss */
 footer .socialmedia {
   float: right;
   padding: 10px;
 }
-/* line 57, ../sass/start.scss */
+/* line 57, ../sass/dropdown.scss */
 footer .socialmedia a i {
   font-size: 30px;
 }
 
-/* line 63, ../sass/start.scss */
+/* line 63, ../sass/dropdown.scss */
 .einleitung {
   margin-left: 28px;
   margin-top: 0;
@@ -67,12 +67,12 @@ footer .socialmedia a i {
   border-radius: 5px;
   color: black;
 }
-/* line 73, ../sass/start.scss */
+/* line 73, ../sass/dropdown.scss */
 .einleitung h2 {
   margin-top: 10px;
 }
 
-/* line 79, ../sass/start.scss */
+/* line 79, ../sass/dropdown.scss */
 .picture {
   border-radius: 5px;
   height: 300px;
@@ -86,11 +86,11 @@ footer .socialmedia a i {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
   position: relative;
 }
-/* line 91, ../sass/start.scss */
+/* line 91, ../sass/dropdown.scss */
 .picture:hover {
   animation: bounce 1s;
 }
-/* line 94, ../sass/start.scss */
+/* line 94, ../sass/dropdown.scss */
 .picture a {
   position: absolute;
   top: 0;
@@ -100,29 +100,29 @@ footer .socialmedia a i {
   display: block;
 }
 
-/* line 103, ../sass/start.scss */
+/* line 103, ../sass/dropdown.scss */
 .first {
   background-image: url("../Pictures/IMG-20160621-WA0011.jpg");
   margin-left: 1.6%;
 }
 
-/* line 107, ../sass/start.scss */
+/* line 107, ../sass/dropdown.scss */
 .second {
   background-image: url("../Pictures/Nachhilfe.jpg");
 }
 
-/* line 110, ../sass/start.scss */
+/* line 110, ../sass/dropdown.scss */
 .third {
   background-image: url("../Pictures/crowd.jpg");
 }
 
-/* line 113, ../sass/start.scss */
+/* line 113, ../sass/dropdown.scss */
 .fourth {
   background-image: url("../Pictures/landkarte.jpg");
   margin-left: 0;
 }
 
-/* line 118, ../sass/start.scss */
+/* line 118, ../sass/dropdown.scss */
 .row {
   padding: 1.6%;
   padding-right: 0;
@@ -137,7 +137,7 @@ footer .socialmedia a i {
   transform: translateY(-50%);
 }
 
-/* line 133, ../sass/start.scss */
+/* line 133, ../sass/dropdown.scss */
 .bildschrift {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -148,14 +148,28 @@ footer .socialmedia a i {
   background-color: rgba(110, 110, 110, 0.7);
 }
 
-/* line 143, ../sass/start.scss */
-h2 {
+/* line 143, ../sass/dropdown.scss */
+h3 {
   font-family: "Droid Serif";
   color: black;
 }
 
+/* -Media-Queries zur Anpassung der Schriftgr├Â├ƒe je kleiner der Bildschrim wird
+   -Ist ein jquery plugin mit der man eine minimale oder maximale Grenze f├╝r die Schriftgr├Â├ƒe setzt */
+@media screen and (max-width: 600px) {
+  /* line 152, ../sass/dropdown.scss */
+  h3 {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 157, ../sass/dropdown.scss */
+  h3 {
+    font-size: 4vw;
+  }
+}
 /*Hamburger Button*/
-/* line 151, ../sass/start.scss */
+/* line 166, ../sass/dropdown.scss */
 .container {
   display: inline-block;
   cursor: pointer;
@@ -163,7 +177,7 @@ h2 {
   margin-left: 5px;
 }
 
-/* line 158, ../sass/start.scss */
+/* line 173, ../sass/dropdown.scss */
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -172,33 +186,33 @@ h2 {
   transition: 0.4s;
 }
 
-/* line 165, ../sass/start.scss */
+/* line 180, ../sass/dropdown.scss */
 .bar1 {
   margin-top: 8px;
 }
 
 /* Rotate first bar */
-/* line 171, ../sass/start.scss */
+/* line 186, ../sass/dropdown.scss */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 /* Fade out the second bar */
-/* line 177, ../sass/start.scss */
+/* line 192, ../sass/dropdown.scss */
 .change .bar2 {
   opacity: 0;
 }
 
 /* Rotate last bar */
-/* line 182, ../sass/start.scss */
+/* line 197, ../sass/dropdown.scss */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /* Dropdown-Men├╝ */
-/* line 188, ../sass/start.scss */
+/* line 203, ../sass/dropdown.scss */
 .dropdown {
   margin-left: 0;
   padding-left: 0;
@@ -208,7 +222,7 @@ h2 {
   float: left;
 }
 
-/* line 197, ../sass/start.scss */
+/* line 212, ../sass/dropdown.scss */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -219,54 +233,54 @@ h2 {
   border-radius: 5px;
 }
 
-/* line 207, ../sass/start.scss */
+/* line 222, ../sass/dropdown.scss */
 .content {
   color: black;
   padding: 15px 30px;
   text-decoration: none;
   display: block;
 }
-/* line 212, ../sass/start.scss */
+/* line 227, ../sass/dropdown.scss */
 .content:hover {
   cursor: pointer;
   background-color: rgba(110, 110, 110, 0.5);
 }
-/* line 215, ../sass/start.scss */
+/* line 230, ../sass/dropdown.scss */
 .content:hover:first-child {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
 }
-/* line 221, ../sass/start.scss */
+/* line 236, ../sass/dropdown.scss */
 .content:hover:last-child {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
 }
-/* line 228, ../sass/start.scss */
+/* line 243, ../sass/dropdown.scss */
 .content a {
   color: black;
   font-weight: bold;
 }
 
-/* line 234, ../sass/start.scss */
+/* line 249, ../sass/dropdown.scss */
 .aktuelleseite {
   color: #6e6e6e;
 }
 
-/* line 238, ../sass/start.scss */
+/* line 253, ../sass/dropdown.scss */
 .menu {
   background-color: rgba(40, 150, 180, 0.8);
   box-shadow: inset 0 0 30px #bef0ff, 0 3px 20px #6e6e6e;
 }
 
-/* line 246, ../sass/start.scss */
+/* line 261, ../sass/dropdown.scss */
 .nav {
   margin-left: 5px;
 }
-/* line 248, ../sass/start.scss */
+/* line 263, ../sass/dropdown.scss */
 .nav a {
   color: black;
 }
