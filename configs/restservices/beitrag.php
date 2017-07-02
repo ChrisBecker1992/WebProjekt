@@ -80,7 +80,6 @@ class Beitrag extends RESTClass
                     'userId' => $user->id,
                     'beitrag' => $data['contribution']
                 ));
-
                 //bescheid sagen - hat geklappt
                 $json= new JSON();
                 $json->result = true;
@@ -97,12 +96,9 @@ class Beitrag extends RESTClass
     {
         //put
 
-        $user = new User();
-
-
         if(isset($data['contribution']))
         {
-
+            $user = new User();
             $model = null;
 
             $model = $this->getModelForCategory($data['category']);
@@ -111,9 +107,9 @@ class Beitrag extends RESTClass
             {
                 $model->updateBeitrag(array(
                     'topic' => $data['contribution'],
-                    'id' => $data['id']
+                    'id' => $this->id
                 ));
-
+            var_dump($data);
                 //bescheid sagen - Beitrag wurde bearbeitet
                 $json = new JSON();
                 $json->result = true;
@@ -124,19 +120,20 @@ class Beitrag extends RESTClass
 
     protected function deleteRequest($id)
     {
-        $user = new User();
 
-        if(!isset($data['id']))
+
+        if(isset($data['contribution']))
         {
-            $model = $this->getModelForCategory($data['category']);
+            $user = new User();
+            $model = null;
 
-            $delObj = $model::getBeitragById($data['id']);
+            $model = $this->getModelForCategory($data['category']);
+            $delObj = $model->getBeitragById($data['id']);
             $model->deleteBeitrag($delObj->id);
 
-            $jsonResponse = new JSON();
-            $jsonResponse->result = true;
-            $jsonResponse->setMessage('Address deleted!');
-            $jsonResponse->send();
+            $json = new JSON();
+            $json->result = true;
+            $json->send();
         }
     }
 

@@ -57,7 +57,8 @@ class AbroadModel
     {
         $db = new Database();
 
-        $sql = "UPDATE abroad SET topic='".$db->escapeString($data['topic'])."' WHERE id=".intval($data['id']);
+        $beitrag = $db->escapeString($data['beitrag']);
+        $sql = "UPDATE abroad SET topic='".$db->escapeString($beitrag)."' WHERE id=".intval($data['id']);
         $db->query($sql);
 
         return (object) $data;
