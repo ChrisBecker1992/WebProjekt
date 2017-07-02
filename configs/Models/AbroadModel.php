@@ -59,6 +59,7 @@ class AbroadModel
 
         $sql = "UPDATE abroad SET topic='".$db->escapeString($data['topic'])."' WHERE id=".intval($data['id']);
         $db->query($sql);
+        $data['id'] = $db->insertId();
 
         return (object) $data;
     }
@@ -70,5 +71,6 @@ class AbroadModel
 
         $sql = "DELETE FROM abroad WHERE id=".intval($id);
         $db->query($sql);
+        $data['id'] = $db->insertId();
     }
 }
