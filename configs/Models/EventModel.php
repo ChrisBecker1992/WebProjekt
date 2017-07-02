@@ -5,7 +5,7 @@ class EventModel
     public static function getBeitragById($id)
     {
         $db = new Database();
-        $sql = "SELECT * FROM veranstaltung WHERE id=".intval($id);
+        $sql = "SELECT * FROM event WHERE id=".intval($id);
 
         $result = $db->query($sql);
 
@@ -17,23 +17,23 @@ class EventModel
         return null;
     }
 
-    public static function getVeranstaltungByUserId($userId)
+    public static function getEventByUserId($userId)
     {
         $db = new Database();
 
-        $sql = "SELECT * FROM veranstaltung INNER JOIN USER ON user.id = veranstaltung.userId";
+        $sql = "SELECT * FROM event INNER JOIN USER ON user.id = event.userId";
         $result = $db->query($sql);
 
         if($db->numRows($result) > 0)
         {
-            $veranstaltungArray = array();
+            $eventArray = array();
 
             while($row = $db->fetchObject($result))
             {
-                $veranstaltungArray[] = $row;
+                $eventArray[] = $row;
             }
 
-            return $veranstaltungArray;
+            return $eventArray;
         }
 
         return null;
@@ -44,7 +44,7 @@ class EventModel
         $db = new Database();
 
         $beitrag = $db->escapeString($data['beitrag']);
-        $sql = "INSERT INTO veranstaltung(userId,veranstaltungen) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
+        $sql = "INSERT INTO event(userId,topic) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
         $db->query($sql);
 
         $data['id'] = $db->insertId();
@@ -57,7 +57,7 @@ class EventModel
     {
         $db = new Database();
 
-        $sql = "UPDATE veranstaltung SET veranstaltungen='".$db->escapeString($data['veranstaltungen'])."' WHERE id=".intval($data['id']);
+        $sql = "UPDATE event SET topic='".$db->escapeString($data['topic'])."' WHERE id=".intval($data['id']);
         $db->query($sql);
 
         return (object) $data;
@@ -68,7 +68,7 @@ class EventModel
     {
         $db = new Database();
 
-        $sql = "DELETE FROM veranstaltung WHERE id=".intval($id);
+        $sql = "DELETE FROM event WHERE id=".intval($id);
         $db->query($sql);
     }
 }

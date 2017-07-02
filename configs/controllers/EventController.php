@@ -17,7 +17,7 @@ class EventController extends Controller
         $this->view->title = "Veranstaltungen";
         $this->view->username = $this->user->username;
 
-        $this->view->veranstaltung = EventModel::getVeranstaltungByUserId($this->user->id);
+        $this->view->event = EventModel::getEventByUserId($this->user->id);
     }
 
 }

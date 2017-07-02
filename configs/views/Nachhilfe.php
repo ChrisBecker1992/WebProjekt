@@ -18,7 +18,7 @@
 
     <div class="col-xs-1"></div>    <!-- div for responsive -->
     <div class="col-xs-10 articleTable">    <!-- div for responsive -->
-<?php if($this->coaching): ?>
+<?php if($this->help): ?>
     <table class="table table-striped"> <!-- table for the articles -->
         <thead>
         <tr>
@@ -27,13 +27,13 @@
         </tr>
         </thead>
         <tbody>
-        <?php foreach($this->coaching as $coaching): ?>
+        <?php foreach($this->help as $help): ?>
             <tr>
-                <td><?php echo $coaching->name; ?></td>
-                <td><?php echo $coaching->coach; ?></td>
+                <td><?php echo $help->name; ?></td>
+                <td><?php echo $help->topic; ?></td>
 
-                <td><button class="btn btn-default editBeitrag" data-id="<?php echo $coaching->id; ?>" data-category="nachhilfe"> Bearbeiten</button></td>
-                <td><a class="btn btn-danger triggerDelete" href="api/nachhilfe/" data-id="<?php echo $coaching->id; ?>"> Löschen </td>
+                <td><button class="btn btn-default editBeitrag" data-id="<?php echo $help->id; ?>" data-category="nachhilfe"> Bearbeiten</button></td>
+                <td><a class="btn btn-danger triggerDelete" href="api/nachhilfe/" data-id="<?php echo $help->id; ?>"> Löschen </td>
             </tr>
         <?php endforeach; ?>
         </tbody>

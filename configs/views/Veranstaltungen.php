@@ -21,7 +21,7 @@
 
     <div class="col-xs-1"></div>    <!-- div for responsive -->
     <div class="col-xs-10 articleTable">    <!-- div for responsive -->
-        <?php if ($this->veranstaltung): ?>
+        <?php if ($this->event): ?>
             <table class="table table-striped"> <!-- table for the articles -->
                 <thead>
                 <tr>
@@ -30,18 +30,18 @@
                 </tr>
                 </thead>
                 <tbody>
-                <?php foreach ($this->veranstaltung as $veranstaltung): ?>
+                <?php foreach ($this->event as $event): ?>
                     <tr>
-                        <td><?php echo $veranstaltung->name; ?></td>
-                        <td><?php echo $veranstaltung->veranstaltungen; ?></td>
+                        <td><?php echo $event->name; ?></td>
+                        <td><?php echo $event->topic; ?></td>
 
                         <td>
                             <button class="btn btn-default" data-toggle="modal" data-target="#editModal"
-                                    data-id="<?php echo $veranstaltung->id; ?>"> Bearbeiten
+                                    data-id="<?php echo $event->id; ?>"> Bearbeiten
                             </button>
                         </td>
                         <td><a class="btn btn-danger triggerDelete" href="api/veranstaltungen/"
-                               data-id="<?php echo $veranstaltung->id; ?>"> Löschen</td>
+                               data-id="<?php echo $event->id; ?>"> Löschen</td>
                     </tr>
                 <?php endforeach; ?>
                 </tbody>

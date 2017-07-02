@@ -18,7 +18,7 @@ class HelpController extends Controller
         $this->view->title = "Nachhilfe";
         $this->view->username = $this->user->username;
 
-        $this->view->coaching = HelpModel::getNachhilfeByUserId($this->user->id);
+        $this->view->help = HelpModel::getHelpByUserId($this->user->id);
     }
 
 }

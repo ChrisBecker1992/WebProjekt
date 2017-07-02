@@ -6,7 +6,7 @@ class HelpModel
     public static function getBeitragById($id)
     {
         $db = new Database();
-        $sql = "SELECT * FROM nachhilfe WHERE id=".intval($id);
+        $sql = "SELECT * FROM help WHERE id=".intval($id);
 
         $result = $db->query($sql);
 
@@ -18,23 +18,23 @@ class HelpModel
         return null;
     }
 
-    public static function getNachhilfeByUserId($userId)
+    public static function getHelpByUserId($userId)
     {
         $db = new Database();
 
-        $sql = "SELECT * FROM nachhilfe INNER JOIN USER ON user.id = nachhilfe.userId";
+        $sql = "SELECT * FROM help INNER JOIN USER ON user.id = help.userId";
         $result = $db->query($sql);
 
         if($db->numRows($result) > 0)
         {
-            $nachhilfeArray = array();
+            $helpArray = array();
 
             while($row = $db->fetchObject($result))
             {
-                $nachhilfeArray[] = $row;
+                $helpArray[] = $row;
             }
 
-            return $nachhilfeArray;
+            return $helpArray;
         }
 
         return null;
@@ -46,7 +46,7 @@ class HelpModel
         $db = new Database();
 
         $beitrag = $db->escapeString($data['beitrag']);
-        $sql = "INSERT INTO nachhilfe(userId,coach) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
+        $sql = "INSERT INTO help(userId,topic) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
         $db->query($sql);
 
         $data['id'] = $db->insertId();
@@ -59,7 +59,7 @@ class HelpModel
     {
         $db = new Database();
 
-        $sql = "UPDATE nachhilfe SET coach='".$db->escapeString($data['coach'])."' WHERE id=".intval($data['id']);
+        $sql = "UPDATE help SET topic='".$db->escapeString($data['topic'])."' WHERE id=".intval($data['id']);
         $db->query($sql);
 
         return (object) $data;
@@ -70,7 +70,7 @@ class HelpModel
     {
         $db = new Database();
 
-        $sql = "DELETE FROM nachhilfe WHERE id=".intval($id);
+        $sql = "DELETE FROM help WHERE id=".intval($id);
         $db->query($sql);
     }
 }

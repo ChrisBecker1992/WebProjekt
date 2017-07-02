@@ -18,7 +18,7 @@ class HabitationController extends Controller
         $this->view->title = "Wohnen";
         $this->view->username = $this->user->username;
 
-        $this->view->habitation = HabitationModel::getWohnenByUserId($this->user->id);
+        $this->view->habitation = HabitationModel::getHabitationByUserId($this->user->id);
     }
 
 }

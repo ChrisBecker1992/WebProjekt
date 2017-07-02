@@ -5,7 +5,7 @@ class AbroadModel
     public static function getBeitragById($id)
     {
         $db = new Database();
-        $sql = "SELECT * FROM ausland WHERE id=".intval($id);
+        $sql = "SELECT * FROM abroad WHERE id=".intval($id);
 
         $result = $db->query($sql);
 
@@ -17,23 +17,23 @@ class AbroadModel
         return null;
     }
 
-    public static function getAuslandByUserId($userId)
+    public static function getAbroadByUserId($userId)
     {
         $db = new Database();
 
-        $sql = "SELECT * FROM ausland INNER JOIN USER ON user.id = ausland.userId";
+        $sql = "SELECT * FROM abroad INNER JOIN USER ON user.id = abroad.userId";
         $result = $db->query($sql);
 
         if($db->numRows($result) > 0)
         {
-            $auslandArray = array();
+            $abroadArray = array();
 
             while($row = $db->fetchObject($result))
             {
-                $auslandArray[] = $row;
+                $abroadArray[] = $row;
             }
 
-            return $auslandArray;
+            return $abroadArray;
         }
 
         return null;
@@ -44,7 +44,7 @@ class AbroadModel
         $db = new Database();
 
         $beitrag = $db->escapeString($data['beitrag']);
-        $sql = "INSERT INTO ausland(userId,topic) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
+        $sql = "INSERT INTO abroad(userId,topic) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
         $db->query($sql);
 
         $data['id'] = $db->insertId();
@@ -57,7 +57,7 @@ class AbroadModel
     {
         $db = new Database();
 
-        $sql = "UPDATE ausland SET topic='".$db->escapeString($data['topic'])."' WHERE id=".intval($data['id']);
+        $sql = "UPDATE abroad SET topic='".$db->escapeString($data['topic'])."' WHERE id=".intval($data['id']);
         $db->query($sql);
 
         return (object) $data;
@@ -68,7 +68,7 @@ class AbroadModel
     {
         $db = new Database();
 
-        $sql = "DELETE FROM ausland WHERE id=".intval($id);
+        $sql = "DELETE FROM abroad WHERE id=".intval($id);
         $db->query($sql);
     }
 }

@@ -5,7 +5,7 @@ class HabitationModel
     public static function getBeitragById($id)
     {
         $db = new Database();
-        $sql = "SELECT * FROM wohnen WHERE id=".intval($id);
+        $sql = "SELECT * FROM habitation WHERE id=".intval($id);
 
         $result = $db->query($sql);
 
@@ -17,23 +17,23 @@ class HabitationModel
         return null;
     }
 
-    public static function getWohnenByUserId($userId)
+    public static function getHabitationByUserId($userId)
     {
         $db = new Database();
 
-        $sql = "SELECT * FROM wohnen INNER JOIN USER ON user.id = wohnen.userId";
+        $sql = "SELECT * FROM habitation INNER JOIN USER ON user.id = habitation.userId";
         $result = $db->query($sql);
 
         if($db->numRows($result) > 0)
         {
-            $wohnenArray = array();
+            $habitationArray = array();
 
             while($row = $db->fetchObject($result))
             {
-                $wohnenArray[] = $row;
+                $habitationArray[] = $row;
             }
 
-            return $wohnenArray;
+            return $habitationArray;
         }
 
         return null;
@@ -44,7 +44,7 @@ class HabitationModel
         $db = new Database();
 
         $beitrag = $db->escapeString($data['beitrag']);
-        $sql = "INSERT INTO wohnen(userId,wohnung) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
+        $sql = "INSERT INTO habitation(userId,topic) VALUES('".$db->escapeString($data['userId'])."','".$beitrag."')";
         $db->query($sql);
 
         $data['id'] = $db->insertId();
@@ -57,7 +57,7 @@ class HabitationModel
     {
         $db = new Database();
 
-        $sql = "UPDATE wohnen SET wohnung='".$db->escapeString($data['wohnung'])."' WHERE id=".intval($data['id']);
+        $sql = "UPDATE habitation SET topic='".$db->escapeString($data['topic'])."' WHERE id=".intval($data['id']);
         $db->query($sql);
 
         return (object) $data;
@@ -68,7 +68,7 @@ class HabitationModel
     {
         $db = new Database();
 
-        $sql = "DELETE FROM wohnen WHERE id=".intval($id);
+        $sql = "DELETE FROM habitation WHERE id=".intval($id);
         $db->query($sql);
     }
 }
