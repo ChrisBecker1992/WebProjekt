@@ -32,7 +32,7 @@ class Beitrag extends RESTClass
 
                 $dataForView['category'] = $data['category'];
 
-                $dataForView['beitrag'] = $dataForView['wohnung']; //| 'coach' | 'veranstaltungen' | 'topic'];    //für alle Seiten erstellen
+               // $dataForView['beitrag'] = $dataForView['wohnung']; //| 'coach' | 'veranstaltungen' | 'topic'];    //für alle Seiten erstellen
 
             }
 
@@ -97,6 +97,9 @@ class Beitrag extends RESTClass
     {
         //put
 
+        $user = new User();
+
+
         if(isset($data['contribution']))
         {
 
@@ -107,7 +110,7 @@ class Beitrag extends RESTClass
             if ($model !== null)
             {
                 $model->updateBeitrag(array(
-                    'wohnung' => $data['contribution'],
+                    'topic' => $data['contribution'],
                     'id' => $data['id']
                 ));
 
@@ -119,32 +122,23 @@ class Beitrag extends RESTClass
         }
     }
 
-    protected function deleteRequest($data)
+    protected function deleteRequest($id)
     {
-        if(isset($data['contribution']))
+        $user = new User();
+
+        if(!isset($data['id']))
         {
-            $user = new User();
-
-            $model = null;
-
-            //Werte in der Datenbankspeichern
             $model = $this->getModelForCategory($data['category']);
 
-            if($model !== null)
-            {
-                $model->deleteBeitrag(array(
-                    'userId' => $this->delete('id')
-                ));
+            $delObj = $model::getBeitragById($data['id']);
+            $model->deleteBeitrag($delObj->id);
 
-                //bescheid sagen - hat geklappt
-                $json= new JSON();
-                $json->result = true;
-                $json->send();
-
-            }
-
-
+            $jsonResponse = new JSON();
+            $jsonResponse->result = true;
+            $jsonResponse->setMessage('Address deleted!');
+            $jsonResponse->send();
         }
-
     }
+
+
 }

@@ -17,6 +17,7 @@ class AbroadController extends Controller
         $this->view->title = "Auslandssemester";
         $this->view->username = $this->user->username;
         $this->view->currentUserId = $this->user->id;
+        $this->view->currentId = $this->id;
 
         $this->view->allAbroads = AbroadModel::getAllAbroads();
 
