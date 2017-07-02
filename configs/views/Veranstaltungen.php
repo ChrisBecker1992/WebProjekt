@@ -35,13 +35,8 @@
                         <td><?php echo $event->name; ?></td>
                         <td><?php echo $event->topic; ?></td>
 
-                        <td>
-                            <button class="btn btn-default" data-toggle="modal" data-target="#editModal"
-                                    data-id="<?php echo $event->id; ?>"> Bearbeiten
-                            </button>
-                        </td>
-                        <td><a class="btn btn-danger triggerDelete" href="api/veranstaltungen/"
-                               data-id="<?php echo $event->id; ?>"> Löschen</td>
+                        <td><button class="btn btn-default" data-toggle="modal" data-target="#editModal" data-id="<?php echo $event->id; ?>"> Bearbeiten</button></td>
+                        <td><a class="btn btn-danger triggerDelete" href="api/veranstaltungen/" data-id="<?php echo $event->id; ?>"> Löschen</td>
                     </tr>
                 <?php endforeach; ?>
                 </tbody>

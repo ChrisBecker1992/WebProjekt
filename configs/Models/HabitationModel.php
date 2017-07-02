@@ -17,7 +17,7 @@ class HabitationModel
         return null;
     }
 
-    public static function getHabitationByUserId($userId)
+    public static function getAllHabitations()
     {
         $db = new Database();
 

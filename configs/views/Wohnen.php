@@ -16,7 +16,7 @@
 
 <div class="col-xs-1"></div>    <!-- div for responsive -->
 <div class="col-xs-10 articleTable">    <!-- div for responsive -->
-<?php if($this->habitation): ?>
+<?php if($this->allHabitations): ?>
     <table class="table table-striped"> <!-- table for the articles -->
         <thead>
         <tr>
@@ -25,14 +25,17 @@
         </tr>
         </thead>
         <tbody>
-        <?php foreach($this->habitation as $habitation): ?>
+        <?php foreach($this->allHabitations as $habitation): ?>
             <tr>
                 <td><?php echo $habitation->name; ?></td>
                 <td><?php echo $habitation->topic; ?></td>
+                <td><?php echo $this->currentUserId; ?></td>
+                <td><?php echo $habitation->userId; ?></td>
 
+                <?php if($this->currentUserId == $habitation->userId) { ?>
                 <td><button class="btn btn-default editBeitrag" data-id="<?php echo $habitation->id; ?>" data-category="wohnen"></i> Bearbeiten</button></td>
                 <td><a class="btn btn-danger triggerDelete" href="api/beitrag/" data-id="<?php echo $habitation->id; ?>"> Löschen </td>
-
+                <?php } ?>
 
             </tr>
         <?php endforeach; ?>
@@ -65,7 +68,7 @@
                         <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
                         <div class="form-group">
                             <label for="wohnung">Beitrag</label>
-                            <input type="text" name="wohnung" class="form-control" id="beitrag" value="<?php echo $this->wohnung; ?>">
+                            <input type="text" name="wohnung" class="form-control" id="beitrag" value="<?php echo $this->topic; ?>">
                         </div>
                             <input type="hidden" name="category" value="wohnen" id="category">
                         </form>
@@ -97,7 +100,7 @@
                     <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
                         <div class="form-group">
                             <label for="wohnung">Beitrag</label>
-                            <input type="text" name="wohnung" class="form-control" id="beitrag" value="<?php echo $this->wohnung; ?>">
+                            <input type="text" name="wohnung" class="form-control" id="beitrag" value="<?php echo $this->topic; ?>">
                         </div>
                         <input type="hidden" name="category" value="wohnen" id="category">
                     </form>
