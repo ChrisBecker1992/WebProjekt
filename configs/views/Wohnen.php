@@ -16,7 +16,7 @@
 
 <div class="col-xs-1"></div>    <!-- div for responsive -->
 <div class="col-xs-10 articleTable">    <!-- div for responsive -->
-<?php if($this->habitation): ?>
+<?php if($this->allHabitations): ?>
     <table class="table table-striped"> <!-- table for the articles -->
         <thead>
         <tr>
@@ -31,7 +31,7 @@
                 <td><?php echo $habitation->topic; ?></td>
 
             <?php if($this->currentUserId == $habitation->userId): ?>
-                <td><button class="btn btn-default editBeitrag" data-id="<?php echo $habitation->id; ?>" data-category="wohnen"></i> Bearbeiten</button></td>
+                <td><button class="btn btn-default editBeitrag" data-id="<?php echo $habitation->id; ?>" data-category="wohnen"> Bearbeiten</button></td>
                 <td><a class="btn btn-danger triggerDelete" href="api/beitrag/" data-id="<?php echo $habitation->id; ?>"> Löschen </td>
             <?php else: ?>
                 <td></td>
