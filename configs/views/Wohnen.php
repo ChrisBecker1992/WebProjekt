@@ -31,8 +31,10 @@
                 <td><?php echo $habitation->topic; ?></td>
 
             <?php if($this->currentUserId == $habitation->userId): ?>
+
                 <td><button class="btn btn-default editBeitrag" data-id="<?php echo $habitation->id; ?>" data-category="wohnen"> Bearbeiten</button></td>
                 <td><a class="btn btn-danger triggerDelete" href="api/beitrag/" data-id="<?php echo $habitation->id; ?>"> Löschen </td>
+
             <?php else: ?>
                 <td></td>
                 <td></td>
@@ -66,7 +68,7 @@
                 </div>
                 <div class="modal-body">
 
-                        <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
+                        <form method="<?php $this->id ?>post<?php ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
                         <div class="form-group">
                             <label for="wohnung">Beitrag</label>
                             <input type="text" name="wohnung" class="form-control" id="beitrag" value="<?php echo $this->topic; ?>">
@@ -98,7 +100,7 @@
                 </div>
                 <div class="modal-body">
 
-                    <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
+                    <form method="<?php $this->id ?>put<?php ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
                         <div class="form-group">
                             <label for="wohnung">Beitrag</label>
                             <input type="text" name="wohnung" class="form-control" id="beitrag" value="<?php echo $this->topic; ?>">
