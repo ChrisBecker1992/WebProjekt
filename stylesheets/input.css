@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 6, ../sass/beitragseiten.scss */
+/* line 6, ../sass/input.scss */
 header {
   padding: 0;
   top: 0;
@@ -10,22 +10,22 @@ header {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 15, ../sass/beitragseiten.scss */
+/* line 15, ../sass/input.scss */
 header .header {
   margin: 0;
   padding: 10px;
   color: black;
 }
-/* line 20, ../sass/beitragseiten.scss */
+/* line 20, ../sass/input.scss */
 header .h1header {
   font-family: "Droid Serif";
 }
-/* line 23, ../sass/beitragseiten.scss */
+/* line 23, ../sass/input.scss */
 header .h4header {
   font-family: Bevan;
 }
 
-/* line 28, ../sass/beitragseiten.scss */
+/* line 28, ../sass/input.scss */
 footer {
   padding: 20px;
   left: 0;
@@ -35,18 +35,18 @@ footer {
   box-shadow: 3px 3px 20px #6e6e6e;
   position: fixed;
 }
-/* line 36, ../sass/beitragseiten.scss */
+/* line 36, ../sass/input.scss */
 footer .socialmedia {
   float: right;
   padding: 10px;
 }
-/* line 39, ../sass/beitragseiten.scss */
+/* line 39, ../sass/input.scss */
 footer .socialmedia a i {
   font-size: 30px;
 }
 
 /*Hamburger Button*/
-/* line 48, ../sass/beitragseiten.scss */
+/* line 48, ../sass/input.scss */
 .container {
   display: inline-block;
   cursor: pointer;
@@ -54,7 +54,7 @@ footer .socialmedia a i {
   margin-left: 5px;
 }
 
-/* line 55, ../sass/beitragseiten.scss */
+/* line 55, ../sass/input.scss */
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -63,33 +63,33 @@ footer .socialmedia a i {
   transition: 0.4s;
 }
 
-/* line 62, ../sass/beitragseiten.scss */
+/* line 62, ../sass/input.scss */
 .bar1 {
   margin-top: 8px;
 }
 
 /* Rotate first bar */
-/* line 68, ../sass/beitragseiten.scss */
+/* line 68, ../sass/input.scss */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 /* Fade out the second bar */
-/* line 74, ../sass/beitragseiten.scss */
+/* line 74, ../sass/input.scss */
 .change .bar2 {
   opacity: 0;
 }
 
 /* Rotate last bar */
-/* line 79, ../sass/beitragseiten.scss */
+/* line 79, ../sass/input.scss */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /* Dropdown-Men├╝ */
-/* line 85, ../sass/beitragseiten.scss */
+/* line 85, ../sass/input.scss */
 .dropdown {
   margin-left: 0;
   padding-left: 0;
@@ -99,7 +99,7 @@ footer .socialmedia a i {
   float: left;
 }
 
-/* line 94, ../sass/beitragseiten.scss */
+/* line 94, ../sass/input.scss */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -110,65 +110,66 @@ footer .socialmedia a i {
   border-radius: 5px;
 }
 
-/* line 104, ../sass/beitragseiten.scss */
+/* line 104, ../sass/input.scss */
 .content {
   color: black;
   padding: 15px 30px;
   text-decoration: none;
   display: block;
 }
-/* line 109, ../sass/beitragseiten.scss */
+/* line 109, ../sass/input.scss */
 .content:hover {
   cursor: pointer;
   background-color: rgba(110, 110, 110, 0.5);
 }
-/* line 112, ../sass/beitragseiten.scss */
+/* line 112, ../sass/input.scss */
 .content:hover:first-child {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
 }
-/* line 118, ../sass/beitragseiten.scss */
+/* line 118, ../sass/input.scss */
 .content:hover:last-child {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
 }
-/* line 125, ../sass/beitragseiten.scss */
+/* line 125, ../sass/input.scss */
 .content a {
   color: black;
   font-weight: bold;
 }
 
-/* line 131, ../sass/beitragseiten.scss */
+/* line 131, ../sass/input.scss */
 .aktuelleseite {
   color: #6e6e6e;
 }
 
-/* line 135, ../sass/beitragseiten.scss */
+/* line 135, ../sass/input.scss */
 .menu {
   background-color: rgba(40, 150, 180, 0.8);
   box-shadow: inset 0 0 30px #bef0ff, 0 3px 20px #6e6e6e;
 }
 
-/* line 143, ../sass/beitragseiten.scss */
+/* line 143, ../sass/input.scss */
 .links h1 {
   font-family: "Droid Serif";
   margin-top: 5px;
+  margin-left: 20px;
 }
 
-/* line 149, ../sass/beitragseiten.scss */
+/* line 150, ../sass/input.scss */
 .nav {
   margin-left: 5px;
 }
-/* line 151, ../sass/beitragseiten.scss */
+/* line 152, ../sass/input.scss */
 .nav a {
   color: black;
 }
 
-/* line 156, ../sass/beitragseiten.scss */
+/* line 157, ../sass/input.scss */
 .articleTable {
   border-radius: 5px;
   background: linear-gradient(#f0f0f0, #aaaaaa);
