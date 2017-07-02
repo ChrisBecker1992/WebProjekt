@@ -140,10 +140,25 @@ footer{
   background-color: rgba(110, 110, 110, 0.7);
 }
 
-h2{
+h3 {
   font-family: "Droid Serif";
   color: $black;
 }
+
+/* -Media-Queries zur Anpassung der Schriftgröße je kleiner der Bildschrim wird
+   -Ist ein jquery plugin mit der man eine minimale oder maximale Grenze für die Schriftgröße setzt */
+
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 4vw; //Die Einheit vw entspricht dem 100. Teil der Breite des Anzeigebereichs (Viewport). Es gilt also: 100vw = Breite des Viewports.
+  }
+}
+
 
 
 /*Hamburger Button*/
