@@ -9,7 +9,7 @@
 </header>
 
 
-<!-- Login-Bereich -->
+<!-- Login Window -->
 
 <div class="container">
     <br><br>
@@ -19,25 +19,24 @@
 
     <form action="anmelden" method="post">
 
-        <div class="links col-xs-3"></div>
+        <div class="links col-xs-3"></div>  <!-- div for responsive -->
 
 
-        <div class="form-group col-xs-6">
+        <div class="form-group col-xs-6">   <!-- div for responsive -->
 
-            <div class="innenlinks col-xs-3"></div>
+            <div class="innenlinks col-xs-3"></div>     <!-- div for responsive -->
 
-            <div class="innenmitte col-xs-6">
+            <div class="innenmitte col-xs-6">           <!-- div for responsive -->
 
                 <h3 class="h3login">Login</h3>
                 <br>
                 <div class="form-group">
-                    <!--<label for="username">Benutzername</label>-->
+
                     <br>
                     <input type="text" name="username" class="form-control" id="username" placeholder="Benutzername">
                 </div>
                 <br>
 
-                <!--<label for="password">Passwort</label>-->
                 <br>
                 <input type="password" name="password"  class="form-control" id="password" placeholder="Passwort">
 
@@ -50,7 +49,7 @@
 
                     <br><br>
 
-                </div>
+                </div>  <!-- div for getting to main site -->
 
                 <a href="Startseite.php">
                 <button class="btn btn-lg btn-primary btn-block" name="login" type="submit">
@@ -60,7 +59,7 @@
                 <input type="hidden" name="action" value="login">
                 <br>
 
-                <div>
+                <div>   <!-- div for getting to registration -->
 
                     <h4 class="regtext">Hasd du noch k1 Account?
                         <br>
@@ -72,14 +71,14 @@
                     </h4>
                 </div>
             </div>
-            <div class="innenrecht col-xs-3"></div>
+            <div class="innenrecht col-xs-3"></div>     <!-- div for responsive -->
         </div>
     </form>
-    <div class="rechts col-xs-3"></div>
+    <div class="rechts col-xs-3"></div>     <!-- div for responsive -->
 </div> <!-- /container -->
 
 
-<!-- Lightbox für Registrieren -->
+<!-- Lightbox for registration -->
 <div class="modal fade <?php if($registerError):?> in<?php endif; ?> lightbox" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -126,7 +125,7 @@
 </div>
 
 
-<!-- Lightbox für Passwort vergessen -->
+<!-- Lightbox for password forgot -->
 <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -157,7 +156,7 @@
 </div><!-- /.modal -->
 
 
-<!-- Lightbox für erfolgreiches Absenden der Email von Passwort vergessen -->
+<!-- Lightbox for successful sending of Email (doesn't work, is just a nice thing to have) -->
 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

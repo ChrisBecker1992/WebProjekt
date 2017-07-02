@@ -6,10 +6,10 @@
 <br>
 
 
-    <!--Button für neuen Eintrag-->
+    <!--Button for new Article -->
 
     <div class="links col-xs-10"><h1>Veranstaltungen</h1></div>
-    <div class="rechts col-xs-2">
+    <div class="rechts col-xs-2">   <!-- div for responsive -->
         <button class="btn btn-lg btn-primary btn-block beitragbutton" data-toggle="modal" data-target="#editModal"> +
             neuer Beitrag
         </button>
@@ -19,10 +19,10 @@
     <br><br>
 
 
-    <div class="col-xs-1"></div>
-    <div class="col-xs-10 articleTable">
+    <div class="col-xs-1"></div>    <!-- div for responsive -->
+    <div class="col-xs-10 articleTable">    <!-- div for responsive -->
         <?php if ($this->veranstaltung): ?>
-            <table class="table table-striped">
+            <table class="table table-striped"> <!-- table for the articles -->
                 <thead>
                 <tr>
                     <th>Username</th>
@@ -47,20 +47,20 @@
                 </tbody>
             </table>
         <?php else: ?>
-            <p>&nbsp;</p>
+            <p>&nbsp;</p>       <!-- div shows when there is no article -->
             <div class="alert alert-info">Noch keine Veranstaltungen vorhanden - Sie können über den Button <strong>neuer
                     Beitrag</strong> ein neues Events hinzufügen.
             </div>
         <?php endif; ?>
     </div>
 
-    <div class="col-xs-1"></div>
+    <div class="col-xs-1"></div>    <!-- div for responsive -->
 
     <br><br>
     <br><br>
 
 
-    <!-- Lightbox für neuen Beitrag -->
+    <!-- Lightbox for new Article -->
 
     <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -93,7 +93,7 @@
 
 
 
-    <div class="col-xs-12" style="height: 120px"></div>
+    <div class="col-xs-12" style="height: 120px"></div> <!-- div at the bottom for footer being at the bottom (that's a design thing) -->
 
 
 
