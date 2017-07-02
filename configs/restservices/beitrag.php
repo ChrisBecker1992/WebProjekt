@@ -130,7 +130,7 @@ class Beitrag extends RESTClass
         {
             $model = $this->getModelForCategory($data['category']);
 
-            $delObj = $model::getBeitragById($data['id']);
+            $delObj = $model::getBeitragById(intval($data['id']));
             $model->deleteBeitrag($delObj->id);
 
             $jsonResponse = new JSON();
