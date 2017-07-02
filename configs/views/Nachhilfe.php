@@ -18,7 +18,7 @@
 
     <div class="col-xs-1"></div>    <!-- div for responsive -->
     <div class="col-xs-10 articleTable">    <!-- div for responsive -->
-<?php if($this->help): ?>
+<?php if($this->allHelp): ?>
     <table class="table table-striped"> <!-- table for the articles -->
         <thead>
         <tr>
@@ -27,13 +27,19 @@
         </tr>
         </thead>
         <tbody>
-        <?php foreach($this->help as $help): ?>
+        <?php foreach($this->allHelp as $help): ?>
             <tr>
                 <td><?php echo $help->name; ?></td>
                 <td><?php echo $help->topic; ?></td>
 
+            <?php if($this->currentUserId == $help->userId): ?>
                 <td><button class="btn btn-default editBeitrag" data-id="<?php echo $help->id; ?>" data-category="nachhilfe"> Bearbeiten</button></td>
                 <td><a class="btn btn-danger triggerDelete" href="api/nachhilfe/" data-id="<?php echo $help->id; ?>"> Löschen </td>
+            <?php else: ?>
+                <td></td>
+                <td></td>
+            <?php endif ?>
+
             </tr>
         <?php endforeach; ?>
         </tbody>

@@ -30,14 +30,15 @@
             <tr>
                 <td><?php echo $habitation->name; ?></td>
                 <td><?php echo $habitation->topic; ?></td>
-                <td><?php echo $this->currentUserId; ?></td>
-                <td><?php echo $habitation->userId; ?></td>
 
-                <?php if($this->currentUserId == $habitation->userId) { ?>
+            <?php if($this->currentUserId == $habitation->userId): ?>
                 <td><button class="btn btn-default editBeitrag" data-id="<?php echo $habitation->id; ?>" data-category="wohnen"></i> Bearbeiten</button></td>
                 <td><a class="btn btn-danger triggerDelete" href="api/beitrag/" data-id="<?php echo $habitation->id; ?>"> Löschen </td>
-                <?php } ?>
-
+            <?php else: ?>
+                <td></td>
+                <td></td>
+            <?php endif ?>
+                
             </tr>
         <?php endforeach; ?>
         </tbody>

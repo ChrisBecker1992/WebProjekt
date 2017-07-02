@@ -17,7 +17,7 @@ class AbroadModel
         return null;
     }
 
-    public static function getAbroadByUserId($userId)
+    public static function getAllAbroads()
     {
         $db = new Database();
 
