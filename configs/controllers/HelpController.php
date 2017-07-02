@@ -17,8 +17,9 @@ class HelpController extends Controller
 
         $this->view->title = "Nachhilfe";
         $this->view->username = $this->user->username;
+        $this->view->currentUserId = $this->user->id;
 
-        $this->view->help = HelpModel::getHelpByUserId($this->user->id);
+        $this->view->allHelp = HelpModel::getAllHelp();
     }
 
 }

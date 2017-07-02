@@ -17,7 +17,7 @@ class EventModel
         return null;
     }
 
-    public static function getEventByUserId($userId)
+    public static function getAllEvents()
     {
         $db = new Database();
 

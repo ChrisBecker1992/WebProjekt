@@ -18,7 +18,7 @@ class HelpModel
         return null;
     }
 
-    public static function getHelpByUserId($userId)
+    public static function getAllHelp()
     {
         $db = new Database();
 

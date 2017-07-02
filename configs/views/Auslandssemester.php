@@ -17,7 +17,7 @@
 
     <div class="col-xs-1"></div>    <!-- div for responsive -->
     <div class="col-xs-10 articleTable">    <!-- div for responsive -->
-        <?php if($this->abroad): ?>
+        <?php if($this->allAbroads): ?>
             <table class="table table-striped"> <!-- table for the articles -->
                 <thead>
                 <tr>
@@ -26,13 +26,19 @@
                 </tr>
                 </thead>
                 <tbody>
-                <?php foreach($this->abroad as $abroad): ?>
+                <?php foreach($this->allAbroads as $abroad): ?>
                     <tr>
                         <td><?php echo $abroad->name; ?></td>
                         <td><?php echo $abroad->topic; ?></td>
 
+                    <?php if($this->currentUserId == $abroad->userId): ?>
                         <td><button class="btn btn-default editBeitrag" data-id="<?php echo $abroad->id; ?>" data-category="auslandssemester"></i>Bearbeiten</button></td>
                         <td><a class="btn btn-danger triggerDelete" href="api/auslandssemester/" data-id="<?php echo $abroad->id; ?>"> Löschen </td>
+                    <?php else: ?>
+                        <td></td>
+                        <td></td>
+                    <?php endif ?>
+
                     </tr>
                 <?php endforeach; ?>
                 </tbody>

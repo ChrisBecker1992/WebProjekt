@@ -25,15 +25,19 @@
         </tr>
         </thead>
         <tbody>
-        <?php foreach($this->habitation as $habitation): ?>
+        <?php foreach($this->allHabitations as $habitation): ?>
             <tr>
                 <td><?php echo $habitation->name; ?></td>
                 <td><?php echo $habitation->topic; ?></td>
 
+            <?php if($this->currentUserId == $habitation->userId): ?>
                 <td><button class="btn btn-default editBeitrag" data-id="<?php echo $habitation->id; ?>" data-category="wohnen"></i> Bearbeiten</button></td>
                 <td><a class="btn btn-danger triggerDelete" href="api/beitrag/" data-id="<?php echo $habitation->id; ?>"> Löschen </td>
-
-
+            <?php else: ?>
+                <td></td>
+                <td></td>
+            <?php endif ?>
+                
             </tr>
         <?php endforeach; ?>
         </tbody>
@@ -65,7 +69,7 @@
                         <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
                         <div class="form-group">
                             <label for="wohnung">Beitrag</label>
-                            <input type="text" name="wohnung" class="form-control" id="beitrag" value="<?php echo $this->wohnung; ?>">
+                            <input type="text" name="wohnung" class="form-control" id="beitrag" value="<?php echo $this->topic; ?>">
                         </div>
                             <input type="hidden" name="category" value="wohnen" id="category">
                         </form>
@@ -97,7 +101,7 @@
                     <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
                         <div class="form-group">
                             <label for="wohnung">Beitrag</label>
-                            <input type="text" name="wohnung" class="form-control" id="beitrag" value="<?php echo $this->wohnung; ?>">
+                            <input type="text" name="wohnung" class="form-control" id="beitrag" value="<?php echo $this->topic; ?>">
                         </div>
                         <input type="hidden" name="category" value="wohnen" id="category">
                     </form>
