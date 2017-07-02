@@ -80,6 +80,7 @@
                             <input type="hidden" name="category" value="veranstaltungen" id="category">
                         </form>
                         <br><br>
+                    <br><br>
 
                 </div>
                 <div class="modal-footer">
@@ -87,6 +88,36 @@
                     <button type="button" class="btn btn-primary saveContribution">Speichern</button>
                 </div>
 
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Lightbox for edit Article -->
+    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title" id="myModalLabel">Beitrag bearbeiten</h3>
+                </div>
+                <div class="modal-body">
+
+                    <form method="<?php if($this->id): ?>put<?php else: ?>post<?php endif; ?>" action="api/beitrag/" class="col-xs-12" id="beitragsformular">
+                        <div class="form-group">
+                            <label for="wohnung">Beitrag</label>
+                            <input type="text" name="wohnung" class="form-control" id="beitrag" value="<?php echo $this->wohnung; ?>">
+                        </div>
+                        <input type="hidden" name="category" value="wohnen" id="category">
+                    </form>
+                    <br><br>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
+                    <button type="button" class="btn btn-primary updateContribution">Speichern</button>
+                </div>
             </div>
         </div>
     </div>

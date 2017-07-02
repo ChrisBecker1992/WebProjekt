@@ -17,7 +17,7 @@
 <div class="col-xs-1"></div>    <!-- div for responsive -->
 <div class="col-xs-10 articleTable">    <!-- div for responsive -->
 <?php if($this->habitation): ?>
-    <table class="table table-striped"> <!-- table for the articles -->
+    <table class="table table-striped col-xs-10"> <!-- table for the articles -->
         <thead>
         <tr>
             <th>Username</th>
