@@ -96,7 +96,7 @@ class Beitrag extends RESTClass
     {
         //put
 
-        if(isset($data['contribution']))
+        // if(isset($data['contribution']))
         {
             $user = new User();
             $model = null;
@@ -106,10 +106,10 @@ class Beitrag extends RESTClass
             if ($model !== null)
             {
                 $model->updateBeitrag(array(
-                    'topic' => $data['contribution'],
-                    'id' => $this->id
+                    'topic' => $data['beitrag'],
+                    'id' => $data['id']
                 ));
-            var_dump($data);
+            //var_dump($data);
                 //bescheid sagen - Beitrag wurde bearbeitet
                 $json = new JSON();
                 $json->result = true;
@@ -118,11 +118,11 @@ class Beitrag extends RESTClass
         }
     }
 
-    protected function deleteRequest($id)
+    protected function deleteRequest($data)
     {
 
 
-        if(isset($data['contribution']))
+        // if(isset($data['contribution']))
         {
             $user = new User();
             $model = null;

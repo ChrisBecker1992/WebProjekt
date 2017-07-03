@@ -21,7 +21,7 @@ class HabitationModel
     {
         $db = new Database();
 
-        $sql = "SELECT * FROM habitation INNER JOIN USER ON user.id = habitation.userId";
+        $sql = "SELECT hab.id, hab.userId, hab.topic, user.name FROM habitation as hab INNER JOIN USER ON user.id = hab.userId";
         $result = $db->query($sql);
 
         if($db->numRows($result) > 0)

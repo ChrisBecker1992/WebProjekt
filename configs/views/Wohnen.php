@@ -33,7 +33,7 @@
             <?php if($this->currentUserId == $habitation->userId): ?>
 
                 <td><button class="btn btn-default editBeitrag" data-id="<?php echo $habitation->id; ?>" data-category="wohnen"> Bearbeiten</button></td>
-                <td><a class="btn btn-danger triggerDelete" href="api/beitrag/" data-id="<?php echo $habitation->id; ?>"> Löschen </td>
+                <td><a class="btn btn-danger triggerDelete" href="api/beitrag/" data-id="<?php echo $habitation->id; ?>" data-category="wohnen"> Löschen </td>
 
             <?php else: ?>
                 <td></td>

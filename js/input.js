@@ -101,10 +101,11 @@ $(document).ready(function() {
         var del = confirm("Wollen Sie diesen Beitrag wirklich löschen?");
         if (del == true) {
             var id = $(this).attr('data-id');
+            var category = $(this).attr('data-category');
             $.ajax({
                 'url': 'api/beitrag/',
                 'method': 'delete',
-                'data': id,
+                'data': {category: category, id: id},
                 'dataType': "json",
                 'success': function (receivedData) {
                     if(receivedData.result) {
